@@ -1,0 +1,59 @@
+<div class="mt-3 container-fluid header-container">
+    <div class="container header-search p-0">
+        <div class="row h-100">
+            <div class="col-2 h-100">
+                <img src="../../assets/images/final-logo.jpg" class="logo mt-2">
+            </div>
+            <div class="col-6 h-100 offset-1 position-relative">
+                <input class="w-100 h-75 mt-2  p-3 border-0 txtSearch" placeholder="Search here ...">
+                <button class="btn btn-info btnSearch">
+                    <mat-icon class="mt-1">search</mat-icon>
+                </button>
+            </div>
+            <div class="col-1 offset-1 h-100 text-center border-left">
+                <mat-icon class="mt-2">shopping_cart</mat-icon>
+                <p>Cart</p>
+            </div>
+            <div class="col-1 h-100 text-center border-left">
+                <mat-icon class="mt-2">account_circle</mat-icon>
+                <p>Account</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container header-nav ">
+        <div class="row h-100">
+            <button class="btn col-2 bg-info fw-bold h-100 d-flex justify-content-center border-0 btnCate text-white">
+                <mat-icon>list</mat-icon>
+                <p class="title">Category</p>
+            </button>
+            <nav class="col-6 offset-1 container-fluid h-100 p-0 navbar">
+                <div class="row h-100 w-100 navbar-nav m-0">
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" (click)="changeActive($event)">Home</a>
+                    </li>
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link" href="#" (click)="changeActive($event)">Collection</a>
+                    </li>
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link" href="#" (click)="changeActive($event)">Shop</a>
+                    </li>
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link" href="#" (click)="changeActive($event)">Authors</a>
+                    </li>
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link" href="#" (click)="changeActive($event)">F&Q</a>
+                    </li>
+                    <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
+                        <a class="nav-link" href="#" (click)="changeActive($event)">About us</a>
+                    </li>
+                </div>
+            </nav>
+            <button
+                class="btn col-2 offset-1 bg-info d-flex justify-content-center h-100 fw-bold border-0 btnCall text-white">
+                <mat-icon>call</mat-icon>
+                <p class="title">0987654321</p>
+            </button>
+        </div>
+    </div>
+</div>

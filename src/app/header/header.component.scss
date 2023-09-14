@@ -1,0 +1,49 @@
+.header-container{
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+     .header-search{
+         height: 60px;
+         box-sizing: border-box;
+         .logo{
+             color: red;
+             font-weight: bold;
+             margin: 0;
+             height: 40px;
+         }
+         .btnSearch{
+             position: absolute;
+             top: 8px;
+             right: 11px;
+             height: 45px;
+             width: 90px;
+             border-radius: 30px;
+         }
+         .txtSearch{
+             background-color: #f6f6f6;
+             border-radius: 30px;
+         }
+     }
+     .header-nav{
+         height: 40px;
+         .btnCate{
+             border-radius: 30px;
+         }
+         .btnCall{
+             border-radius: 30px;
+         }
+         .title{
+             margin-left: 10px;
+         }
+         a{
+             color: black;
+             font-weight: bold;
+         }
+         a:hover, .active{
+             border-bottom: 2px solid #0dcaf0;
+             color: #0dcaf0;
+         }
+     }  
+ }
+ 
+ 
