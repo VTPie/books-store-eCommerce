@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin-left: 0;
     margin-right: 0;
-     .header-search{
+    .header-search{
          height: 60px;
          box-sizing: border-box;
          .logo{
@@ -23,26 +23,26 @@
              background-color: #f6f6f6;
              border-radius: 30px;
          }
-     }
-     .header-nav{
-         height: 40px;
-         .btnCate{
-             border-radius: 30px;
-         }
-         .btnCall{
-             border-radius: 30px;
-         }
-         .title{
-             margin-left: 10px;
-         }
-         a{
-             color: black;
-             font-weight: bold;
-         }
-         a:hover, .active{
-             border-bottom: 2px solid #0dcaf0;
-             color: #0dcaf0;
-         }
+    }
+    .header-nav{
+        height: 40px;
+        .btnCate{
+            border-radius: 30px;
+        }
+        .btnCall{
+            border-radius: 30px;
+        }
+        .title{
+            margin-left: 10px;
+        }
+        a{
+            color: black;
+            font-weight: bold;
+        }
+        a:hover, .active{
+            color: #0dcaf0;
+            border-bottom: 2px solid #0dcaf0;       
+        }
      }  
  }
  

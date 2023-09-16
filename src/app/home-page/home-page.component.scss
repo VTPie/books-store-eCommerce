@@ -1,0 +1,30 @@
+.sale-container{
+    .sale-banner1{
+        background-image: url("../../assets/images/final-sale1.jpg");
+        height: 240px;
+        width: 640px;
+        .banner1-title{
+            margin-left: 220px;
+            margin-top: 60px;
+            width: 290px;
+        }
+        .banner1-content{
+            margin-left: 220px;
+            width: 290px;
+        }
+        #icon-sale{
+            margin-top: 70px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .sale-banner2{
+        background-image: url("../../assets/images/final-sale2.jpg");
+        height: 240px;
+        width: 640px;
+        .banner2-content{
+            margin-left: 350px;
+        }
+    }
+
+}
