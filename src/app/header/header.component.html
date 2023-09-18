@@ -10,11 +10,11 @@
                     <mat-icon class="mt-1 text-white">search</mat-icon>
                 </button>
             </div>
-            <div class="col-1 offset-1 h-100 text-center border-left">
+            <div class="btnCart col-1 offset-1 h-100 text-center border-left">
                 <mat-icon class="mt-2">shopping_cart</mat-icon>
                 <p>Cart</p>
             </div>
-            <div class="col-1 h-100 text-center border-left">
+            <div class="btnAcc col-1 h-100 text-center border-left">
                 <mat-icon class="mt-2">account_circle</mat-icon>
                 <p>Account</p>
             </div>
@@ -23,10 +23,103 @@
     <hr>
     <div class="container header-nav mt-4">
         <div class="row h-100">
-            <button class="btn col-2 btn-info fw-bold h-100 d-flex justify-content-center border-0 btnCate text-white">
-                <mat-icon>list</mat-icon>
-                <p class="title">Category</p>
-            </button>
+            <div class="dropdown col-2 h-100 d-block">
+                <button
+                    class="main-dropdown-toggle btn w-100 btn-info fw-bold h-100 d-flex justify-content-center border-0 text-white dropdown-toggle rounded-5"
+                    type="button" id="dropdownToggle" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <mat-icon>list</mat-icon>
+                    <p class="ms-3">Categories</p>
+                </button>
+                <ul class="main-dropdown-menu dropdown-menu mt-0 p-0" aria-labelledby="dropdownMenuButton">
+                    <li class="dropend">
+                        <a class="sub-dropdown-toggle dropdown-item fw-normal d-flex mt-2 dropdown-toggle ps-2" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <mat-icon class="ms-3 p-0"> import_contacts </mat-icon>
+                            <p class="m-0 ms-3">Literature</p>
+                        </a>
+                        <div class="sub-dropdown-menu dropdown-menu">
+                            <div>
+                                <div class="sub-title d-flex">
+                                    <mat-icon> dns </mat-icon>
+                                    <p class="m-0 ms-3 fw-bold">Genres</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Prose</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Poem</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Drama</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Fable</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal my-1" href="#">Autobiography</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sub-title d-flex">
+                                    <mat-icon> flag </mat-icon>
+                                    <p class="m-0 ms-3 fw-bold">Storyline</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Detective</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Gothic</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Historical</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Fiction</a>
+                                    </div>
+                                    <div>
+                                        <a class="dropdown-item fw-normal mt-1" href="#">Romance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> face </mat-icon>
+                            <p class="m-0 ms-3">Children</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> attach_money </mat-icon>
+                            <p class="m-0 ms-3">Economy</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> map </mat-icon>
+                            <p class="m-0 ms-3">History</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> gavel </mat-icon>
+                            <p class="m-0 ms-3">Law</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> brightness_low </mat-icon>
+                            <p class="m-0 ms-3">Philosophy</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> mood </mat-icon>
+                            <p class="m-0 ms-3">Psychology</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> account_balance </mat-icon>
+                            <p class="m-0 ms-3">Political</p>
+                        </a></li>
+                    <li><a class="dropdown-item fw-normal d-flex my-2 ps-2" href="#">
+                            <mat-icon class="ms-3 p-0"> school </mat-icon>
+                            <p class="m-0 ms-3">Science</p>
+                        </a></li>
+                </ul>
+            </div>
             <nav class="col-6 offset-1 container-fluid h-100 p-0 navbar">
                 <div class="row h-100 w-100 navbar-nav m-0">
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
@@ -50,9 +143,9 @@
                 </div>
             </nav>
             <button
-                class="btn col-2 offset-1 btn-info d-flex justify-content-center h-100 fw-bold border-0 btnCall text-white">
+                class="btn col-2 offset-1 btn-info d-flex justify-content-center h-100 fw-bold border-0 rounded-5 text-white">
                 <mat-icon>call</mat-icon>
-                <p class="title">0987654321</p>
+                <p class="ms-3">0987654321</p>
             </button>
         </div>
     </div>

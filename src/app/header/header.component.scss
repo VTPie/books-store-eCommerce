@@ -3,47 +3,83 @@
     margin-left: 0;
     margin-right: 0;
     .header-search{
-         height: 60px;
-         box-sizing: border-box;
-         .logo{
-             color: red;
-             font-weight: bold;
-             margin: 0;
-             height: 40px;
-         }
-         .btnSearch{
-             position: absolute;
-             top: 8px;
-             right: 11px;
-             height: 45px;
-             width: 90px;
-             border-radius: 30px;
-         }
-         .txtSearch{
-             background-color: #f6f6f6;
-             border-radius: 30px;
-         }
+        height: 60px;
+        box-sizing: border-box;
+        .logo{
+            color: red;
+            font-weight: bold;
+            margin: 0;
+            height: 40px;
+        }
+        .btnSearch{
+            position: absolute;
+            top: 8px;
+            right: 11px;
+            height: 45px;
+            width: 90px;
+            border-radius: 30px;
+        }
+        .txtSearch{
+            background-color: #f6f6f6;
+            border-radius: 30px;
+        }
+        .btnCart:hover, .btnAcc:hover{
+            color: #0dcaf0;
+        }
     }
     .header-nav{
         height: 40px;
-        .btnCate{
-            border-radius: 30px;
+
+        // Dropdown 
+        #dropdownToggle::after{
+            margin-top: 12px;
+            margin-left: 20px;
         }
-        .btnCall{
-            border-radius: 30px;
+        .main-dropdown-menu{
+            width: 196px;
         }
-        .title{
-            margin-left: 10px;
+        .dropdown:hover>.main-dropdown-menu {
+            display: block;
         }
-        a{
+        .dropdown>.main-dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+        .dropdown a:hover{
+            background-color: #0dcaf0;
+            color: white;
+        }
+
+        // Sub-Dropend
+        .sub-dropdown-toggle:after{
+            margin-top: 9px;
+            margin-bottom: auto;
+            margin-left: 32px;
+        }
+        .dropend{
+            position: relative;
+        }
+        .dropend > .sub-dropdown-menu{
+            left: 100%;
+            top: -8px;
+        }
+        .dropend:hover > .sub-dropdown-menu, .dropend > a:focus + .dropend {
+            display: block;
+        }
+        .sub-dropdown-menu .sub-title{
+            margin-left: 13px;
+        }
+
+        // NavBar
+        nav a{
             color: black;
             font-weight: bold;
         }
-        a:hover, .active{
+        nav a:hover, nav .active{
             color: #0dcaf0;
             border-bottom: 2px solid #0dcaf0;       
         }
-     }  
+    }  
  }
  
  
