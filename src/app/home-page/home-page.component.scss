@@ -1,30 +1,68 @@
 .sale-container{
-    .sale-banner1{
-        background-image: url("../../assets/images/final-sale1.jpg");
+    .sale-banner{
         height: 240px;
         width: 640px;
-        .banner1-title{
-            margin-left: 220px;
-            margin-top: 60px;
-            width: 290px;
+        overflow: hidden;
+        position: relative;
+        .bg-banner{
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s;
         }
-        .banner1-content{
-            margin-left: 220px;
-            width: 290px;
+        .hover-underline{
+            position: relative;
+            color: white;
+            text-decoration: none;
         }
+        .hover-underline::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 110px;
+            height: 2px;
+            // bottom: 0;
+            top: 25px;
+            left: 0;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: top left;
+            transition: transform 0.4s ease;
+        }
+
+        // Banner 1
         #icon-sale{
             margin-top: 70px;
             width: 100px;
             height: 100px;
         }
-    }
-    .sale-banner2{
-        background-image: url("../../assets/images/final-sale2.jpg");
-        height: 240px;
-        width: 640px;
+        #banner1-title{
+            margin-left: 220px;
+            margin-top: 60px;
+            width: 290px;
+        }
+        #banner1-content{
+            margin-left: 220px;
+            width: 290px;
+        }
+
+        // Banner 2
         .banner2-content{
             margin-left: 350px;
         }
+        #banner2-title{
+            margin-top: 35px;
+        }
     }
-
+    .sale-banner:hover{
+        .bg-banner{
+            transform: scale(1.1);
+        }
+        .hover-underline::before{
+            transform: scaleX(1);
+        }
+    }
 }
