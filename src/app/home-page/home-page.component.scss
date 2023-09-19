@@ -1,3 +1,26 @@
+.banner-top-container{
+    .carousel-control-prev, .carousel-control-next{
+        background-color: gray;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .carousel-control-prev{
+        margin-left: 13px;
+        margin-top: 150px;
+    }
+    .carousel-control-next{
+        margin-right: 13px;
+        margin-top: 150px;
+    }
+    .carousel-control-next, .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(80%);
+    }
+    .carousel-indicators{
+        filter: invert(60%);
+    }
+}
 .sale-container{
     .sale-banner{
         height: 240px;
@@ -67,8 +90,63 @@
     }
 }
 .featured-container{
+    width: 93vw;
+    margin-left: 3vw;
+    position: relative;
     .featured-item{
         width: 250px;
         height: 500px;
+    }
+    #featured-title{
+        position: relative;
+    }
+    #featured-title::before {
+        content:"";
+        display: block;
+        height: 1px;
+        width: 500px;
+        position: absolute;
+        top: 20px;
+        left: 55px;
+        background: black;
+    }
+    #featured-title::after {
+        content:"";
+        display: block;
+        height: 1px;
+        width: 500px;
+        position: absolute;
+        top: 20px;
+        right: 55px;
+        background: black;
+    }
+}
+.new-container{
+    .new-item{
+        width: 250px;
+        height: 500px;
+    }
+    #new-title{
+        position: relative;
+    }
+    #new-title::before {
+        content:"";
+        display: block;
+        height: 1px;
+        width: 500px;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        background: black;
+    }
+    #new-title::after {
+        content:"";
+        display: block;
+        height: 1px;
+        width: 500px;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        background: black;
     }
 }

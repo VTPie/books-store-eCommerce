@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { BookCardComponent } from './book-card/book-card.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BookCardComponent } from './book-card/book-card.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

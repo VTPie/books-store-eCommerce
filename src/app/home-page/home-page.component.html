@@ -2,7 +2,7 @@
 <app-header></app-header>
 
 <!-- Carousel -->
-<div class="container-fluid carousel mt-4 p-0 slide carousel-fade" id="carouselExampleIndicators">
+<div class="banner-top-container container-fluid carousel mt-4 p-0 slide carousel-fade" id="carouselExampleIndicators">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -57,19 +57,52 @@
     </div>
 </div>
 
-<!-- Featured books -->
-<div class="featured-container container-fluid mt-4 p-0">
-    <h2 class="text-center mb-4">Featured book</h2>
-    <div class="w-100 d-flex justify-content-around">
-        <app-book-card class="featured-item"></app-book-card>
-        <app-book-card class="featured-item"></app-book-card>
-        <app-book-card class="featured-item"></app-book-card>
-        <app-book-card class="featured-item"></app-book-card>
-        <app-book-card class="featured-item"></app-book-card>
-    </div>
+<!-- New books -->
+<div class="featured-container mt-4 p-0">
+    <h2 class="text-center mb-4" id="featured-title">New books</h2>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+    </owl-carousel-o>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<!-- Featured books -->
+<div class="featured-container mt-3 p-0">
+    <h2 class="text-center mb-4" id="featured-title">Featured books</h2>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-book-card class="featured-item"></app-book-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>

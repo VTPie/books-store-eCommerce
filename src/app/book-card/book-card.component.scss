@@ -18,20 +18,20 @@
     }
     .btnFvr{
         position: absolute;
-        left: 250px;
-        top: 250px;
+        left: 300px;
+        top: 295px;
         transition: left .2s;
     }
     .btnAdd{
         position: absolute;
-        left: 250px;
-        top: 300px;
+        left: 300px;
+        top: 345px;
         transition: left .2s;
     }
 }
 .card-container:hover{
     .btnFvr, .btnAdd{
-        left: 200px;
+        left: 230px;
     }
     .card-name{
         color: #0dcaf0;

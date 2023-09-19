@@ -37,3 +37,33 @@ $books-store-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+// Css for Featured Books section
+.featured-container .owl-next, .featured-container .owl-prev{
+  color: black !important;
+  background-color: inherit !important;
+  font-size: 50px !important;
+  position: absolute !important;
+}
+.featured-container .owl-prev{
+  top: 200px !important;
+  left: -40px !important;
+}
+.featured-container .owl-next{
+  top: 200px !important;
+  right: -40px !important;
+}
+.featured-container .owl-prev:hover{
+  color: cyan !important;
+}
+.featured-container .owl-next:hover{
+  color: cyan !important;
+}
+.featured-container .owl-item:not(.center){
+  -webkit-transform: scale(0.8) !important;
+    transform: scale(0.8) !important;
+}
