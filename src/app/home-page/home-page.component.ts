@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faFaceSmile, faCartShopping, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-page',
@@ -7,7 +7,10 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
-  faCaretRight = faCaretRight;
+  faBook = faBook;
+  faFaceSmile = faFaceSmile;
+  faCartShopping = faCartShopping;
+  faUsers = faUsers;
   customOptions: any = {
     loop: true,
     mouseDrag: true,

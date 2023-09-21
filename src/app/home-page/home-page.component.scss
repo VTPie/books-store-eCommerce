@@ -121,38 +121,48 @@
         background: black;
     }
 }
-.new-container{
-    .new-item{
-        width: 250px;
-        height: 500px;
+.stat-container{
+    .stat-item{
+        .stat-item-icon{
+            width: 40%;
+            padding: 19px 0;
+            background-color: #edebfc;
+            border-radius: 50px;
+        }
+        .stat-item-info{
+            margin-top: 35px;
+        }
     }
-    #new-title{
-        position: relative;
+    #stat-item-1:hover{
+        .stat-item-icon{
+            transform: scale(0.8);
+        }
+        .stat-item-info{
+            color: blue;
+        }
     }
-    #new-title::before {
-        content:"";
-        display: block;
-        height: 1px;
-        width: 500px;
-        position: absolute;
-        top: 20px;
-        left: 100px;
-        background: black;
+    #stat-item-2:hover{
+        .stat-item-icon{
+            transform: scale(0.8);
+        }
+        .stat-item-info{
+            color: cyan;
+        }
     }
-    #new-title::after {
-        content:"";
-        display: block;
-        height: 1px;
-        width: 500px;
-        position: absolute;
-        top: 20px;
-        right: 100px;
-        background: black;
+    #stat-item-3:hover{
+        .stat-item-icon{
+            transform: scale(0.8);
+        }
+        .stat-item-info{
+            color: red;
+        }
+    }
+    #stat-item-4:hover{
+        .stat-item-icon{
+            transform: scale(0.8);
+        }
+        .stat-item-info{
+            color: green;
+        }
     }
 }
-// .oapw{
-//     #oapw-feat{
-//         app-book-card{
-//         }
-//     }
-// }
