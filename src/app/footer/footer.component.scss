@@ -1,0 +1,29 @@
+.footer-container{
+    background-color: #282828;
+    .even-col{
+        padding-left: 60px;
+    }
+    .list-link{
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                opacity: 100 !important;
+                font-weight: bold;
+            }
+        }
+    }
+    #copyright{
+        margin-left: 65px;
+    }
+    #linked{
+        margin-right: 70px;
+        margin-left: auto;
+        .linked-item{
+            width: 13%;
+            height: 40px;
+        }
+    }
+}

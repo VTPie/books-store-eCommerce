@@ -10,13 +10,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { BookCardComponent } from './book-card/book-card.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    BookCardComponent
+    BookCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

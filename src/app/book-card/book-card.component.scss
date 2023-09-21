@@ -2,7 +2,8 @@
     position: relative;
     overflow: hidden;
     .card-name{
-        height: 10%;
+        // height: 10%;
+        height: fit-content;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -18,20 +19,20 @@
     }
     .btnFvr{
         position: absolute;
-        left: 300px;
-        top: 295px;
+        left: 120%;
+        top: 54%;
         transition: left .2s;
     }
     .btnAdd{
         position: absolute;
-        left: 300px;
-        top: 345px;
+        left: 120%;
+        top: 63.5%;
         transition: left .2s;
     }
 }
 .card-container:hover{
     .btnFvr, .btnAdd{
-        left: 230px;
+        left: 80%;
     }
     .card-name{
         color: #0dcaf0;
