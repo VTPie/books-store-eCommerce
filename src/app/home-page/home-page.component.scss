@@ -91,18 +91,18 @@
     }
 }
 
-.featured-container{
+.new-container{
     width: 93vw;
     margin-left: 3vw;
     position: relative;
-    .featured-item{
+    .new-item{
         width: 250px;
         height: 500px;
     }
-    #featured-title{
+    #new-title{
         position: relative;
     }
-    #featured-title::before {
+    #new-title::before {
         content:"";
         display: block;
         height: 1px;
@@ -112,7 +112,7 @@
         left: 55px;
         background: black;
     }
-    #featured-title::after {
+    #new-title::after {
         content:"";
         display: block;
         height: 1px;
@@ -121,6 +121,22 @@
         top: 20px;
         right: 55px;
         background: black;
+    }
+}
+
+.oapw{
+    height: 700px;
+    #oapw-info{
+        width: 28%;
+    }
+    #oapw-pic{
+        width: 44%;
+    }
+    #oapw-feat{
+        width: 28%;
+        .oapw-card{
+            height: 26%;
+        }
     }
 }
 

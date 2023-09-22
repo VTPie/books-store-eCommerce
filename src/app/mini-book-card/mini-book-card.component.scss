@@ -1,0 +1,25 @@
+.miniCard-container{
+    #miniCard-img{
+        width: 35.8%;
+    }
+    #miniCard-info{
+        width: 64.2%;
+        .card-name{
+            margin-top: 20px !important;
+            height: fit-content;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+.miniCard-container:hover{
+    transform: scale(0.9);
+    #miniCard-info{
+        .card-name{
+            color: cyan;
+        }
+    }
+}

@@ -58,84 +58,72 @@
 </div>
 
 <!-- New books -->
-<div class="featured-container container-fluid mt-3 p-0">
-    <h2 class="text-center mb-4" id="featured-title">New books</h2>
+<div class="new-container container-fluid mt-3 p-0">
+    <h2 class="text-center mb-3" id="new-title">New books</h2>
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
+            <app-book-card class="new-item"></app-book-card>
         </ng-template>
     </owl-carousel-o>
 </div>
 
 <!-- One author per week -->
-<!-- <div class="oapw container mt-2">
-    <div class="row">
-        <div class="col-4 bg-warning" id="oapw-info">
-            a
+<div class="oapw container mt-3 d-flex">
+    <div class="h-100 text-end" id="oapw-info">
+        <h5 class="text-danger">ONE AUTHOR PER WEEK</h5>
+        <h1 class="mt-3">Jessica Munoz</h1>
+        <p class="opacity-75 mt-3">Janice Hallett is a British author,<br>
+            screenwriter and an award-winning journalist,<br>
+            best known for her
+            phenomenally successful<br>
+            debut thriller The Appeal.</p>
+        <p class="opacity-75">Before her breakout entry into<br>
+            the realms of crime fiction,<br>
+            Janice Hallett worked as a journalist,<br>
+            magazine editor and speech writer for<br>
+            the Cabinet Office and Home Office,<br>
+            as well as writing for the stage and screen.<br>
+            Her first feature film Retreat<br>
+            (co-written and directed by Carl Tibbetts)<br>
+            came out in 2011,<br>
+            and she won the award for Best New Screenplay<br>
+            at the 2014 British Independent Film Festival.</p>
+        <button class="btn btn-info py-2 px-4 rounded-5 fw-bold text-white mt-3" type=" button">View Author</button>
+    </div>
+    <div class="h-100" id="oapw-pic">
+        <img src="../../assets/images/author1.jpg" class="h-100 d-block mx-auto">
+    </div>
+    <div class="h-100 d-flex flex-column justify-content-between p-0" id="oapw-feat">
+        <div class="oapw-card row m-0">
+            <app-mini-book-card class="p-0"></app-mini-book-card>
         </div>
-        <div class="col-4 bg-info" id="oapw-pic">
-            b
+        <hr class="m-0">
+        <div class="oapw-card row m-0">
+            <app-mini-book-card class="p-0"></app-mini-book-card>
         </div>
-        <div class="col-4" id="oapw-feat">
-            <div class="row">
-                <div class="col-6">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="col-6">
-                    <app-book-card></app-book-card>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="col-6">
-                    <app-book-card></app-book-card>
-                </div>
-            </div>
+        <hr class="m-0">
+        <div class="oapw-card row m-0">
+            <app-mini-book-card class="p-0"></app-mini-book-card>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- Featured books -->
-<div class="featured-container container-fluid mt-2 p-0">
-    <h2 class="text-center mb-4" id="featured-title">Featured books</h2>
-    <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-book-card class="featured-item"></app-book-card>
-        </ng-template>
-    </owl-carousel-o>
-</div>
 
 <!-- Get info from shop -->
 <div class="getInfo-container container text-center mt-3 rounded-5">
