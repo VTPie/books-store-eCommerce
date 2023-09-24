@@ -42,7 +42,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 
-// Css for Featured Books section
+// Css for owl-carousel in New Books section
 .new-container .owl-next, .new-container .owl-prev{
   color: black !important;
   background-color: inherit !important;
@@ -66,4 +66,39 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .new-container .owl-item:not(.center){
   -webkit-transform: scale(0.8) !important;
     transform: scale(0.8) !important;
+}
+.new-container{
+  .owl-dots{
+    .active{
+      span{
+        width: 30px !important;
+        background-color: cyan !important;
+      }
+    }
+  }
+}
+
+// Css for owl-carousel in What client says section
+#evaluate-container{
+  .owl-dots{
+    width: fit-content;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    .owl-dot{
+      span{
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+      }
+    }
+    .active{
+      span{
+        width: 15px;
+        height: 5px;
+        margin: 5px;
+        background-color: cyan;
+      }
+    }
+  }
 }

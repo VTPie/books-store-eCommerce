@@ -12,6 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { MiniBookCardComponent } from './mini-book-card/mini-book-card.component';
+import { EvaluateCardComponent } from './evaluate-card/evaluate-card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MiniBookCardComponent } from './mini-book-card/mini-book-card.component
     BookCardComponent,
     FooterComponent,
     MiniBookCardComponent,
+    EvaluateCardComponent,
   ],
   imports: [
     BrowserModule,

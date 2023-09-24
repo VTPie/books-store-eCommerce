@@ -38,4 +38,29 @@ export class HomePageComponent {
     },
     nav: true
   }
+  evaluateOptions: any = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dotsEach: true,
+    margin: 30,
+    autoplay: true,
+    center: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      400: {
+        items: 3
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 3
+      }
+    },
+  }
 }

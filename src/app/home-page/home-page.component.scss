@@ -124,8 +124,18 @@
     }
 }
 
+// .combo-container{
+//     #combo-deal{
+//         #deal-daily{
+//             .deal-card{
+//                 width: 20%;
+//             }
+//         }
+//     }
+// }
+
 .oapw{
-    height: 700px;
+    height: 650px;
     #oapw-info{
         width: 28%;
     }
@@ -135,8 +145,25 @@
     #oapw-feat{
         width: 28%;
         .oapw-card{
-            height: 26%;
+            height: 28%;
         }
+    }
+}
+
+#evaluate-container{
+    position: relative;
+    #evaluate-title{
+        position: relative;
+    }
+    #evaluate-title::after {
+        content:"";
+        display: block;
+        height: 1px;
+        width: 850px;
+        position: absolute;
+        top: 20px;
+        right: 150px;
+        background: black;
     }
 }
 

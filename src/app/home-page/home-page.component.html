@@ -82,6 +82,8 @@
     </owl-carousel-o>
 </div>
 
+<!-- Top this week - Daily deals - Weekly deadls -->
+
 <!-- One author per week -->
 <div class="oapw container mt-3 d-flex">
     <div class="h-100 text-end" id="oapw-info">
@@ -110,23 +112,46 @@
     </div>
     <div class="h-100 d-flex flex-column justify-content-between p-0" id="oapw-feat">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
         </div>
         <hr class="m-0">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
         </div>
         <hr class="m-0">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
         </div>
     </div>
 </div>
 
-<!-- Featured books -->
+<!-- What client says -->
+<div class="container" id="evaluate-container">
+    <h2 class="my-3" id="evaluate-title">What client says</h2>
+    <owl-carousel-o [options]="evaluateOptions">
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+        <ng-template carouselSlide>
+            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        </ng-template>
+    </owl-carousel-o>
+</div>
 
 <!-- Get info from shop -->
-<div class="getInfo-container container text-center mt-3 rounded-5">
+<div class="getInfo-container container text-center mt-4 rounded-5">
     <h4 class="pt-5 text-white">Get 10% Off Your Order!</h4>
     <p class="my-3 text-white">Enter your email and receive a 10% discount on your next order!</p>
     <div class="position-relative pb-5">
