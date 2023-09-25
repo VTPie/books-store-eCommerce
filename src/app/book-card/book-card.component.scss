@@ -38,3 +38,45 @@
         color: #0dcaf0;
     }
 }
+
+//Custom card for deal section (homepage)
+:host-context(.deal-card){
+    .card-name{
+        font-size: 1rem;
+    }
+    .card-rated{
+        .mat-icon{
+            transform: scale(0.8);
+        }
+    }
+    .card-author{
+        font-size: 0.8rem;
+        margin-top: 0 !important;
+    }
+    .card-price{
+        font-size: 1rem;
+        margin-top: 4px !important;
+    }
+    .btnFvr{
+        top: 49%;
+        left: 100%;
+        transform: scale(0.8);
+    }
+    .btnAdd{
+        top: 59%;
+        left: 100%;
+        transform: scale(0.8);
+    }
+}
+:host-context(.deal-card):hover{
+    .btnFvr{
+        top: 49%;
+        left: 77%;
+        transform: scale(0.8);
+    }
+    .btnAdd{
+        top: 59%;
+        left: 77%;
+        transform: scale(0.8);
+    }
+}

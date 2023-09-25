@@ -19,6 +19,7 @@ import { AuthorsPageComponent } from './authors-page/authors-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { TinyBookCardComponent } from './tiny-book-card/tiny-book-card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     FaqPageComponent,
     AboutPageComponent,
     NotFoundPageComponent,
+    TinyBookCardComponent,
   ],
   imports: [
     BrowserModule,

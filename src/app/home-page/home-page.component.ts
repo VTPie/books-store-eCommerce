@@ -7,10 +7,14 @@ import { faBook, faFaceSmile, faCartShopping, faUsers } from '@fortawesome/free-
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
+
+  //Icon for Statistics section
   faBook = faBook;
   faFaceSmile = faFaceSmile;
   faCartShopping = faCartShopping;
   faUsers = faUsers;
+
+  //Action for carousel in new-book section
   customOptions: any = {
     loop: true,
     mouseDrag: true,
@@ -38,6 +42,8 @@ export class HomePageComponent {
     },
     nav: true
   }
+
+  //Action for carousel in what-client-says section
   evaluateOptions: any = {
     loop: true,
     mouseDrag: true,
@@ -63,4 +69,10 @@ export class HomePageComponent {
       }
     },
   }
+
+  //Action smooth scroll in sales-section
+  scrollToDailySale(elem: string) {
+    document.querySelector(elem)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
 }

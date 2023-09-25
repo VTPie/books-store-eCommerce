@@ -1,5 +1,5 @@
 <!-- Carousel -->
-<div class="banner-top-container container-fluid carousel mt-4 p-0 slide carousel-fade" id="carouselExampleIndicators">
+<div class="banner-top-container container-fluid carousel my-4 p-0 slide carousel-fade" id="carouselExampleIndicators">
     <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -32,8 +32,8 @@
 </div>
 
 <!-- Sale -->
-<div class="container mt-4 sale-container d-flex justify-content-between p-0">
-    <div class="sale-banner rounded-5 d-flex" id="sale-banner1">
+<div class="container sale-container d-flex justify-content-between p-0">
+    <div class="sale-banner rounded-5 d-flex" id="sale-banner1" (click)="scrollToDailySale('#deal-daily-title')">
         <img src="../../assets/images/final-sale1.jpg" class="bg-banner">
         <img src="../../assets/images/off20pc.png" id="icon-sale" class="ms-3">
         <div>
@@ -46,7 +46,7 @@
             </p>
         </div>
     </div>
-    <div class="sale-banner rounded-5" id="sale-banner2">
+    <div class="sale-banner rounded-5" id="sale-banner2" (click)="scrollToDailySale('#deal-weekly-title')">
         <img src="../../assets/images/final-sale2.jpg" class="bg-banner">
         <h5 class="text-white banner2-content hover-underline" id="banner2-title">Novel week!</h5>
         <h3 class="text-white mt-3 banner2-content">10% discount on all novels in the store.</h3>
@@ -55,7 +55,7 @@
 </div>
 
 <!-- New books -->
-<div class="new-container container-fluid mt-3 p-0">
+<div class="new-container container-fluid my-4 p-0">
     <h2 class="text-center mb-3" id="new-title">New books</h2>
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
@@ -80,9 +80,89 @@
 </div>
 
 <!-- Top this week - Daily deals - Weekly deadls -->
+<div class="combo-container container">
+    <div class="row">
+        <div class="col-3 rounded-5 py-4 px-4" id="combo-bestselling">
+            <h4>Top 10 this week</h4>
+            <hr class="my-4">
+            <div class="list-card d-flex flex-column justify-content-between">
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+                <app-tiny-book-card></app-tiny-book-card>
+            </div>
+        </div>
+        <div class="col-9" id="combo-deal">
+            <h3 id="deal-daily-title" class="mb-0">Daily Deals</h3>
+            <p class="mb-0 bg-warning px-5 py-1 rounded-5 fw-bold fs-5" id="timer-daily">1:23:59:59</p>
+            <div class="d-flex flex-wrap justify-content-evenly py-3 border border-danger border-2 rounded-5 mt-3"
+                id="deal-daily">
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+            </div>
+            <h3 class="mt-3" id="deal-weekly-title">Weekly Deals</h3>
+            <p class="mb-0 bg-warning px-5 py-1 rounded-5 fw-bold fs-5" id="timer-weekly">6:23:59:59</p>
+            <div class="d-flex flex-wrap justify-content-evenly py-3 border border-danger border-2 rounded-5 mt-3"
+                id="deal-weekly">
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="deal-card mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- One author per week -->
-<div class="oapw container mt-3 d-flex">
+<div class="oapw container my-4 d-flex">
     <div class="h-100 text-end" id="oapw-info">
         <h5 class="text-danger">ONE AUTHOR PER WEEK</h5>
         <h1 class="mt-3">Jessica Munoz</h1>
@@ -148,7 +228,7 @@
 </div>
 
 <!-- Get info from shop -->
-<div class="getInfo-container container text-center mt-4 rounded-5">
+<div class="getInfo-container container text-center my-4 bg-info rounded-5">
     <h4 class="pt-5 text-white">Get 10% Off Your Order!</h4>
     <p class="my-3 text-white">Enter your email and receive a 10% discount on your next order!</p>
     <div class="position-relative pb-5">
@@ -160,7 +240,7 @@
 </div>
 
 <!-- Statistics -->
-<div class="container-fluid stat-container mt-4">
+<div class="container-fluid stat-container mb-4">
     <div class="row d-flex justify-content-evenly">
         <div class="stat-item col-2 d-flex rounded-5 border" id="stat-item-1">
             <div class="stat-item-icon text-primary my-4 ms-3 text-center">
