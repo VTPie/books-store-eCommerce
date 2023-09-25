@@ -13,6 +13,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { MiniBookCardComponent } from './mini-book-card/mini-book-card.component';
 import { EvaluateCardComponent } from './evaluate-card/evaluate-card.component';
+import { CollectionPageComponent } from './collection-page/collection-page.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
+import { AuthorsPageComponent } from './authors-page/authors-page.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,12 @@ import { EvaluateCardComponent } from './evaluate-card/evaluate-card.component';
     FooterComponent,
     MiniBookCardComponent,
     EvaluateCardComponent,
+    CollectionPageComponent,
+    ShopPageComponent,
+    AuthorsPageComponent,
+    FaqPageComponent,
+    AboutPageComponent,
+    NotFoundPageComponent,
   ],
   imports: [
     BrowserModule,
