@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSliderModule } from '@angular/material/slider';
 import { BookCardComponent } from './book-card/book-card.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -43,6 +43,7 @@ import { TinyBookCardComponent } from './tiny-book-card/tiny-book-card.component
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatSliderModule,
     CarouselModule,
     FontAwesomeModule
   ],

@@ -1,0 +1,24 @@
+:host{
+    .box-cate{
+        .form-check-label:hover{
+            color: blue;
+        }
+    }
+    .box-author{
+        .form-check-label:hover{
+            color: blue;
+        }
+    }
+    .box-price{
+        .mat-mdc-slider{
+            width: 94%;
+            color: blue;
+        }
+    }
+    .box-evaluate{
+        .mat-mdc-slider{
+            width: 94%;
+            color: blue;
+        }
+    }
+}
