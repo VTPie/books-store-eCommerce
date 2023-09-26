@@ -80,6 +80,7 @@ export class HomePageComponent implements OnInit {
 
   //Fetch data
   books: Book[] = [];
+  newBooks: Book[] = [];
   errorMessage = '';
   constructor(private bookService: BookService, private loader: LoaderService) { }
   ngOnInit(): void {
@@ -91,6 +92,7 @@ export class HomePageComponent implements OnInit {
       .subscribe({
         next: (books) => {
           this.books = books;
+          this.newBooks = books.slice(0, 6)
         },
         error: (err) => {
           this.errorMessage = <any>err;
@@ -102,7 +104,4 @@ export class HomePageComponent implements OnInit {
         }
       });
   }
-
-  //Data for new-books section
-  newBooks: Book[] = [this.books[0], this.books[1], this.books[3], this.books[6], this.books[7], this.books[8]]
 }
