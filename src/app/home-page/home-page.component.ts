@@ -81,6 +81,7 @@ export class HomePageComponent implements OnInit {
   //Fetch data
   books: Book[] = [];
   newBooks: Book[] = [];
+  dailyDeals: Book[] = [];
   errorMessage = '';
   constructor(private bookService: BookService, private loader: LoaderService) { }
   ngOnInit(): void {
@@ -93,6 +94,7 @@ export class HomePageComponent implements OnInit {
         next: (books) => {
           this.books = books;
           this.newBooks = books.slice(0, 6)
+          this.dailyDeals = books.slice(6, 14)
         },
         error: (err) => {
           this.errorMessage = <any>err;
