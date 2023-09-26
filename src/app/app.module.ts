@@ -20,6 +20,8 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { TinyBookCardComponent } from './tiny-book-card/tiny-book-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,10 @@ import { TinyBookCardComponent } from './tiny-book-card/tiny-book-card.component
     MatIconModule,
     MatSliderModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -59,22 +59,28 @@
     <h2 class="text-center mb-3" id="new-title">New books</h2>
     <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[1].name" [author]="books[1].author" [price]="books[1].price"
+                [image]="books[1].image" class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[2].name" [author]="books[2].author" [price]="books[2].price"
+                [image]="books[2].image" class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[3].name" [author]="books[3].author" [price]="books[3].price"
+                [image]="books[3].image" class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[4].name" [author]="books[4].author" [price]="books[4].price"
+                [image]="books[4].image" class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[5].name" [author]="books[5].author" [price]="books[5].price"
+                [image]="books[5].image" class="new-item"></app-book-card>
         </ng-template>
         <ng-template carouselSlide>
-            <app-book-card class="new-item"></app-book-card>
+            <app-book-card [name]="books[6].name" [author]="books[6].author" [price]="books[6].price"
+                [image]="books[6].image" class="new-item"></app-book-card>
         </ng-template>
     </owl-carousel-o>
 </div>

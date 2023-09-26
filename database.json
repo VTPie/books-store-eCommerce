@@ -1,0 +1,247 @@
+[
+    {
+        "name": "No Place Like Here",
+        "author": "Christina June",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/1.jpg",
+        "price": "10",
+        "id": "1"
+    },
+    {
+        "name": "The Beast's Heart",
+        "author": "Leife Shallcross",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/2.jpg",
+        "price": "20",
+        "id": "2"
+    },
+    {
+        "name": "Blue is a Darkness Weakened by Light",
+        "author": "Sarah McCarry",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/3.jpg",
+        "price": "30",
+        "id": "3"
+    },
+    {
+        "name": "A Light So Lovely",
+        "author": "Sarah Arthur",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/4.jpg",
+        "price": "40",
+        "id": "4"
+    },
+    {
+        "name": "A Place Called Perfect",
+        "author": "Helena Duggan",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/5.jpg",
+        "price": "50",
+        "id": "5"
+    },
+    {
+        "name": "In the Garden of the Fugitives",
+        "author": "Ceridwen Dovey",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/6.jpg",
+        "price": "60",
+        "id": "6"
+    },
+    {
+        "name": "The Feather Thief",
+        "author": "Kirk W. Johnson",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/7.jpg",
+        "price": "70",
+        "id": "7"
+    },
+    {
+        "name": "DUNE",
+        "author": "Frank Herbert",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/9.jpg",
+        "price": "80",
+        "id": "8"
+    },
+    {
+        "name": "Helium",
+        "author": "Rudy Francisco",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/8.jpg",
+        "price": "90",
+        "id": "9"
+    },
+    {
+        "name": "Clap When You Land",
+        "author": "Elizabeth Acevedo",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/10.jpg",
+        "price": "12",
+        "id": "10"
+    },
+    {
+        "name": "The Illness Lesson",
+        "author": "Clare Beams",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/11.jpg",
+        "price": "22",
+        "id": "11"
+    },
+    {
+        "name": "Grown",
+        "author": "Tiffany D. Jackson",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/12.jpg",
+        "price": "32",
+        "id": "12"
+    },
+    {
+        "name": "The Standardization of Demoralization",
+        "author": "Jennifer Hofmann",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/13.jpg",
+        "price": "42",
+        "id": "13"
+    },
+    {
+        "name": "The Southern Book Club's Guide to Slaying Vampire",
+        "author": "Grady Hendrix",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/14.jpg",
+        "price": "24",
+        "id": "14"
+    },
+    {
+        "name": "Self Care",
+        "author": "Leigh Stein",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/15.jpg",
+        "price": "85",
+        "id": "15"
+    },
+    {
+        "name": "A Certain Hunger",
+        "author": "Chelsea G. Summers",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/16.jpg",
+        "price": "36",
+        "id": "16"
+    },
+    {
+        "name": "The Knockout Queen",
+        "author": "Rufi Thorpe",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/17.jpg",
+        "price": "91",
+        "id": "17"
+    },
+    {
+        "name": "A Burning",
+        "author": "Megha Majumdar",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/18.jpg",
+        "price": "27",
+        "id": "18"
+    },
+    {
+        "name": "Lobizona",
+        "author": "Romina Garber",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/19.jpg",
+        "price": "43",
+        "id": "19"
+    },
+    {
+        "name": "Woven in Moonlight",
+        "author": "Isabel Ibañez",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/20.jpg",
+        "price": "53",
+        "id": "20"
+    },
+    {
+        "name": "Verge",
+        "author": "Lidia Yuknavitch",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/21.jpg",
+        "price": "58",
+        "id": "21"
+    },
+    {
+        "name": "Mexican Gothic",
+        "author": "Silvia Moreno-Garcia",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/22.jpg",
+        "price": "47",
+        "id": "22"
+    },
+    {
+        "name": "A Lover's Discourse",
+        "author": "Xiaolu Guo",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/23.jpg",
+        "price": "36",
+        "id": "23"
+    },
+    {
+        "name": "Apple: Skin to the Core",
+        "author": "Eric Gansworth",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/24.jpg",
+        "price": "75",
+        "id": "24"
+    },
+    {
+        "name": "Felix Ever After",
+        "author": "Kacen Callender",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/25.jpg",
+        "price": "73",
+        "id": "25"
+    },
+    {
+        "name": "Memorial",
+        "author": "Bryan Washington",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/26.jpg",
+        "price": "53",
+        "id": "26"
+    },
+    {
+        "name": "Luster",
+        "author": "Raven Leilani",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/27.jpg",
+        "price": "66",
+        "id": "27"
+    },
+    {
+        "name": "Sad Janet",
+        "author": "Lucie Britsch",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/28.jpg",
+        "price": "26",
+        "id": "28"
+    },
+    {
+        "name": "The Scapegracers",
+        "author": "H.A. Clarke",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/29.jpg",
+        "price": "76",
+        "id": "29"
+    },
+    {
+        "name": "Each of Us a Desert",
+        "author": "Mark Oshiro",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/30.jpg",
+        "price": "44",
+        "id": "30"
+    },
+    {
+        "name": "Ring Shout",
+        "author": "P. Djèlí Clark",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/31.jpg",
+        "price": "86",
+        "id": "31"
+    },
+    {
+        "name": "Eat a Peach",
+        "author": "David Chang",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/32.jpg",
+        "price": "64",
+        "id": "32"
+    },
+    {
+        "name": "Over the Woodward Wall",
+        "author": " A. Deborah Baker",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/33.jpg",
+        "price": "82",
+        "id": "33"
+    },
+    {
+        "name": "Piranesi",
+        "author": "Susanna Clarke",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/34.jpg",
+        "price": "47",
+        "id": "34"
+    },
+    {
+        "name": "Long Live the Post Horn!",
+        "author": "Vigdis Hjorth",
+        "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/35.jpg",
+        "price": "89",
+        "id": "35"
+    }
+]

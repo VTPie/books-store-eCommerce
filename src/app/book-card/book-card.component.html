@@ -1,12 +1,12 @@
 <div class="card-container w-100 h-100">
-    <img src="../../assets/images/card1.jpg" class="card-image w-100 rounded-4">
+    <img src={{image}} class="card-image w-100 rounded-4">
     <button class="btnFvr btn btn-light rounded-5" type="button">
         <mat-icon> favorite_border </mat-icon>
     </button>
     <button class="btnAdd btn btn-light rounded-5" type="button">
         <mat-icon> add_shopping_cart </mat-icon>
     </button>
-    <h5 class="card-name mb-0 mt-2 mx-1">Over the woodward wall A debora baker Over the woodward</h5>
+    <h5 class="card-name mb-0 mt-2 mx-1">{{name}}</h5>
     <div class="card-rated mb-0 mt-1 mx-1 text-warning">
         <mat-icon class="h-100"> star </mat-icon>
         <mat-icon class="h-100"> star </mat-icon>
@@ -14,6 +14,8 @@
         <mat-icon class="h-100"> star </mat-icon>
         <mat-icon class="h-100"> star </mat-icon>
     </div>
-    <p class="card-author mb-0 mt-1 mx-1 fst-italic opacity-50">Jessica Munoz</p>
-    <h5 class="card-price mb-0 mt-2 mx-1 text-danger">$ 75</h5>
+    <p class="card-author mb-0 mt-1 mx-1 fst-italic opacity-50">{{author}}</p>
+    <h5 class="card-price mb-0 mt-2 mx-1 text-danger">$
+        <span>{{price}}</span>
+    </h5>
 </div>

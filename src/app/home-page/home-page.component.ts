@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faBook, faFaceSmile, faCartShopping, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { LoaderService } from 'src/app/loader.service';
+import { Book } from '../book/book';
+import { BookService } from '../book/book.service';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent {
+export class HomePageComponent implements OnInit {
 
   //Icon for Statistics section
   faBook = faBook;
@@ -75,4 +78,31 @@ export class HomePageComponent {
     document.querySelector(elem)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
+  //Fetch data
+  books: Book[] = [];
+  errorMessage = '';
+  constructor(private bookService: BookService, private loader: LoaderService) { }
+  ngOnInit(): void {
+    this.getBookData();
+  }
+  getBookData() {
+    this.loader.show();
+    this.bookService.getBooks()
+      .subscribe({
+        next: (books) => {
+          this.books = books;
+        },
+        error: (err) => {
+          this.errorMessage = <any>err;
+          this.loader.hide();
+        },
+        complete: () => {
+          console.info('Get books');
+          this.loader.hide();
+        }
+      });
+  }
+
+  //Data for new-books section
+  newBooks: Book[] = [this.books[0], this.books[1], this.books[3], this.books[6], this.books[7], this.books[8]]
 }
