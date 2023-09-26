@@ -72,16 +72,10 @@
             <h4>Top 10 this week</h4>
             <hr class="my-4">
             <div class="list-card d-flex flex-column justify-content-between">
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
-                <app-tiny-book-card></app-tiny-book-card>
+                <div *ngFor="let book of bestSelling; let i = index">
+                    <app-tiny-book-card [name]="bestSelling[i].name" [author]="bestSelling[i].author"
+                        [image]="bestSelling[i].image" [rank]="i+1"></app-tiny-book-card>
+                </div>
             </div>
         </div>
         <div class="col-9 ps-5" id="combo-deal">
