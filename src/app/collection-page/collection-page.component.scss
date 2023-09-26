@@ -1,24 +1,41 @@
 :host{
-    .box-cate{
-        .form-check-label:hover{
-            color: blue;
+    .filter{
+        .box-cate{
+            .form-check-label:hover{
+                color: blue;
+            }
+        }
+        .box-author{
+            .form-check-label:hover{
+                color: blue;
+            }
+        }
+        .box-price{
+            .mat-mdc-slider{
+                width: 94%;
+                color: blue;
+            }
+        }
+        .box-evaluate{
+            .mat-mdc-slider{
+                width: 94%;
+                color: blue;
+            }
         }
     }
-    .box-author{
-        .form-check-label:hover{
-            color: blue;
+    .product{
+        #slShow{
+            width: 11%;
         }
-    }
-    .box-price{
-        .mat-mdc-slider{
-            width: 94%;
-            color: blue;
+        .collection-items{
+            .collection-item{
+                width: 20.01%;
+            }
         }
-    }
-    .box-evaluate{
-        .mat-mdc-slider{
-            width: 94%;
-            color: blue;
+        .pag{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

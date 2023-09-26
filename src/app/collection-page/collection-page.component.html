@@ -5,7 +5,7 @@
 </div>
 <div class="container mb-4">
     <div class="row">
-        <div class="col-3">
+        <div class="filter col-3">
             <div class="box-cate border rounded-2 py-3 px-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Categories</h5>
                 <div class="form-check">
@@ -184,8 +184,79 @@
                 <button class="btn btn-primary text-white mt-2 d-block mx-auto" type="button">Approve</button>
             </div>
         </div>
-        <div class="col-9 bg-warning">
-            <p>a</p>
+        <div class="product col-9">
+            <div class="d-flex flex-row-reverse">
+                <select class="form-select form-select-sm" id="slShow" aria-label="Small select example">
+                    <option selected>Show 4</option>
+                    <option value="1">Show 8</option>
+                    <option value="2">Show 12</option>
+                </select>
+                <select class="form-select form-select-sm me-4 w-25" id="slSort" aria-label="Small select example">
+                    <option value="1" selected>A &rarr; Z</option>
+                    <option value="2">Z &rarr; A</option>
+                    <option value="3">Sort by price: low to high</option>
+                    <option value="4">Sort by price: high to low</option>
+                    <option value="5">Sort by rating: low to high</option>
+                    <option value="6">Sort by rating: high to low</option>
+                    <option value="7">Sort by latest</option>
+                </select>
+            </div>
+            <hr class="mb-0">
+            <div class="collection-items d-flex flex-wrap justify-content-evenly">
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+                <div class="collection-item mt-3">
+                    <app-book-card></app-book-card>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" class="pag mt-3">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
