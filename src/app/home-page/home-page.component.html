@@ -98,29 +98,9 @@
             <p class="mb-0 bg-warning px-5 py-1 rounded-5 fw-bold fs-5" id="timer-weekly">6:23:59:59</p>
             <div class="d-flex flex-wrap justify-content-evenly py-3 border border-danger border-2 rounded-5 mt-3"
                 id="deal-weekly">
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
-                </div>
-                <div class="deal-card mt-3">
-                    <app-book-card></app-book-card>
+                <div class="deal-card mt-3" *ngFor="let book of weeklyDeals; let i = index">
+                    <app-book-card [name]="weeklyDeals[i].name" [author]="weeklyDeals[i].author"
+                        [price]="weeklyDeals[i].price" [image]="weeklyDeals[i].image"></app-book-card>
                 </div>
             </div>
         </div>
