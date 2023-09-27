@@ -145,7 +145,6 @@ export class HomePageComponent implements OnInit {
           this.loader.hide();
         },
         complete: () => {
-          console.info('Get books');
           this.loader.hide();
         }
       });
