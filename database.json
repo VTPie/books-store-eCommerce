@@ -4,6 +4,7 @@
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/34.jpg",
         "price": "47",
+        "category": "Literature - Detective",
         "id": "1"
     },
     {
@@ -11,6 +12,7 @@
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/8.jpg",
         "price": "80",
+        "category": "Literature - Gothic",
         "id": "2"
     },
     {
@@ -18,6 +20,7 @@
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/9.jpg",
         "price": "90",
+        "category": "Literature - Historical",
         "id": "3"
     },
     {
@@ -25,6 +28,7 @@
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/12.jpg",
         "price": "32",
+        "category": "Literature - Fiction",
         "id": "4"
     },
     {
@@ -32,6 +36,7 @@
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/19.jpg",
         "price": "43",
+        "category": "Literature - Romance",
         "id": "5"
     },
     {
@@ -39,6 +44,7 @@
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/21.jpg",
         "price": "58",
+        "category": "Children",
         "id": "6"
     },
     {
@@ -46,6 +52,7 @@
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/26.jpg",
         "price": "53",
+        "category": "Economy",
         "id": "7"
     },
     {
@@ -53,6 +60,7 @@
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/27.jpg",
         "price": "66",
+        "category": "History",
         "id": "8"
     },
     {
@@ -60,6 +68,7 @@
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/15.jpg",
         "price": "85",
+        "category": "Law",
         "id": "9"
     },
     {
@@ -67,6 +76,7 @@
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/18.jpg",
         "price": "27",
+        "category": "Philosophy",
         "id": "10"
     },
     {
@@ -74,6 +84,7 @@
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/22.jpg",
         "price": "47",
+        "category": "Psychology",
         "id": "11"
     },
     {
@@ -81,6 +92,7 @@
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/28.jpg",
         "price": "26",
+        "category": "Political",
         "id": "12"
     },
     {
@@ -88,6 +100,7 @@
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/32.jpg",
         "price": "86",
+        "category": "Science",
         "id": "13"
     },
     {
@@ -95,6 +108,7 @@
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/31.jpg",
         "price": "64",
+        "category": "Literature - Detective",
         "id": "14"
     },
     {
@@ -102,6 +116,7 @@
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/2.jpg",
         "price": "20",
+        "category": "Literature - Gothic",
         "id": "15"
     },
     {
@@ -109,6 +124,7 @@
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/16.jpg",
         "price": "36",
+        "category": "Literature - Historical",
         "id": "16"
     },
     {
@@ -116,6 +132,7 @@
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/17.jpg",
         "price": "91",
+        "category": "Literature - Fiction",
         "id": "17"
     },
     {
@@ -123,6 +140,7 @@
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/10.jpg",
         "price": "12",
+        "category": "Literature - Romance",
         "id": "18"
     },
     {
@@ -130,6 +148,7 @@
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/5.jpg",
         "price": "50",
+        "category": "Children",
         "id": "19"
     },
     {
@@ -137,6 +156,7 @@
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/20.jpg",
         "price": "53",
+        "category": "Economy",
         "id": "20"
     },
     {
@@ -144,6 +164,7 @@
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/11.jpg",
         "price": "22",
+        "category": "History",
         "id": "21"
     },
     {
@@ -151,6 +172,7 @@
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/23.jpg",
         "price": "36",
+        "category": "Law",
         "id": "22"
     },
     {
@@ -158,6 +180,7 @@
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/25.jpg",
         "price": "73",
+        "category": "Philosophy",
         "id": "23"
     },
     {
@@ -165,6 +188,7 @@
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/7.jpg",
         "price": "70",
+        "category": "Psychology",
         "id": "24"
     },
     {
@@ -172,6 +196,7 @@
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/1.jpg",
         "price": "10",
+        "category": "Political",
         "id": "25"
     },
     {
@@ -179,6 +204,7 @@
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/4.jpg",
         "price": "40",
+        "category": "Science",
         "id": "26"
     },
     {
@@ -186,6 +212,7 @@
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/29.jpg",
         "price": "76",
+        "category": "Literature - Detective",
         "id": "27"
     },
     {
@@ -193,6 +220,7 @@
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/24.jpg",
         "price": "75",
+        "category": "Literature - Gothic",
         "id": "28"
     },
     {
@@ -200,6 +228,7 @@
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/30.jpg",
         "price": "44",
+        "category": "Literature - Historical",
         "id": "29"
     },
     {
@@ -207,6 +236,7 @@
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/6.jpg",
         "price": "60",
+        "category": "Literature - Fiction",
         "id": "30"
     },
     {
@@ -214,6 +244,7 @@
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/13.jpg",
         "price": "42",
+        "category": "Literature - Romance",
         "id": "31"
     },
     {
@@ -221,6 +252,7 @@
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/14.jpg",
         "price": "24",
+        "category": "Children",
         "id": "32"
     },
     {
@@ -228,6 +260,7 @@
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/33.jpg",
         "price": "82",
+        "category": "Economy",
         "id": "33"
     },
     {
@@ -235,6 +268,7 @@
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/3.jpg",
         "price": "30",
+        "category": "History",
         "id": "34"
     },
     {
@@ -242,6 +276,7 @@
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/35.jpg",
         "price": "89",
+        "category": "Law",
         "id": "35"
     }
 ]

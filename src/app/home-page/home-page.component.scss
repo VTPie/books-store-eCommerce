@@ -264,9 +264,12 @@
     }
 }
 
-#goToTop{
+#goToTop-home{
     position: fixed; 
     bottom: 30px;
     right: 20px;
     z-index: 2;
+    .ng-fa-icon{
+        padding: 0 2.2px;
+    }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoaderService } from 'src/app/loader.service';
 import { Book } from '../book/book';
 import { BookService } from '../book/book.service';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-collection-page',
@@ -10,9 +11,17 @@ import { BookService } from '../book/book.service';
 })
 export class CollectionPageComponent implements OnInit {
 
+  //Button ScrollToTop
+  faChevronUp = faChevronUp;
+  scrollToTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
   //Get books
   books: Book[] = [];
-  filteredBooks: Book[] = [];
   errorMessage = '';
   constructor(private bookService: BookService, private loader: LoaderService) { }
   ngOnInit(): void {
@@ -24,7 +33,6 @@ export class CollectionPageComponent implements OnInit {
       .subscribe({
         next: (books) => {
           this.books = books;
-          this.filteredBooks = [...this.books];
         },
         error: (err) => {
           this.errorMessage = <any>err;
@@ -36,21 +44,144 @@ export class CollectionPageComponent implements OnInit {
       });
   }
 
-  //Author filter
-  authorFilter = [
-    'Susanna Clarke',
-    'Frank Herbert',
-    'Rudy Francisco',
-    'Tiffany D. Jackson',
-    'Romina Garber',
-    'Lidia Yuknavitch',
-    'Bryan Washington'
+  //Filter
+  categories = [
+    {
+      id: 1,
+      name: "Literature - Detective",
+      checked: false
+    },
+    {
+      id: 2,
+      name: "Literature - Gothic",
+      checked: false
+    },
+    {
+      id: 3,
+      name: "Literature - Historical",
+      checked: false
+    },
+    {
+      id: 4,
+      name: "Literature - Fiction",
+      checked: false
+    },
+    {
+      id: 5,
+      name: "Literature - Romance",
+      checked: false
+    },
+    {
+      id: 6,
+      name: "Children",
+      checked: false
+    },
+    {
+      id: 7,
+      name: "Economy",
+      checked: false
+    },
+    {
+      id: 8,
+      name: "History",
+      checked: false
+    },
+    {
+      id: 9,
+      name: "Law",
+      checked: false
+    },
+    {
+      id: 10,
+      name: "Philosophy",
+      checked: false
+    },
+    {
+      id: 11,
+      name: "Psychology",
+      checked: false
+    },
+    {
+      id: 12,
+      name: "Political",
+      checked: false
+    },
+    {
+      id: 13,
+      name: "Science",
+      checked: false
+    }
   ]
+  authors = [
+    {
+      id: 1,
+      name: 'Susanna Clarke',
+      checked: false
+    },
+    {
+      id: 2,
+      name: 'Frank Herbert',
+      checked: false
+    },
+    {
+      id: 3,
+      name: 'Rudy Francisco',
+      checked: false
+    },
+    {
+      id: 4,
+      name: 'Tiffany D. Jackson',
+      checked: false
+    },
+    {
+      id: 5,
+      name: 'Romina Garber',
+      checked: false
+    },
+    {
+      id: 6,
+      name: 'Lidia Yuknavitch',
+      checked: false
+    },
+    {
+      id: 7,
+      name: 'Bryan Washington',
+      checked: false
+    },
+  ]
+  filterCate: any[] = [];
+  filterAuthor: any[] = [];
+  onChangeCategory($event: any, category: any) {
+    const checked = $event.target.checked;
+    if (checked) {
+      this.filterCate = [...this.filterCate, { ...category }];
+    } else {
+      this.filterCate = [...this.filterCate.filter(x => x.id !== category.id)];
+    }
+  }
+  onChangeAuthor($event: any, author: any) {
+    const checked = $event.target.checked;
+    if (checked) {
+      this.filterAuthor = [...this.filterAuthor, { ...author }];
+    } else {
+      this.filterAuthor = [...this.filterAuthor.filter(x => x.id !== author.id)];
+    }
+  }
+  public get filteredBooks(): any[] {
+    let filtered = [...this.books];
 
-  filterByAuthor: string = ""
-
-  radioChangeHandler(event: any) {
-    this.filterByAuthor = event.target.value
-    this.filteredBooks = [...this.books].filter(book => book.author === this.filterByAuthor)
+    if (this.filterCate.length > 0) {
+      filtered = filtered.filter(x => {
+        const t = this.filterCate.find(v => v.name === x.category);
+        return t != null;
+      });
+    }
+    if (this.filterAuthor.length > 0) {
+      filtered = filtered.filter(x => {
+        const t = this.filterAuthor.find(v => v.name === x.author);
+        return t != null;
+      });
+    }
+    return filtered;
   }
 }

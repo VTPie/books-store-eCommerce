@@ -1,129 +1,28 @@
 <div class="container-fluid my-4 bg-info">
-    <div class="container">
-        <h1 class="py-5">All items</h1>
+    <div class="container py-5">
+        <span class="fs-1 fw-medium">All items</span>
     </div>
 </div>
 <div class="container mb-4">
     <div class="row">
         <div class="filter col-3">
-            <div class="box-cate border rounded-2 py-3 px-4">
+            <form class="box-cate border rounded-2 py-3 px-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Categories</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Prose
+                <div class="form-check mt-2" *ngFor="let category of categories; let i = index">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCate"
+                        (change)="onChangeCategory($event, category)">
+                    <label class="form-check-label" for="flexCheckCate">
+                        {{categories[i].name}}
                     </label>
                 </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Poem
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Drama
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Fable
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Autobiography
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Detective
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Gothic
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Historical
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Fiction
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Literature - Romance
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Children
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Economy
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        History
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Law
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Philosophy
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Psychology
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Political
-                    </label>
-                </div>
-                <div class="form-check mt-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Science
-                    </label>
-                </div>
-            </div>
+            </form>
             <form class="box-author border rounded-2 py-3 px-4 my-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Authors</h5>
-                <div class="form-check mt-2" *ngFor="let author of authorFilter; let i = index">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"
-                        (change)="radioChangeHandler($event)" value={{authorFilter[i]}}>
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        {{authorFilter[i]}}
+                <div class="form-check mt-2" *ngFor="let author of authors; let i = index">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAuthor"
+                        (change)="onChangeAuthor($event, author)">
+                    <label class="form-check-label" for="flexCheckAuthor">
+                        {{authors[i].name}}
                     </label>
                 </div>
             </form>
@@ -134,7 +33,7 @@
                     <input matSliderEndThumb>
                 </mat-slider>
                 <p>Currency: Dollar - $</p>
-                <button class="btn btn-primary text-white mt-2 d-block mx-auto" type="button">Approve</button>
+                <button class="btn btn-primary text-white mt-2 d-block mx-auto" type="button">Apply</button>
             </div>
             <div class="box-evaluate border rounded-2 py-3 px-4 mt-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Evaluate</h5>
@@ -146,7 +45,7 @@
                     <p class="mb-0">Unit:</p>
                     <mat-icon class="h-100 text-warning ms-2"> star </mat-icon>
                 </div>
-                <button class="btn btn-primary text-white mt-2 d-block mx-auto" type="button">Approve</button>
+                <button class="btn btn-primary text-white mt-2 d-block mx-auto" type="button">Apply</button>
             </div>
         </div>
         <div class="product col-9">
@@ -196,3 +95,8 @@
     </div>
 
 </div>
+
+<!-- Go to top -->
+<button class="btn btn-info text-white rounded-5" id="goToTop-collection" type=" button" (click)="scrollToTop()">
+    <fa-icon class="fa-2x" [icon]="faChevronUp"></fa-icon>
+</button>
