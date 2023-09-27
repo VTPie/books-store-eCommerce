@@ -84,6 +84,45 @@ export class HomePageComponent implements OnInit {
   dailyDeals: Book[] = [];
   weeklyDeals: Book[] = [];
   bestSelling: Book[] = [];
+  listSusan: Book[] = [];
+  listEvaluate = [
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_01.png',
+      name: 'John Doe',
+      national: 'Bristol',
+      comment: 'I am so happy to find a site where I can shop for unusual items. The packaging was phenomenal and my book arrived on time in perfect condition.'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_02.png',
+      name: 'Pam Pruitt',
+      national: 'London',
+      comment: 'This is the best book store!. The prices are great, and there is always a sale of some kind going on. You can find just what you are looking for. So great !'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_03.png',
+      name: 'Ellie A.',
+      national: 'Liverpool',
+      comment: 'Excellent service. The books were wrapped securely and arrived in pristine condition. I sent an email after to books arrived to ask about the author.'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_01.png',
+      name: 'John Doe',
+      national: 'Bristol',
+      comment: 'I am so happy to find a site where I can shop for unusual items. The packaging was phenomenal and my book arrived on time in perfect condition.'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_02.png',
+      name: 'Pam Pruitt',
+      national: 'London',
+      comment: 'This is the best book store!. The prices are great, and there is always a sale of some kind going on. You can find just what you are looking for. So great !'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_03.png',
+      name: 'Ellie A.',
+      national: 'Liverpool',
+      comment: 'Excellent service. The books were wrapped securely and arrived in pristine condition. I sent an email after to books arrived to ask about the author.'
+    },
+  ]
   errorMessage = '';
   constructor(private bookService: BookService, private loader: LoaderService) { }
   ngOnInit(): void {
@@ -99,6 +138,7 @@ export class HomePageComponent implements OnInit {
           this.dailyDeals = books.slice(6, 14)
           this.weeklyDeals = books.slice(14, 22)
           this.bestSelling = books.slice(0, 10)
+          this.listSusan = books.filter(book => book.author === 'Susanna Clarke')
         },
         error: (err) => {
           this.errorMessage = <any>err;

@@ -105,15 +105,15 @@
 <div class="oapw container my-4 d-flex">
     <div class="h-100 text-end" id="oapw-info">
         <h5 class="text-danger">ONE AUTHOR PER WEEK</h5>
-        <h1 class="mt-3">Jessica Munoz</h1>
-        <p class="opacity-75 mt-3">Janice Hallett is a British author,<br>
+        <h1 class="mt-3">Susanna Clarke</h1>
+        <p class="opacity-75 mt-3">Susanna Clarke is a British author,<br>
             screenwriter and an award-winning journalist,<br>
             best known for her
             phenomenally successful<br>
             debut thriller The Appeal.</p>
         <p class="opacity-75">Before her breakout entry into<br>
             the realms of crime fiction,<br>
-            Janice Hallett worked as a journalist,<br>
+            Susanna Clarke worked as a journalist,<br>
             magazine editor and speech writer for<br>
             the Cabinet Office and Home Office,<br>
             as well as writing for the stage and screen.<br>
@@ -129,15 +129,18 @@
     </div>
     <div class="h-100 d-flex flex-column justify-content-between p-0" id="oapw-feat">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[0].name" [author]="listSusan[0].author"
+                [price]="listSusan[0].price" [image]="listSusan[0].image" class="new-item"></app-mini-book-card>
         </div>
         <hr class="m-0">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[1].name" [author]="listSusan[1].author"
+                [price]="listSusan[1].price" [image]="listSusan[1].image" class="new-item"></app-mini-book-card>
         </div>
         <hr class="m-0">
         <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100"></app-mini-book-card>
+            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[2].name" [author]="listSusan[2].author"
+                [price]="listSusan[2].price" [image]="listSusan[2].image" class="new-item"></app-mini-book-card>
         </div>
     </div>
 </div>
@@ -146,23 +149,10 @@
 <div class="container p-0" id="evaluate-container">
     <h2 class="my-3" id="evaluate-title">What client says</h2>
     <owl-carousel-o [options]="evaluateOptions">
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
-        </ng-template>
-        <ng-template carouselSlide>
-            <app-evaluate-card class="evaluate-item"></app-evaluate-card>
+        <ng-template carouselSlide *ngFor="let cmt of listEvaluate; let i = index">
+            <app-evaluate-card class="evaluate-item" [name]="listEvaluate[i].name" [national]="listEvaluate[i].national"
+                [comment]="listEvaluate[i].comment" [image]="listEvaluate[i].image"
+                class="new-item"></app-evaluate-card>
         </ng-template>
     </owl-carousel-o>
 </div>
