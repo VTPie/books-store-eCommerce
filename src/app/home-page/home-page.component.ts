@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBook, faFaceSmile, faCartShopping, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faFaceSmile, faCartShopping, faUsers, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { LoaderService } from 'src/app/loader.service';
 import { Book } from '../book/book';
 import { BookService } from '../book/book.service';
@@ -11,11 +11,12 @@ import { BookService } from '../book/book.service';
 })
 export class HomePageComponent implements OnInit {
 
-  //Icon for Statistics section
+  //Icon
   faBook = faBook;
   faFaceSmile = faFaceSmile;
   faCartShopping = faCartShopping;
   faUsers = faUsers;
+  faChevronUp = faChevronUp;
 
   //Action for carousel in new-book section
   customOptions: any = {
@@ -76,6 +77,14 @@ export class HomePageComponent implements OnInit {
   //Action smooth scroll in sales-section
   scrollToDailySale(elem: string) {
     document.querySelector(elem)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  //Action smooth scroll in button ScrollToTop
+  scrollToTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
   //Fetch data
