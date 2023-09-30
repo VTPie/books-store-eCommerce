@@ -22,6 +22,7 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { TinyBookCardComponent } from './tiny-book-card/tiny-book-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPageComponent,
     NotFoundPageComponent,
     TinyBookCardComponent,
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,

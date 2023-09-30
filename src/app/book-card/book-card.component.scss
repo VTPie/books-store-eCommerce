@@ -100,24 +100,24 @@
         margin-top: 4px !important;
     }
     .btnFvr{
-        top: 49%;
+        top: 190px;
         left: 100%;
         transform: scale(0.8);
     }
     .btnAdd{
-        top: 59%;
+        top: 228px;
         left: 100%;
         transform: scale(0.8);
     }
 }
 :host-context(.collection-item):hover{
     .btnFvr{
-        top: 49%;
+        top: 190px;
         left: 77%;
         transform: scale(0.8);
     }
     .btnAdd{
-        top: 59%;
+        top: 228px;
         left: 77%;
         transform: scale(0.8);
     }

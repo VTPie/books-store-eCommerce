@@ -1,0 +1,93 @@
+<div class="container p-0" *ngIf="targetBook">
+    <div class="product-info row mt-4 ms-0 d-flex justify-content-between">
+        <div class="product-left col-6 p-4 border rounded-5">
+            <img src={{targetBook.image}} class="w-100 rounded-5">
+        </div>
+        <div class="product-right col-6 border rounded-5 p-4">
+            <!-- Top -->
+            <h2>{{targetBook.name}}</h2>
+            <span class="opacity-75">Author: </span>
+            <span class="pe-4 border-end me-4">{{targetBook.author}}</span>
+            <span class="pe-4 border-end me-4">
+                <span class="me-2 fw-medium">5.0</span>
+                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                <fa-icon class="text-warning" [icon]="faStar"></fa-icon>
+                <span class="ms-2">(1999 voted)</span>
+            </span>
+            <span class="opacity-75">SKU: </span>
+            <span>{{targetBook.id}}</span>
+            <h2 class="text-danger mt-2">
+                <span>$</span>
+                <span>{{targetBook.price}}</span>
+            </h2>
+            <hr>
+            <!-- Format -->
+            <p class="mb-0 fw-bold">Quantity</p>
+            <div class="quantity d-flex mt-2">
+                <button class="quantity-minus btn btn-info border border-end-0 h-100" type="button"
+                    (click)="minusQtt()"><fa-icon [icon]="faMinus"></fa-icon></button>
+                <input class="h-100 text-center fw-bold form-control rounded-0" type="text" [value]="quantity"
+                    id="inputQuantity">
+                <button class="quantity-plus btn btn-info border border-start-0 h-100" type="button"
+                    (click)="plusQtt()"><fa-icon [icon]="faPlus"></fa-icon></button>
+            </div>
+            <p class="mt-2 mb-1 fw-bold">Editions</p>
+            <div>
+                <input type="radio" class="btn-check" name="options-outlined" id="radio-ppb" autocomplete="off" checked>
+                <label class="btn btn-outline-info" for="radio-ppb">Paperback</label>
+
+                <input type="radio" class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
+                <label class="btn btn-outline-info ms-3" for="radio-hc">Hardcover</label>
+
+                <input type="radio" class="btn-check" name="options-outlined" id="radio-lmt" autocomplete="off">
+                <label class="btn btn-outline-info ms-3" for="radio-lmt">Limited</label>
+
+            </div>
+            <h4 class="text-danger mt-2">
+                <span class="fs-5 text-black">Total: </span>
+                <span class="fs-2">$</span>
+                <span class="fs-2">{{targetBook.price}}</span>
+            </h4>
+            <hr>
+            <!-- Buy -->
+            <div class="d-flex justify-content-between w-100">
+                <button class="combo-button btn btn-info fw-bold" type="button" disabled>Add to
+                    wishlist</button>
+                <button class="combo-button btn btn-info fw-bold" type="button">Add to cart</button>
+                <button class="combo-button btn btn-danger fw-bold" type="button">Buy now</button>
+            </div>
+            <hr>
+            <!-- Bottom -->
+            <span class="opacity-75">Categories: </span>
+            <span>{{targetBook.category}}</span>
+            <div class="">
+                <fa-icon [icon]="faFacebook" class="fa-2x" style="color: blue;"></fa-icon>
+                <fa-icon [icon]="faTwitter" class="ms-3 fa-2x" style="color: #1DA1F2;"></fa-icon>
+                <fa-icon [icon]="faPinterest" class="ms-3 fa-2x" style="color: #c8232c;"></fa-icon>
+                <fa-icon [icon]="faLinkedin" class="ms-3 fa-2x" style="color: #0072b1;"></fa-icon>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-4 ms-0 bg-info">
+        sub-nav
+    </div>
+    <div class="product-related row mt-4 ms-0 bg-warning">
+        <h4 class="product-related-title p-0">Related products</h4>
+        <button class="product-related-btn btn btn-info fw-bold" type="button">View all</button>
+        <div class="bg-primary mt-1">
+            <!-- <div class="deal-card mt-3" *ngFor="let book of relatedBooks; let i = index">
+                <app-book-card [name]="relatedBooks[i].name" [author]="relatedBooks[i].author"
+                    [price]="relatedBooks[i].price" [image]="relatedBooks[i].image"
+                    [routerLink]="['/collection', relatedBooks[i].id]"></app-book-card>
+            </div> -->
+        </div>
+        <div class="product-author row mt-4 ms-0 bg-warning">
+            <h4 class="product-author-title p-0">Same author</h4>
+            <button class="product-author-btn btn btn-info fw-bold" type="button">View all</button>
+            <div class="bg-primary mt-1">item</div>
+        </div>
+    </div>
