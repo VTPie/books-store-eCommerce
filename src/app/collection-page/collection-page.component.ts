@@ -148,6 +148,36 @@ export class CollectionPageComponent implements OnInit {
       name: 'Bryan Washington',
       checked: false
     },
+    {
+      id: 8,
+      name: 'Raven Leilani',
+      checked: false
+    },
+    {
+      id: 9,
+      name: 'Leigh Stein',
+      checked: false
+    },
+    {
+      id: 10,
+      name: 'Lucie Britsch',
+      checked: false
+    },
+    {
+      id: 11,
+      name: 'David Chang',
+      checked: false
+    },
+    {
+      id: 12,
+      name: 'Leife Shallcross',
+      checked: false
+    },
+    {
+      id: 13,
+      name: 'Chelsea G. Summers',
+      checked: false
+    }
   ]
   filterCate: any[] = [];
   filterAuthor: any[] = [];

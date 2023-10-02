@@ -42,6 +42,7 @@ export class ProductPageComponent implements OnInit {
       .subscribe({
         next: (books) => {
           this.relatedBooks = books.filter(book => book.category === this.targetBook.category)
+          this.authorBooks = books.filter(book => book.author === this.targetBook.author)
         },
         error: (err) => {
           this.errorMessage = <any>err;
@@ -81,4 +82,54 @@ export class ProductPageComponent implements OnInit {
 
   //Get related books list
   relatedBooks: Book[] = [];
+
+  //Get same author books list
+  authorBooks: Book[] = [];
+
+  //Change template on mini-nav
+  indexTemplate: number = 1;
+  subnav = document.getElementsByClassName("sub-nav");
+  changeTemplate(event: any) {
+    switch (event.target.id) {
+      case 'template1':
+        this.indexTemplate = 1
+        break
+      case 'template2':
+        this.indexTemplate = 2
+        break
+      case 'template3':
+        this.indexTemplate = 3
+        break
+    }
+    let elements = document.querySelectorAll('.active');
+    elements.forEach((element) => {
+      element.classList.remove('active');
+    });
+    event.srcElement.classList.add('active')
+  }
+
+  //Data fot review section
+  listReview = [
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_01.png',
+      name: 'John Doe',
+      date: 'February 15, 2022',
+      national: 'Bristol',
+      comment: 'I am so happy to find a site where I can shop for unusual items. The packaging was phenomenal and my book arrived on time in perfect condition.'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_02.png',
+      name: 'Pam Pruitt',
+      date: 'February 15, 2022',
+      national: 'London',
+      comment: 'This is the best book store!. The prices are great, and there is always a sale of some kind going on. You can find just what you are looking for. So great !'
+    },
+    {
+      image: 'https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/test_03.png',
+      name: 'Ellie A.',
+      date: 'February 15, 2022',
+      national: 'Liverpool',
+      comment: 'Excellent service. The books were wrapped securely and arrived in pristine condition. I sent an email after to books arrived to ask about the author.'
+    }
+  ]
 }

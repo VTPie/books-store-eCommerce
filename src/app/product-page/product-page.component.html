@@ -42,6 +42,9 @@
                 <input type="radio" class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
                 <label class="btn btn-outline-info ms-3" for="radio-hc">Hardcover</label>
 
+                <input type="radio" class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
+                <label class="btn btn-outline-info ms-3" for="radio-hc">Ebook</label>
+
                 <input type="radio" class="btn-check" name="options-outlined" id="radio-lmt" autocomplete="off">
                 <label class="btn btn-outline-info ms-3" for="radio-lmt">Limited</label>
 
@@ -72,22 +75,95 @@
 
         </div>
     </div>
-    <div class="row mt-4 ms-0 bg-info">
-        sub-nav
+    <div class="detail-info row mt-4 ms-0">
+        <nav class="w-100 p-0">
+            <ul class="nav nav-underline justify-content-center mx-auto" style="width: 96%;">
+                <li class="nav-item">
+                    <a class="sub-nav nav-link active text-black active fs-5" aria-current="page"
+                        (click)="changeTemplate($event)" id="template1">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="sub-nav nav-link text-black fs-5" (click)="changeTemplate($event)"
+                        id="template2">Additional
+                        Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="sub-nav nav-link text-black fs-5" (click)="changeTemplate($event)"
+                        id="template3">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+        <div [ngSwitch]="indexTemplate" class="border rounded-5">
+            <ng-template [ngSwitchCase]=1>
+                <div style="padding: 16px 150px;">
+                    <p>Aut eligendi voluptatem adipisci unde iusto. Vitae aut voluptas velit beatae at nam
+                        maiores. Sunt
+                        dolorem cumque qui sit in esse quia occaecati. Eos et vero optio eaque nemo.</p>
+                    <p>Qui omnis nihil accusantium dolorum molestiae. Assumenda rem et non. Aut fugiat fugiat voluptatum
+                        vero vitae error. Sequi fugit vitae dolor velit. Nemo et sapiente repudiandae.</p>
+                    <p>Quam dolorum accusantium odio amet. Commodi consequatur distinctio voluptas repellat doloribus
+                        quia.
+                        Consectetur ad similique atque voluptas ut.</p>
+                    <p class="mb-0">Earum vel delectus in facilis. Voluptatum minus nobis cum temporibus perferendis est
+                        ut. Sed aut
+                        saepe ipsum animi asperiores. Nihil nihil repudiandae adipisci quis ea voluptatum dicta.</p>
+                </div>
+            </ng-template>
+            <ng-template [ngSwitchCase]=2>
+                <div style="padding: 16px 150px;">
+                    <table class="table-info mx-auto">
+                        <tr>
+                            <th>Publisher</th>
+                            <td>DC Comics</td>
+                        </tr>
+                        <tr>
+                            <th>Language</th>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>4,8 kg</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensions</th>
+                            <td>88 x 110 x 95 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Select Format</th>
+                            <td>Limited, Ebook, Hardcover, Paperback</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            <ng-template [ngSwitchCase]=3>
+                <div *ngFor="let cmt of listReview; let i = index" style="padding: 16px 150px;">
+                    <app-review-card [name]="listReview[i].name" [date]="listReview[i].date"
+                        [comment]="listReview[i].comment" [image]="listReview[i].image"
+                        [national]="listReview[i].national"></app-review-card>
+                </div>
+            </ng-template>
+        </div>
     </div>
-    <div class="product-related row mt-4 ms-0 bg-warning">
-        <h4 class="product-related-title p-0">Related products</h4>
+    <div class="product-related row mt-4 ms-0">
+        <h2 class="product-related-title p-0">Related products</h2>
         <button class="product-related-btn btn btn-info fw-bold" type="button">View all</button>
-        <div class="bg-primary mt-1">
-            <!-- <div class="deal-card mt-3" *ngFor="let book of relatedBooks; let i = index">
+        <div class="d-flex justify-content-between w-100 p-0 mt-3">
+            <div class="product-card" *ngFor="let book of relatedBooks; let i = index">
                 <app-book-card [name]="relatedBooks[i].name" [author]="relatedBooks[i].author"
                     [price]="relatedBooks[i].price" [image]="relatedBooks[i].image"
                     [routerLink]="['/collection', relatedBooks[i].id]"></app-book-card>
-            </div> -->
-        </div>
-        <div class="product-author row mt-4 ms-0 bg-warning">
-            <h4 class="product-author-title p-0">Same author</h4>
-            <button class="product-author-btn btn btn-info fw-bold" type="button">View all</button>
-            <div class="bg-primary mt-1">item</div>
+            </div>
         </div>
     </div>
+    <div class="product-author row my-4 ms-0">
+        <h2 class="product-author-title p-0">Same author</h2>
+        <button class="product-author-btn btn btn-info fw-bold" type="button">View all</button>
+        <div class="mt-1 d-flex justify-content-between w-100 p-0 mt-3">
+            <div class="product-card" *ngFor="let book of authorBooks; let i = index">
+                <app-book-card [name]="authorBooks[i].name" [author]="authorBooks[i].author"
+                    [price]="authorBooks[i].price" [image]="authorBooks[i].image"
+                    [routerLink]="['/collection', authorBooks[i].id]"></app-book-card>
+            </div>
+        </div>
+    </div>
+</div>

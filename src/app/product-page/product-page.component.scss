@@ -25,13 +25,23 @@
             }
         }
     }
+    .detail-info{
+        .table-info, th, td{
+            
+            th, td{
+                padding: 10px 30px;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        }
+    }
     .product-related{
         position: relative;
         .product-related-title:after{
             content:"";
             display: block;
             height: 1px;
-            width: 930px;
+            width: 890px;
             position: absolute;
             top: 20px;
             right: 170px;
@@ -44,6 +54,9 @@
             top: 0;
             right: 0;
         }
+        .product-card{
+            width: 17%;
+        }
     }
     .product-author{
         position: relative;
@@ -51,7 +64,7 @@
             content:"";
             display: block;
             height: 1px;
-            width: 930px;
+            width: 940px;
             position: absolute;
             top: 20px;
             right: 170px;
@@ -63,6 +76,9 @@
             position: absolute;
             top: 0;
             right: 0;
+        }
+        .product-card{
+            width: 17%;
         }
     }
 }
