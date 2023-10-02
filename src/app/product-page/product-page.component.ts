@@ -3,7 +3,7 @@ import { LoaderService } from 'src/app/loader.service';
 import { Book } from '../book/book';
 import { BookService } from '../book/book.service';
 import { ActivatedRoute } from '@angular/router';
-import { faStar, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faMinus, faPlus, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -68,6 +68,7 @@ export class ProductPageComponent implements OnInit {
   faLinkedin = faLinkedin;
   faMinus = faMinus;
   faPlus = faPlus;
+  faChevronUp = faChevronUp;
 
   //Quantity
   quantity: number = 1;
@@ -132,4 +133,12 @@ export class ProductPageComponent implements OnInit {
       comment: 'Excellent service. The books were wrapped securely and arrived in pristine condition. I sent an email after to books arrived to ask about the author.'
     }
   ]
+
+  //Action smooth scroll in button ScrollToTop
+  scrollToTop() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }
