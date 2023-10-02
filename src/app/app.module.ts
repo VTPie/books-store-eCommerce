@@ -24,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ReviewCardComponent } from './review-card/review-card.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ReviewCardComponent } from './review-card/review-card.component';
     TinyBookCardComponent,
     ProductPageComponent,
     ReviewCardComponent,
+    CartPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,

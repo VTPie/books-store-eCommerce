@@ -1,0 +1,68 @@
+<div class="container my-4 p-0">
+    <nav class="w-100 p-0">
+        <ul class="nav nav-underline justify-content-center mx-auto" style="width: 96%;">
+            <li class="nav-item">
+                <a class="sub-nav nav-link active text-black active fs-5" aria-current="page"
+                    (click)="changeTemplate($event)" id="template1">Sign in</a>
+            </li>
+            <li class="nav-item">
+                <a class="sub-nav nav-link text-black fs-5" (click)="changeTemplate($event)" id="template2">Sign up</a>
+            </li>
+        </ul>
+    </nav>
+    <div [ngSwitch]="indexTemplate" class="border rounded-5">
+        <ng-template [ngSwitchCase]=1>
+            <div style="padding: 16px 400px;">
+                <form>
+                    <div class="mb-3">
+                        <label for="txt-signin-username" class="form-label fw-medium">Email address / Phone</label>
+                        <input type="email" class="form-control" id="txt-signin-username"
+                            placeholder="Enter your email address or your phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-signin-pw" class="form-label fw-medium">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your password"
+                                id="txt-signin-pw">
+                            <button class="btn btn-outline-secondary" type="button" id="toggle-signin-pw">Show</button>
+                        </div>
+                    </div>
+                    <p class="text-end text-danger mb-0">Forgot password?</p>
+                    <div class="col-auto text-center">
+                        <button type="submit" class="btn btn-info mb-3 fw-bold px-5">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </ng-template>
+        <ng-template [ngSwitchCase]=2>
+            <div style="padding: 16px 400px;">
+                <form>
+                    <div class="mb-3">
+                        <label for="txt-signup-username" class="form-label fw-medium">Email address / Phone</label>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="txt-signup-username"
+                                placeholder="Enter your email address or your phone">
+                            <button class="btn btn-outline-secondary" type="button" id="btn-sendOTP">Send
+                                OTP</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-signup-otp" class="form-label fw-medium">OTP</label>
+                        <input type="text" class="form-control" id="txt-signup-otp" placeholder="Enter your OTP">
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-signup-pw" class="form-label fw-medium">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your password"
+                                id="txt-signup-pw">
+                            <button class="btn btn-outline-secondary" type="button" id="toggle-signup-pw">Show</button>
+                        </div>
+                    </div>
+                    <div class="col-auto text-center">
+                        <button type="submit" class="btn btn-info mb-3 fw-bold px-5">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </ng-template>
+    </div>
+</div>

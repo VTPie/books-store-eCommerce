@@ -8,6 +8,8 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent, title: 'bookzone - home' },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'authors', component: AuthorsPageComponent, title: 'bookzone - authors' },
   { path: 'faq', component: FaqPageComponent, title: 'bookzone - F&Q' },
   { path: 'about', component: AboutPageComponent, title: 'bookzone - about us' },
+  { path: 'cart', component: CartPageComponent, title: 'bookzone - cart' },
+  { path: 'register', component: RegisterPageComponent, title: 'bookzone - register' },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundPageComponent },
 ];
