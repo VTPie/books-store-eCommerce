@@ -1,1 +1,20 @@
-<p>account-page works!</p>
+<div class="container my-4">
+    <button type="button" class="btn btn-danger d-block mx-auto" (click)="openModal()">Logout</button>
+</div>
+<div class="modal" tabindex="-1" id="modal-confirm-logout">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Warning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to log out?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="logout()">OK</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
