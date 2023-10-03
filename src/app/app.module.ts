@@ -27,6 +27,7 @@ import { ReviewCardComponent } from './review-card/review-card.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { AccountPageComponent } from './account-page/account-page.component';
     FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

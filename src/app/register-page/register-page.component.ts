@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register-page',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterPageComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private toastr: ToastrService) { }
 
   //Change template
   indexTemplate: number = 1;
@@ -43,12 +44,12 @@ export class RegisterPageComponent {
   //Login method
   onSubmitLogin() {
     if (this.signin.value.username === "admin@gmail.com" && this.signin.value.psw === "admin") {
-      alert("successful authentication.")
+      this.toastr.success('Successful authentication.', 'Success');
       localStorage.setItem('token', Math.random().toString());
       this.router.navigate(['account'])
     }
     else {
-      alert("authentication failed.")
+      this.toastr.error('Authentication failed. Incorrect name or password.', 'Error');
     }
   }
 }
