@@ -1,0 +1,26 @@
+.cart-product{
+    .cart-item{
+        table{
+            th, tr, td{
+                padding: 15px 0;
+            }
+            tr:hover{
+                background-color: cyan;
+            }
+            .quantity{
+                height: 35px;
+                .quantity-minus{
+                    border-radius: 50px 0 0 50px;
+                    width: 20%;
+                }
+                input{
+                    width: 40%;
+                }
+                .quantity-plus{ 
+                    border-radius: 0 50px 50px 0;
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

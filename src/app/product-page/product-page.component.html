@@ -59,7 +59,8 @@
             <div class="d-flex justify-content-between w-100">
                 <button class="combo-button btn btn-info fw-bold" type="button" disabled>Add to
                     wishlist</button>
-                <button class="combo-button btn btn-info fw-bold" type="button">Add to cart</button>
+                <button class="combo-button btn btn-info fw-bold" type="button" (click)="addToCart()">Add to
+                    cart</button>
                 <button class="combo-button btn btn-danger fw-bold" type="button">Buy now</button>
             </div>
             <hr>
@@ -172,3 +173,21 @@
 <button class="btn btn-info rounded-5" id="goToTop-home" type=" button" (click)="scrollToTop()">
     <fa-icon class="fa-2x" [icon]="faChevronUp"></fa-icon>
 </button>
+
+<div class="modal" tabindex="-1" id="modal-route-to-login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Warning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You need to log in before using the shopping cart feature. Would you like to log in now?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="navToLogin()">Log in</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>

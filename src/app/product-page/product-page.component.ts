@@ -5,8 +5,11 @@ import { BookService } from '../book/book.service';
 import { ActivatedRoute } from '@angular/router';
 import { faStar, faMinus, faPlus, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
+import { CartService } from '../cart.service';
+import { ToastrService } from 'ngx-toastr';
 
-
+declare var window: any
 @Component({
   selector: 'app-product-page',
   templateUrl: './product-page.component.html',
@@ -14,11 +17,21 @@ import { faFacebook, faTwitter, faPinterest, faLinkedin } from '@fortawesome/fre
 })
 export class ProductPageComponent implements OnInit {
   constructor(
-    public activatedRoute: ActivatedRoute, private bookService: BookService, private loader: LoaderService
+    public activatedRoute: ActivatedRoute,
+    private bookService: BookService,
+    private loader: LoaderService,
+    private router: Router,
+    private cartService: CartService,
+    private toastr: ToastrService
   ) { }
   ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.params['id'];
     this.getBookData();
+
+    //Show modal
+    this.formModal = new window.bootstrap.Modal(
+      document.getElementById("modal-route-to-login")
+    )
   }
 
   //Fetch data
@@ -140,5 +153,22 @@ export class ProductPageComponent implements OnInit {
       top: 0,
       behavior: 'smooth'
     });
+  }
+
+  //Add to cart
+  formModal: any
+  token = localStorage.getItem('token');
+  addToCart() {
+    if (this.token) {
+      this.cartService.addToCart(this.targetBook);
+      this.toastr.success('Your product has been added to the cart!', 'Congratulation!');
+    }
+    else {
+      this.formModal.show()
+    }
+  }
+  navToLogin() {
+    this.router.navigate(['register']);
+    this.formModal.hide()
   }
 }

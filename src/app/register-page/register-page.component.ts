@@ -44,12 +44,12 @@ export class RegisterPageComponent {
   //Login method
   onSubmitLogin() {
     if (this.signin.value.username === "admin@gmail.com" && this.signin.value.psw === "admin") {
-      this.toastr.success('Successful authentication.', 'Success');
+      this.toastr.success('Successful authentication.', 'Congratulation!');
       localStorage.setItem('token', Math.random().toString());
       this.router.navigate(['account'])
     }
     else {
-      this.toastr.error('Authentication failed. Incorrect name or password.', 'Error');
+      this.toastr.error('Authentication failed. Username or password is incorrect.', 'Sorry!');
     }
   }
 }
