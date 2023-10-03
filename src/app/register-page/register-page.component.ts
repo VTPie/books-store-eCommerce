@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./register-page.component.scss']
 })
 export class RegisterPageComponent {
+  //Change template
   indexTemplate: number = 1;
   subnav = document.getElementsByClassName("sub-nav");
   changeTemplate(event: any) {
@@ -26,4 +27,6 @@ export class RegisterPageComponent {
     });
     event.srcElement.classList.add('active')
   }
+
+
 }

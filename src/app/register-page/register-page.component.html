@@ -48,12 +48,21 @@
                     </div>
                     <div class="mb-3">
                         <label for="txt-signup-otp" class="form-label fw-medium">OTP</label>
-                        <input type="text" class="form-control" id="txt-signup-otp" placeholder="Enter your OTP">
+                        <input type="text" class="form-control" disabled id="txt-signup-otp"
+                            placeholder="Enter your OTP">
                     </div>
                     <div class="mb-3">
                         <label for="txt-signup-pw" class="form-label fw-medium">Password</label>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Enter your password"
+                                id="txt-signup-pw">
+                            <button class="btn btn-outline-secondary" type="button" id="toggle-signup-pw">Show</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txt-signup-pw" class="form-label fw-medium">Confirm password</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Confirm your password"
                                 id="txt-signup-pw">
                             <button class="btn btn-outline-secondary" type="button" id="toggle-signup-pw">Show</button>
                         </div>
