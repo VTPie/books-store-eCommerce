@@ -13,17 +13,17 @@
     <div [ngSwitch]="indexTemplate" class="border rounded-5">
         <ng-template [ngSwitchCase]=1>
             <div style="padding: 16px 400px;">
-                <form>
+                <form [formGroup]="signin" (ngSubmit)="onSubmitLogin()">
                     <div class="mb-3">
                         <label for="txt-signin-username" class="form-label fw-medium">Email address / Phone</label>
                         <input type="email" class="form-control" id="txt-signin-username"
-                            placeholder="Enter your email address or your phone">
+                            placeholder="Enter your email address or your phone" formControlName="username">
                     </div>
                     <div class="mb-3">
                         <label for="txt-signin-pw" class="form-label fw-medium">Password</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Enter your password"
-                                id="txt-signin-pw">
+                            <input type="password" class="form-control" placeholder="Enter your password"
+                                id="txt-signin-pw" formControlName="psw">
                             <button class="btn btn-outline-secondary" type="button" id="toggle-signin-pw">Show</button>
                         </div>
                     </div>

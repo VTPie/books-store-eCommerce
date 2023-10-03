@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-page',
@@ -6,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./register-page.component.scss']
 })
 export class RegisterPageComponent {
+
+  constructor(private router: Router) { }
+
   //Change template
   indexTemplate: number = 1;
   subnav = document.getElementsByClassName("sub-nav");
@@ -28,5 +33,22 @@ export class RegisterPageComponent {
     event.srcElement.classList.add('active')
   }
 
+  //Authentication
+  signin = new FormGroup({
+    username: new FormControl(''),
+    psw: new FormControl('')
+  })
 
+
+  //Login method
+  onSubmitLogin() {
+    if (this.signin.value.username === "admin@gmail.com" && this.signin.value.psw === "admin") {
+      alert("successful authentication.")
+      localStorage.setItem('token', Math.random().toString());
+      this.router.navigate(['account'])
+    }
+    else {
+      alert("authentication failed.")
+    }
+  }
 }

@@ -10,19 +10,71 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
 import { ProductPageComponent } from './product-page/product-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { AccountPageComponent } from './account-page/account-page.component';
+import { authGuard } from './routes-guard/auth.guard';
 
 const routes: Routes = [
-  { path: 'home', component: HomePageComponent, title: 'bookzone - home' },
-  { path: 'collection', component: CollectionPageComponent, title: 'bookzone - collection' },
-  { path: 'collection/:id', component: ProductPageComponent, title: 'bookzone - product detail' },
-  { path: 'shop', component: ShopPageComponent, title: 'bookzone - shop' },
-  { path: 'authors', component: AuthorsPageComponent, title: 'bookzone - authors' },
-  { path: 'faq', component: FaqPageComponent, title: 'bookzone - F&Q' },
-  { path: 'about', component: AboutPageComponent, title: 'bookzone - about us' },
-  { path: 'cart', component: CartPageComponent, title: 'bookzone - cart' },
-  { path: 'register', component: RegisterPageComponent, title: 'bookzone - register' },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: NotFoundPageComponent },
+  {
+    path: 'home',
+    component: HomePageComponent,
+    title: 'bookzone - home'
+  },
+  {
+    path: 'collection',
+    component: CollectionPageComponent,
+    title: 'bookzone - collection'
+  },
+  {
+    path: 'collection/:id',
+    component: ProductPageComponent,
+    title: 'bookzone - product detail'
+  },
+  {
+    path: 'shop',
+    component: ShopPageComponent,
+    title: 'bookzone - shop'
+  },
+  {
+    path: 'authors',
+    component: AuthorsPageComponent,
+    title: 'bookzone - authors'
+  },
+  {
+    path: 'faq',
+    component: FaqPageComponent,
+    title: 'bookzone - F&Q'
+  },
+  {
+    path: 'about',
+    component: AboutPageComponent,
+    title: 'bookzone - about us'
+  },
+  {
+    path: 'cart',
+    component: CartPageComponent,
+    title: 'bookzone - cart',
+    canActivate: [authGuard]
+  },
+  {
+    path: 'register',
+    component: RegisterPageComponent,
+    title: 'bookzone - register'
+  },
+  {
+    path: 'account',
+    component: AccountPageComponent,
+    title: 'bookzone - account',
+    canActivate: [authGuard]
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: NotFoundPageComponent
+  },
 ];
 
 @NgModule({

@@ -26,6 +26,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { ReviewCardComponent } from './review-card/review-card.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { AccountPageComponent } from './account-page/account-page.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     ReviewCardComponent,
     CartPageComponent,
     RegisterPageComponent,
+    AccountPageComponent,
   ],
   imports: [
     BrowserModule,
