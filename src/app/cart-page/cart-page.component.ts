@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
-import { faTrash, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-
+import { faTrash, faMinus, faPlus, faFaceFrown } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart-page',
@@ -10,7 +10,8 @@ import { faTrash, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 })
 export class CartPageComponent {
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
+    private router: Router
   ) { }
 
   cartList = this.cartService.getItems();
@@ -24,4 +25,10 @@ export class CartPageComponent {
   faTrash = faTrash;
   faMinus = faMinus;
   faPlus = faPlus;
+  faFaceFrown = faFaceFrown;
+
+  //Return home
+  returnHome() {
+    this.router.navigate(['home'])
+  }
 }
