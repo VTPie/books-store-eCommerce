@@ -14,11 +14,12 @@ export class CartPageComponent {
     private router: Router
   ) { }
 
+  //Get property from service CART
   cartList = this.cartService.getItems();
   cartListQtt = this.cartService.getQtt();
   cartListPrice = this.cartService.getPrice();
 
-  //Quantity
+  //Change quantity
   minusQtt(num: number) {
     if (this.cartListQtt[num] > 1) {
       this.cartListQtt[num]--
@@ -30,8 +31,10 @@ export class CartPageComponent {
     this.cartListPrice[num] = this.cartListQtt[num] * this.cartList[num].price
   }
 
-  //Final price
-  finalPrice: number = 1
+  //Delete product from cart
+  deleteProductFromCart(value: number) {
+    console.log(this.cartList[value])
+  }
 
   //Icon
   faTrash = faTrash;

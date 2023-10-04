@@ -225,7 +225,6 @@ export class CollectionPageComponent implements OnInit {
   public get sortedBooks(): Book[] {
     let before = [...this.filteredBooks];
     let after: Book[] = []
-    console.log(this.valueSlSort, typeof (this.valueSlSort))
     switch (this.valueSlSort) {
       case '1':
         after = before

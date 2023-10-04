@@ -37,7 +37,7 @@
                             </div>
                         </td>
                         <td class="fw-bold text-danger fs-5">$ {{cartListPrice[i]}}</td>
-                        <td><fa-icon [icon]="faTrash"></fa-icon></td>
+                        <td (click)="deleteProductFromCart(i)"><fa-icon [icon]="faTrash"></fa-icon></td>
                     </tr>
                 </table>
             </div>

@@ -167,7 +167,13 @@ export class ProductPageComponent implements OnInit {
   token = localStorage.getItem('token');
   addToCart() {
     if (this.token) {
-      this.cartService.addToCart(this.targetBook, this.quantity, this.totalPrice);
+      if (this.totalPrice === 0) {
+        this.cartService.addToCart(this.targetBook, this.quantity, this.targetBook.price);
+      }
+      else {
+        this.cartService.addToCart(this.targetBook, this.quantity, this.totalPrice);
+      }
+
       this.toastr.success('Your product has been added to the cart!', 'Congratulation!');
     }
     else {

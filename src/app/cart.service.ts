@@ -28,8 +28,9 @@ export class CartService {
     return this.cartListPrice;
   }
 
-  clearCart() {
-    this.cartList = [];
-    return this.cartList;
+  deleteProduct(product: Book) {
+    let newCart = [...this.cartList]
+    newCart = newCart.filter((item) => item.id !== product.id)
+    return newCart
   }
 }
