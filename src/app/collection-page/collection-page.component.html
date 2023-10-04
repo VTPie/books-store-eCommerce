@@ -56,23 +56,24 @@
                     <option value="3">Show 8</option>
                     <option value="4">Show 12</option>
                 </select>
-                <select class="form-select form-select-sm me-4 w-25" id="slSort" aria-label="Small select example">
+                <select class="form-select form-select-sm me-4 w-25" id="slSort" aria-label="Small select example"
+                    (change)="getValueSlSort()">
                     <option value="1" selected>Default</option>
                     <option value="2">A &rarr; Z</option>
                     <option value="3">Z &rarr; A</option>
                     <option value="4">Sort by price: low to high</option>
                     <option value="5">Sort by price: high to low</option>
-                    <option value="6">Sort by rating: low to high</option>
-                    <option value="7">Sort by rating: high to low</option>
-                    <option value="8">Sort by latest</option>
+                    <option value="6" disabled>Sort by rating: low to high</option>
+                    <option value="7" disabled>Sort by rating: high to low</option>
+                    <option value="8" disabled>Sort by latest</option>
                 </select>
             </div>
             <hr class="mb-0" style="margin-top: 25px;">
             <div class="collection-items d-flex flex-wrap justify-content-evenly mt-2">
-                <div class="collection-item mt-3" *ngFor="let book of filteredBooks; let i = index">
-                    <app-book-card [name]="filteredBooks[i].name" [author]="filteredBooks[i].author"
-                        [price]="filteredBooks[i].price" [image]="filteredBooks[i].image"
-                        [routerLink]="['/collection', filteredBooks[i].id]"></app-book-card>
+                <div class="collection-item mt-3" *ngFor="let book of sortedBooks; let i = index">
+                    <app-book-card [name]="sortedBooks[i].name" [author]="sortedBooks[i].author"
+                        [price]="sortedBooks[i].price" [image]="sortedBooks[i].image"
+                        [routerLink]="['/collection', sortedBooks[i].id]"></app-book-card>
                 </div>
             </div>
             <nav aria-label="Page navigation example" class="mt-3">

@@ -197,7 +197,7 @@ export class CollectionPageComponent implements OnInit {
       this.filterAuthor = [...this.filterAuthor.filter(x => x.id !== author.id)];
     }
   }
-  public get filteredBooks(): any[] {
+  public get filteredBooks(): Book[] {
     let filtered = [...this.books];
 
     if (this.filterCate.length > 0) {
@@ -213,5 +213,36 @@ export class CollectionPageComponent implements OnInit {
       });
     }
     return filtered;
+  }
+
+  //Sorter
+  valueSlSort: string = '1'
+  getValueSlSort() {
+    var e: any = document.getElementById("slSort");
+    this.valueSlSort = e.value
+    console.log(this.sortedBooks)
+  }
+  public get sortedBooks(): Book[] {
+    let before = [...this.filteredBooks];
+    let after: Book[] = []
+    console.log(this.valueSlSort, typeof (this.valueSlSort))
+    switch (this.valueSlSort) {
+      case '1':
+        after = before
+        break
+      case '2':
+        after = before.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
+        break
+      case '3':
+        after = before.sort((a, b) => (a.name < b.name) ? 1 : ((b.name < a.name) ? -1 : 0))
+        break
+      case '4':
+        after = before.sort((a, b) => (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0))
+        break
+      case '5':
+        after = before.sort((a, b) => (a.price < b.price) ? 1 : ((b.price < a.price) ? -1 : 0))
+        break
+    }
+    return after;
   }
 }
