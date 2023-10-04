@@ -85,16 +85,20 @@ export class ProductPageComponent implements OnInit {
 
   //Quantity
   quantity: number = 1;
+  totalPrice: number = 0
   plusQtt() {
     this.quantity++
+    this.totalPrice = this.targetBook.price * this.quantity
   }
   minusQtt() {
-    if (this.quantity > 0) {
+    if (this.quantity > 1) {
       this.quantity--
     }
+    this.totalPrice = this.targetBook.price * this.quantity
   }
   changeQtt(event: any) {
     this.quantity = event.target.value
+    this.totalPrice = this.targetBook.price * this.quantity
   }
 
   //Get related books list
@@ -163,7 +167,7 @@ export class ProductPageComponent implements OnInit {
   token = localStorage.getItem('token');
   addToCart() {
     if (this.token) {
-      this.cartService.addToCart(this.targetBook);
+      this.cartService.addToCart(this.targetBook, this.quantity, this.totalPrice);
       this.toastr.success('Your product has been added to the cart!', 'Congratulation!');
     }
     else {

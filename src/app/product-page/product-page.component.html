@@ -52,8 +52,14 @@
             <h4 class="text-danger mt-2">
                 <span class="fs-5 text-black">Total: </span>
                 <span class="fs-2">$</span>
-                <!-- <span class="fs-2">{{totalPrice}}</span> -->
-                <span class="fs-2">{{this.targetBook.price}}</span>
+                <ng-container *ngIf="this.totalPrice > 0; else beginPrice">
+                    <span class="fs-2">{{totalPrice}}</span>
+                </ng-container>
+                <ng-template #beginPrice>
+                    <span class="fs-2">{{this.targetBook.price}}</span>
+                </ng-template>
+                <!-- <span class="fs-2">{{totalPrice}}</span>
+                <span class="fs-2">{{this.targetBook.price}}</span> -->
             </h4>
             <hr>
             <!-- Buy -->

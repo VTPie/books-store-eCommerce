@@ -15,11 +15,23 @@ export class CartPageComponent {
   ) { }
 
   cartList = this.cartService.getItems();
+  cartListQtt = this.cartService.getQtt();
+  cartListPrice = this.cartService.getPrice();
 
   //Quantity
-  quantity: number = 1
-  minusQtt() { }
-  plusQtt() { }
+  minusQtt(num: number) {
+    if (this.cartListQtt[num] > 1) {
+      this.cartListQtt[num]--
+    }
+    this.cartListPrice[num] = this.cartListQtt[num] * this.cartList[num].price
+  }
+  plusQtt(num: number) {
+    this.cartListQtt[num]++
+    this.cartListPrice[num] = this.cartListQtt[num] * this.cartList[num].price
+  }
+
+  //Final price
+  finalPrice: number = 1
 
   //Icon
   faTrash = faTrash;
