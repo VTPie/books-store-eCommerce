@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
+
 
 @Component({
   selector: 'app-header',
@@ -12,5 +14,11 @@ export class HeaderComponent {
       element.classList.remove('active');
     });
     event.srcElement.classList.add('active')
+  }
+
+  //Search action
+  txtSearch = new FormControl('')
+  captureSearch(event: any) {
+    console.log(this.txtSearch.value)
   }
 }
