@@ -30,7 +30,7 @@
                 <button class="quantity-minus btn btn-info border border-end-0 h-100" type="button"
                     (click)="minusQtt()"><fa-icon [icon]="faMinus"></fa-icon></button>
                 <input class="h-100 text-center fw-bold form-control rounded-0" type="text" [value]="quantity"
-                    id="inputQuantity">
+                    id="inputQuantity" (change)="changeQtt($event)">
                 <button class="quantity-plus btn btn-info border border-start-0 h-100" type="button"
                     (click)="plusQtt()"><fa-icon [icon]="faPlus"></fa-icon></button>
             </div>
@@ -52,7 +52,8 @@
             <h4 class="text-danger mt-2">
                 <span class="fs-5 text-black">Total: </span>
                 <span class="fs-2">$</span>
-                <span class="fs-2">{{targetBook.price}}</span>
+                <!-- <span class="fs-2">{{totalPrice}}</span> -->
+                <span class="fs-2">{{this.targetBook.price}}</span>
             </h4>
             <hr>
             <!-- Buy -->

@@ -3,7 +3,7 @@
         "name": "Piranesi",
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/34.jpg",
-        "price": "47",
+        "price": 47,
         "category": "Literature - Detective",
         "id": "1"
     },
@@ -11,127 +11,127 @@
         "name": "DUNE",
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/8.jpg",
-        "price": "80",
-        "category": "Literature - Gothic",
+        "price": 80,
+        "category": "Literature - Detective",
         "id": "2"
     },
     {
         "name": "Helium",
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/9.jpg",
-        "price": "90",
-        "category": "Literature - Historical",
+        "price": 90,
+        "category": "Literature - Detective",
         "id": "3"
     },
     {
         "name": "Grown",
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/12.jpg",
-        "price": "32",
-        "category": "Literature - Fiction",
+        "price": 32,
+        "category": "Literature - Detective",
         "id": "4"
     },
     {
         "name": "Lobizona",
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/19.jpg",
-        "price": "43",
-        "category": "Literature - Romance",
+        "price": 43,
+        "category": "Literature - Detective",
         "id": "5"
     },
     {
         "name": "VERGE",
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/21.jpg",
-        "price": "58",
-        "category": "Children",
+        "price": 58,
+        "category": "Literature - Gothic",
         "id": "6"
     },
     {
         "name": "Memorial",
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/26.jpg",
-        "price": "53",
-        "category": "Economy",
+        "price": 53,
+        "category": "Literature - Gothic",
         "id": "7"
     },
     {
         "name": "Luster",
         "author": "Raven Leilani",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/27.jpg",
-        "price": "66",
-        "category": "History",
+        "price": 66,
+        "category": "Literature - Gothic",
         "id": "8"
     },
     {
         "name": "Self Care",
         "author": "Leigh Stein",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/15.jpg",
-        "price": "85",
-        "category": "Law",
+        "price": 85,
+        "category": "Literature - Gothic",
         "id": "9"
     },
     {
         "name": "A Burning",
         "author": "Lucie Britsch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/18.jpg",
-        "price": "27",
-        "category": "Philosophy",
+        "price": 27,
+        "category": "Literature - Gothic",
         "id": "10"
     },
     {
         "name": "Mexican Gothic",
         "author": "David Chang",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/22.jpg",
-        "price": "47",
-        "category": "Psychology",
+        "price": 47,
+        "category": "Literature - Historical",
         "id": "11"
     },
     {
         "name": "Sad Janet",
         "author": "Leife Shallcross",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/28.jpg",
-        "price": "26",
-        "category": "Political",
+        "price": 26,
+        "category": "Literature - Historical",
         "id": "12"
     },
     {
         "name": "Ring Shout",
         "author": "Chelsea G. Summers",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/32.jpg",
-        "price": "86",
-        "category": "Science",
+        "price": 86,
+        "category": "Literature - Historical",
         "id": "13"
     },
     {
         "name": "Eat a Peach",
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/31.jpg",
-        "price": "64",
-        "category": "Literature - Detective",
+        "price": 64,
+        "category": "Literature - Historical",
         "id": "14"
     },
     {
         "name": "The Beast's Heart",
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/2.jpg",
-        "price": "20",
-        "category": "Literature - Gothic",
+        "price": 20,
+        "category": "Literature - Historical",
         "id": "15"
     },
     {
         "name": "A Certain Hunger",
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/16.jpg",
-        "price": "36",
-        "category": "Literature - Historical",
+        "price": 36,
+        "category": "Literature - Fiction",
         "id": "16"
     },
     {
         "name": "The Knockout Queen",
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/17.jpg",
-        "price": "91",
+        "price": 91,
         "category": "Literature - Fiction",
         "id": "17"
     },
@@ -139,127 +139,127 @@
         "name": "Clap When You Land",
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/10.jpg",
-        "price": "12",
-        "category": "Literature - Romance",
+        "price": 12,
+        "category": "Literature - Fiction",
         "id": "18"
     },
     {
         "name": "A Place Called Perfect",
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/5.jpg",
-        "price": "50",
-        "category": "Children",
+        "price": 50,
+        "category": "Literature - Fiction",
         "id": "19"
     },
     {
         "name": "Woven in Moonlight",
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/20.jpg",
-        "price": "53",
-        "category": "Economy",
+        "price": 53,
+        "category": "Literature - Fiction",
         "id": "20"
     },
     {
         "name": "The Illness Lesson",
         "author": "Raven Leilani",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/11.jpg",
-        "price": "22",
-        "category": "History",
+        "price": 22,
+        "category": "Literature - Romance",
         "id": "21"
     },
     {
         "name": "A Lover's Discourse",
         "author": "Leigh Stein",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/23.jpg",
-        "price": "36",
-        "category": "Law",
+        "price": 36,
+        "category": "Literature - Romance",
         "id": "22"
     },
     {
         "name": "Felix Ever After",
         "author": "Lucie Britsch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/25.jpg",
-        "price": "73",
-        "category": "Philosophy",
+        "price": 73,
+        "category": "Literature - Romance",
         "id": "23"
     },
     {
         "name": "The Feather Thief",
         "author": "David Chang",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/7.jpg",
-        "price": "70",
-        "category": "Psychology",
+        "price": 70,
+        "category": "Literature - Romance",
         "id": "24"
     },
     {
         "name": "No Place Like Here",
         "author": "Leife Shallcross",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/1.jpg",
-        "price": "10",
-        "category": "Political",
+        "price": 10,
+        "category": "Literature - Romance",
         "id": "25"
     },
     {
         "name": "A Light So Lovely",
         "author": "Chelsea G. Summers",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/4.jpg",
-        "price": "40",
-        "category": "Science",
+        "price": 40,
+        "category": "Children",
         "id": "26"
     },
     {
         "name": "The Scapegracers",
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/29.jpg",
-        "price": "76",
-        "category": "Literature - Detective",
+        "price": 76,
+        "category": "Children",
         "id": "27"
     },
     {
         "name": "Apple: Skin to the Core",
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/24.jpg",
-        "price": "75",
-        "category": "Literature - Gothic",
+        "price": 75,
+        "category": "Children",
         "id": "28"
     },
     {
         "name": "Each of Us a Desert",
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/30.jpg",
-        "price": "44",
-        "category": "Literature - Historical",
+        "price": 44,
+        "category": "Children",
         "id": "29"
     },
     {
         "name": "In the Garden of the Fugitives",
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/6.jpg",
-        "price": "60",
-        "category": "Literature - Fiction",
+        "price": 60,
+        "category": "Children",
         "id": "30"
     },
     {
         "name": "The Standardization of Demoralization",
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/13.jpg",
-        "price": "42",
-        "category": "Literature - Romance",
+        "price": 42,
+        "category": "Economy",
         "id": "31"
     },
     {
         "name": "The Southern Book Club's Guide to Slaying Vampire",
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/14.jpg",
-        "price": "24",
-        "category": "Children",
+        "price": 24,
+        "category": "Economy",
         "id": "32"
     },
     {
         "name": "Over the Woodward Wall",
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/33.jpg",
-        "price": "82",
+        "price": 82,
         "category": "Economy",
         "id": "33"
     },
@@ -267,127 +267,127 @@
         "name": "Blue is a Darkness Weakened by Light",
         "author": "Raven Leilani",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/3.jpg",
-        "price": "30",
-        "category": "History",
+        "price": 30,
+        "category": "Economy",
         "id": "34"
     },
     {
         "name": "Long Live the Post Horn!",
         "author": "Leigh Stein",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/35.jpg",
-        "price": "89",
-        "category": "Law",
+        "price": 89,
+        "category": "Economy",
         "id": "35"
     },
     {
         "name": "Anna Karenina",
         "author": "Lucie Britsch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/34.jpg",
-        "price": "47",
-        "category": "Philosophy",
+        "price": 47,
+        "category": "History",
         "id": "36"
     },
     {
         "name": "The Great Gatsby",
         "author": "David Chang",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/8.jpg",
-        "price": "80",
-        "category": "Psychology",
+        "price": 80,
+        "category": "History",
         "id": "37"
     },
     {
         "name": "To Kill a Mockingbird",
         "author": "Leife Shallcross",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/9.jpg",
-        "price": "90",
-        "category": "Political",
+        "price": 90,
+        "category": "History",
         "id": "38"
     },
     {
         "name": "Jane Eyre",
         "author": "Chelsea G. Summers",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/12.jpg",
-        "price": "32",
-        "category": "Science",
+        "price": 32,
+        "category": "History",
         "id": "39"
     },
     {
         "name": "Mrs Dalloway",
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/19.jpg",
-        "price": "43",
-        "category": "Literature - Detective",
+        "price": 43,
+        "category": "History",
         "id": "40"
     },
     {
         "name": "A Passage to India",
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/21.jpg",
-        "price": "58",
-        "category": "Literature - Gothic",
+        "price": 58,
+        "category": "Law",
         "id": "41"
     },
     {
         "name": "The Catcher in the Rye",
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/26.jpg",
-        "price": "53",
-        "category": "Literature - Historical",
+        "price": 53,
+        "category": "Law",
         "id": "42"
     },
     {
         "name": "Ulysses",
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/27.jpg",
-        "price": "66",
-        "category": "Literature - Fiction",
+        "price": 66,
+        "category": "Law",
         "id": "43"
     },
     {
         "name": "Lolita",
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/15.jpg",
-        "price": "85",
-        "category": "Literature - Romance",
+        "price": 85,
+        "category": "Law",
         "id": "44"
     },
     {
         "name": "Catch-22",
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/18.jpg",
-        "price": "27",
-        "category": "Children",
+        "price": 27,
+        "category": "Law",
         "id": "45"
     },
     {
         "name": "The Canterbury Tales",
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/22.jpg",
-        "price": "47",
-        "category": "Economy",
+        "price": 47,
+        "category": "Philosophy",
         "id": "46"
     },
     {
         "name": "Divine Comedy ",
         "author": "Raven Leilani",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/28.jpg",
-        "price": "26",
-        "category": "History",
+        "price": 26,
+        "category": "Philosophy",
         "id": "47"
     },
     {
         "name": "The Complete Works",
         "author": "Leigh Stein",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/32.jpg",
-        "price": "86",
-        "category": "Law",
+        "price": 86,
+        "category": "Philosophy",
         "id": "48"
     },
     {
         "name": "Moby Dick",
         "author": "Lucie Britsch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/31.jpg",
-        "price": "64",
+        "price": 64,
         "category": "Philosophy",
         "id": "49"
     },
@@ -395,127 +395,127 @@
         "name": "1984",
         "author": "David Chang",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/2.jpg",
-        "price": "20",
-        "category": "Psychology",
+        "price": 20,
+        "category": "Philosophy",
         "id": "50"
     },
     {
         "name": "Brave New World",
         "author": "Leife Shallcross",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/16.jpg",
-        "price": "36",
-        "category": "Political",
+        "price": 36,
+        "category": "Psychology",
         "id": "51"
     },
     {
         "name": "The Iliad and The Odyssey",
         "author": "Chelsea G. Summers",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/17.jpg",
-        "price": "91",
-        "category": "Science",
+        "price": 91,
+        "category": "Psychology",
         "id": "52"
     },
     {
         "name": "Don Quixote",
         "author": "Susanna Clarke",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/10.jpg",
-        "price": "12",
-        "category": "Literature - Detective",
+        "price": 12,
+        "category": "Psychology",
         "id": "53"
     },
     {
         "name": "In Search of Lost Time",
         "author": "Frank Herbert",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/5.jpg",
-        "price": "50",
-        "category": "Literature - Gothic",
+        "price": 50,
+        "category": "Psychology",
         "id": "54"
     },
     {
         "name": "Madame Bovary",
         "author": "Rudy Francisco",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/20.jpg",
-        "price": "53",
-        "category": "Literature - Historical",
+        "price": 53,
+        "category": "Psychology",
         "id": "55"
     },
     {
         "name": "Arabian Nights",
         "author": "Tiffany D. Jackson",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/11.jpg",
-        "price": "22",
-        "category": "Literature - Fiction",
+        "price": 22,
+        "category": "Political",
         "id": "56"
     },
     {
         "name": "One Hundred Years of Solitude",
         "author": "Romina Garber",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/23.jpg",
-        "price": "36",
-        "category": "Literature - Romance",
+        "price": 36,
+        "category": "Political",
         "id": "57"
     },
     {
         "name": "War and Peace",
         "author": "Lidia Yuknavitch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/25.jpg",
-        "price": "73",
-        "category": "Children",
+        "price": 73,
+        "category": "Political",
         "id": "58"
     },
     {
         "name": "The Tale of Genji",
         "author": "Bryan Washington",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/7.jpg",
-        "price": "70",
-        "category": "Economy",
+        "price": 70,
+        "category": "Political",
         "id": "59"
     },
     {
         "name": "Uncle Tom's Cabin",
         "author": "Raven Leilani",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/1.jpg",
-        "price": "10",
-        "category": "History",
+        "price": 10,
+        "category": "Political",
         "id": "60"
     },
     {
         "name": "Crime and Punishment",
         "author": "Leigh Stein",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/4.jpg",
-        "price": "40",
-        "category": "Law",
+        "price": 40,
+        "category": "Science",
         "id": "61"
     },
     {
         "name": "Things Fall Apart",
         "author": "Lucie Britsch",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/29.jpg",
-        "price": "76",
-        "category": "Philosophy",
+        "price": 76,
+        "category": "Science",
         "id": "62"
     },
     {
         "name": "Faust",
         "author": "David Chang",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/24.jpg",
-        "price": "75",
-        "category": "Psychology",
+        "price": 75,
+        "category": "Science",
         "id": "63"
     },
     {
         "name": "Beloved",
         "author": "Leife Shallcross",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/30.jpg",
-        "price": "44",
-        "category": "Political",
+        "price": 44,
+        "category": "Science",
         "id": "64"
     },
     {
         "name": "The Lord of the Rings",
         "author": "Chelsea G. Summers",
         "image": "https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/6.jpg",
-        "price": "60",
+        "price": 60,
         "category": "Science",
         "id": "65"
     }

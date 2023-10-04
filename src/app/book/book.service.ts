@@ -73,7 +73,7 @@ export class BookService {
       name: "",
       author: "",
       image: "",
-      price: "",
+      price: 0,
       category: ""
     };
   }

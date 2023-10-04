@@ -93,6 +93,9 @@ export class ProductPageComponent implements OnInit {
       this.quantity--
     }
   }
+  changeQtt(event: any) {
+    this.quantity = event.target.value
+  }
 
   //Get related books list
   relatedBooks: Book[] = [];

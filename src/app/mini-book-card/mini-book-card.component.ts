@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class MiniBookCardComponent {
   @Input() name = '';
   @Input() author = '';
-  @Input() price = '';
+  @Input() price = 0;
   @Input() image = '';
 }
