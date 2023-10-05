@@ -18,17 +18,14 @@ export class CartPageComponent {
   cartList = this.cartService.getItems();
   cartListQtt = this.cartService.getQtt();
   cartListPrice = this.cartService.getPrice();
+  totalAmount = this.cartService.getTotalPrice()
 
   //Change quantity
-  minusQtt(num: number) {
-    if (this.cartListQtt[num] > 1) {
-      this.cartListQtt[num]--
-    }
-    this.cartListPrice[num] = this.cartListQtt[num] * this.cartList[num].price
+  minusQtt(index: number) {
+    this.cartService.minusQtt(index)
   }
-  plusQtt(num: number) {
-    this.cartListQtt[num]++
-    this.cartListPrice[num] = this.cartListQtt[num] * this.cartList[num].price
+  plusQtt(index: number) {
+    this.cartService.plusQtt(index)
   }
 
   //Delete product from cart

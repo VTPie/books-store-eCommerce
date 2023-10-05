@@ -7,7 +7,7 @@
 <div class="cart-product container mb-4 p-0">
     <div class="cart-item row">
         <ng-container *ngIf="cartList.length > 0; else noProduct">
-            <div class="col-9">
+            <div style="width: 75%;">
                 <table class="w-100 text-center border border-black">
                     <tr class="border-bottom border-black bg-info">
                         <th style="width: 8%;">No.</th>
@@ -18,7 +18,7 @@
                     </tr>
                     <tr class="border-bottom border-black" *ngFor="let book of cartList; let i = index">
                         <td>{{i+1}}</td>
-                        <td class="d-flex justify-content-center">
+                        <td class="d-flex px-5">
                             <img src={{book.image}} style="width: 100px;">
                             <div class="ms-4 d-flex flex-column justify-content-center">
                                 <p class="text-start fw-bold mb-0 py-2">{{book.name}}</p>
@@ -41,7 +41,13 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-3 bg-warning">a</div>
+            <div class="border rounded-3 p-4" style="width: 24%; margin-left: 1%; height: fit-content;">
+                <div class="d-flex justify-content-between w-100">
+                    <h5>Total Amount:</h5>
+                    <h5 class="text-danger fw-bold">$ {{this.totalAmount[0]}}</h5>
+                </div>
+                <button class="btn btn-info w-100 mt-3 fw-bold" type="button">Payment</button>
+            </div>
         </ng-container>
         <ng-template #noProduct>
             <div class="text-center">
