@@ -28,9 +28,13 @@ export class CartService {
     return this.cartListPrice;
   }
 
-  deleteProduct(product: Book) {
-    let newCart = [...this.cartList]
-    newCart = newCart.filter((item) => item.id !== product.id)
-    return newCart
+  deleteProduct(index: number) {
+    let newCart = this.cartList
+    let newCartQtt = this.cartListQtt
+    let newCartPrice = this.cartListPrice
+
+    newCart = newCart.splice(index, 1)
+    newCartQtt = newCartQtt.splice(index, 1)
+    newCartPrice = newCartPrice.splice(index, 1)
   }
 }

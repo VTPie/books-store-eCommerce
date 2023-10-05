@@ -32,8 +32,8 @@ export class CartPageComponent {
   }
 
   //Delete product from cart
-  deleteProductFromCart(value: number) {
-    console.log(this.cartList[value])
+  deleteProductFromCart(index: number) {
+    this.cartService.deleteProduct(index)
   }
 
   //Icon
