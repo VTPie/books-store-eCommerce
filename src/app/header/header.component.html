@@ -1,23 +1,27 @@
 <div class="mt-3 container-fluid header-container p-0">
-    <div class="container header-search p-0">
-        <div class="row h-100">
-            <a class="col-2 h-100" href="home">
+    <div class="container-xl header-search p-0">
+        <div class="row h-100 px-xl-0 px-4">
+            <a class="toggle-nav col-1 text-black pt-1">
+                <fa-icon class="fa-2x" [icon]="faBarsStaggered"></fa-icon>
+            </a>
+            <a class="col-2 h-100 offet-1 offset-sm-4 offset-lg-0" href="home">
                 <img src="../../assets/images/final-logo.jpg" class="logo mt-2">
             </a>
-            <div class="col-6 h-100 offset-1 position-relative ">
+            <div class="inputMainSearch col-4 col-xl-6 h-100 offset-1 position-relative ">
                 <input class="w-100 h-75 mt-2  p-3 border-0 txtSearch" placeholder="Search by name ..."
                     [formControl]="txtSearch">
                 <button class="btn btn-info btnSearch" (click)="captureSearch($event)">
                     <mat-icon class="mt-1">search</mat-icon>
                 </button>
             </div>
-            <div class="btnCart col-1 offset-1 h-100 text-center border-left" routerLink="/cart">
-                <mat-icon class="mt-2">shopping_cart</mat-icon>
-                <p>Cart</p>
+            <div class="btnMiniSearch col-1 offset-6 offset-sm-2 offset-xl-1 h-100 text-center pt-3">
+                <fa-icon class="icon fa-2x" [icon]="faMagnifyingGlass"></fa-icon>
             </div>
-            <div class="btnAcc col-1 h-100 text-center border-left" routerLink="/account">
-                <mat-icon class="mt-2">account_circle</mat-icon>
-                <p>Account</p>
+            <div class="btnCart col-1 offset-lg-2 offset-xl-1 h-100 text-center pt-3" routerLink="/cart">
+                <fa-icon class="icon fa-2x" [icon]="faCartShopping"></fa-icon>
+            </div>
+            <div class="btnAcc col-1 h-100 text-center pt-3" routerLink="/account">
+                <fa-icon class="icon fa-2x" [icon]="faUser"></fa-icon>
             </div>
         </div>
     </div>

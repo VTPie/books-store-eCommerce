@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { faBarsStaggered, faCartShopping, faUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 
 @Component({
@@ -21,4 +23,10 @@ export class HeaderComponent {
   captureSearch(event: any) {
     console.log(this.txtSearch.value)
   }
+
+  //Icon
+  faBarsStaggered = faBarsStaggered;
+  faCartShopping = faCartShopping;
+  faUser = faUser;
+  faMagnifyingGlass = faMagnifyingGlass;
 }

@@ -23,8 +23,11 @@
             background-color: #f6f6f6;
             border-radius: 30px;
         }
-        .btnCart:hover, .btnAcc:hover{
+        .btnCart:hover, .btnAcc:hover, .btnMiniSearch:hover{
             color: #0dcaf0;
+        }
+        .icon{
+            font-size: 1.5em;
         }
     }
     .header-nav{
@@ -79,6 +82,32 @@
             border-bottom: 2px solid #0dcaf0;       
         }
     }  
- }
+}
+
+
+//Responsive
+.header-nav, hr, .inputMainSearch{
+    display: none;
+}
+.toggle-nav, .btnMiniSearch{
+    display: block;
+}
+
+@media (min-width: 992px){
+    .btnMiniSearch{
+        display: none;
+    }
+    .inputMainSearch{
+        display: block;
+    }
+}
+@media (min-width: 1200px){
+    .header-nav, hr{
+        display: block;
+    }
+    .toggle-nav{
+        display: none;
+    }
+}
  
  
