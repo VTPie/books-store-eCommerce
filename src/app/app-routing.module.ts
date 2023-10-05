@@ -11,6 +11,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { authGuard } from './routes-guard/auth.guard';
 
 const routes: Routes = [
@@ -65,6 +66,11 @@ const routes: Routes = [
     component: AccountPageComponent,
     title: 'bookzone - account',
     canActivate: [authGuard]
+  },
+  {
+    path: 'payment',
+    component: PaymentPageComponent,
+    title: 'bookzone - payment'
   },
   {
     path: '',

@@ -14,7 +14,6 @@ export class CartService {
   // totalPrice: number = 0
   totalPrice: number[] = []
 
-
   addToCart(book: Book, qtt: number, price: number) {
     this.cartList.push(book);
     this.cartListQtt.push(qtt);

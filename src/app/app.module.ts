@@ -28,6 +28,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 import { ToastrModule } from 'ngx-toastr';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ToastrModule } from 'ngx-toastr';
     CartPageComponent,
     RegisterPageComponent,
     AccountPageComponent,
+    PaymentPageComponent,
   ],
   imports: [
     BrowserModule,

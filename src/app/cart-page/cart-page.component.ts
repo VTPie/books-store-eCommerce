@@ -3,6 +3,7 @@ import { CartService } from '../cart.service';
 import { faTrash, faMinus, faPlus, faFaceFrown } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-cart-page',
   templateUrl: './cart-page.component.html',
@@ -42,5 +43,10 @@ export class CartPageComponent {
   //Return home
   returnHome() {
     this.router.navigate(['home'])
+  }
+
+  //Navigate to Payment
+  navToPayment() {
+    this.router.navigate(['payment']);
   }
 }
