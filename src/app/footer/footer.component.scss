@@ -1,7 +1,7 @@
 .footer-container{
     background-color: #282828;
-    .even-col{
-        padding-left: 60px;
+    .download{
+        max-width: 140px;
     }
     .list-link{
         li{
@@ -15,15 +15,28 @@
             }
         }
     }
-    #copyright{
-        margin-left: 65px;
-    }
     #linked{
-        margin-right: 70px;
-        margin-left: auto;
         .linked-item{
-            width: 13%;
+            width: 80px;
             height: 40px;
         }
+    }
+}
+
+//Responsive
+@media (min-width: 1200px){
+    .footer-container{
+        .even-col{
+            padding-left: 60px;
+        }
+    }
+}
+@media (min-width: 992px){
+    #copyright{
+        margin-left: 4.3%;
+    }
+    #linked{
+        margin-right: 4.3%;
+        margin-left: auto;
     }
 }
