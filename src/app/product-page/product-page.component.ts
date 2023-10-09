@@ -8,6 +8,7 @@ import { faFacebook, faTwitter, faPinterest, faLinkedin } from '@fortawesome/fre
 import { Router } from '@angular/router';
 import { CartService } from '../cart.service';
 import { ToastrService } from 'ngx-toastr';
+import { Popover } from 'bootstrap'
 
 declare var window: any
 @Component({
@@ -32,6 +33,10 @@ export class ProductPageComponent implements OnInit {
     this.formModal = new window.bootstrap.Modal(
       document.getElementById("modal-route-to-login")
     )
+
+    //Action coming soon
+    Array.from(document.querySelectorAll('button[data-bs-toggle="popover"]')).forEach(popoverNode => new Popover(popoverNode))
+
   }
 
   //Fetch data

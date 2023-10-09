@@ -39,13 +39,14 @@
                 <input type="radio" class="btn-check" name="options-outlined" id="radio-ppb" autocomplete="off" checked>
                 <label class="btn btn-outline-info" for="radio-ppb">Paperback</label>
 
-                <input type="radio" class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
+                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
                 <label class="btn btn-outline-info ms-3" for="radio-hc">Hardcover</label>
 
-                <input type="radio" class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
+                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
                 <label class="btn btn-outline-info ms-3" for="radio-hc">Ebook</label>
 
-                <input type="radio" class="btn-check" name="options-outlined" id="radio-lmt" autocomplete="off">
+                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-lmt"
+                    autocomplete="off">
                 <label class="btn btn-outline-info ms-3" for="radio-lmt">Limited</label>
 
             </div>
@@ -64,7 +65,8 @@
             <hr>
             <!-- Buy -->
             <div class="d-flex justify-content-between w-100">
-                <button class="combo-button btn btn-info fw-bold" type="button" disabled>Add to
+                <button class="btn btn-info fw-bold combo-button" type="button" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Coming soon...">Add to
                     wishlist</button>
                 <button class="combo-button btn btn-info fw-bold" type="button" (click)="addToCart()">Add to
                     cart</button>

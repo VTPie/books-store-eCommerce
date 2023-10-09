@@ -33,7 +33,8 @@
                     <input matSliderEndThumb>
                 </mat-slider>
                 <p>Currency: Dollar - $</p>
-                <button class="btn btn-info mt-2 d-block mx-auto" type="button">Apply</button>
+                <button class="btn btn-info mt-2 d-block mx-auto" type="button" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Coming soon...">Apply</button>
             </div>
             <div class="box-evaluate border rounded-2 py-3 px-4 mt-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Evaluate</h5>
@@ -45,12 +46,13 @@
                     <p class="mb-0">Unit:</p>
                     <mat-icon class="h-100 text-warning ms-2"> star </mat-icon>
                 </div>
-                <button class="btn btn-info mt-2 d-block mx-auto" type="button">Apply</button>
+                <button class="btn btn-info mt-2 d-block mx-auto" type="button" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Coming soon...">Apply</button>
             </div>
         </div>
         <div class="product col-9">
             <div class="d-flex flex-row-reverse">
-                <select class="form-select form-select-sm" id="slShow" aria-label="Small select example">
+                <select class="form-select form-select-sm" id="slShow" aria-label="Small select example" disabled>
                     <option value="1" selected>Show all</option>
                     <option value="2">Show 4</option>
                     <option value="3">Show 8</option>

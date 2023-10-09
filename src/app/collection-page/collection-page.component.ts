@@ -3,6 +3,7 @@ import { LoaderService } from 'src/app/loader.service';
 import { Book } from '../book/book';
 import { BookService } from '../book/book.service';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { Popover } from 'bootstrap'
 
 @Component({
   selector: 'app-collection-page',
@@ -26,6 +27,9 @@ export class CollectionPageComponent implements OnInit {
   constructor(private bookService: BookService, private loader: LoaderService) { }
   ngOnInit(): void {
     this.getBookData();
+
+    //Action coming soon
+    Array.from(document.querySelectorAll('button[data-bs-toggle="popover"]')).forEach(popoverNode => new Popover(popoverNode))
   }
   getBookData() {
     this.loader.show();
