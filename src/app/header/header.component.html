@@ -38,7 +38,7 @@
                 </button>
                 <ul class="main-dropdown-menu dropdown-menu mt-0 p-0" aria-labelledby="dropdownMenuButton">
                     <li class="dropend">
-                        <a class="sub-dropdown-toggle dropdown-item fw-normal d-flex mt-2 dropdown-toggle ps-2" href="#"
+                        <a class="sub-dropdown-toggle dropdown-item fw-normal d-flex mt-2 dropdown-toggle ps-2"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <mat-icon class="ms-3 p-0"> import_contacts </mat-icon>
                             <p class="m-0 ms-3">Literature</p>
@@ -51,53 +51,53 @@
                                 </div>
                                 <div>
                                     <div>
-                                        <a class="dropdown-item fw-normal mt-1" href="#">Detective</a>
+                                        <a class="dropdown-item fw-normal mt-1" href="/collection">Detective</a>
                                     </div>
                                     <div>
-                                        <a class="dropdown-item fw-normal mt-1" href="#">Gothic</a>
+                                        <a class="dropdown-item fw-normal mt-1" href="/collection">Gothic</a>
                                     </div>
                                     <div>
-                                        <a class="dropdown-item fw-normal mt-1" href="#">Historical</a>
+                                        <a class="dropdown-item fw-normal mt-1" href="/collection">Historical</a>
                                     </div>
                                     <div>
-                                        <a class="dropdown-item fw-normal mt-1" href="#">Fiction</a>
+                                        <a class="dropdown-item fw-normal mt-1" href="/collection">Fiction</a>
                                     </div>
                                     <div>
-                                        <a class="dropdown-item fw-normal mt-1" href="#">Romance</a>
+                                        <a class="dropdown-item fw-normal mt-1" href="/collection">Romance</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> face </mat-icon>
                             <p class="m-0 ms-3">Children</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> attach_money </mat-icon>
                             <p class="m-0 ms-3">Economy</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> map </mat-icon>
                             <p class="m-0 ms-3">History</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> gavel </mat-icon>
                             <p class="m-0 ms-3">Law</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> brightness_low </mat-icon>
                             <p class="m-0 ms-3">Philosophy</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> mood </mat-icon>
                             <p class="m-0 ms-3">Psychology</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex mt-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> account_balance </mat-icon>
                             <p class="m-0 ms-3">Political</p>
                         </a></li>
-                    <li><a class="dropdown-item fw-normal d-flex my-2 ps-2" href="#">
+                    <li><a class="dropdown-item fw-normal d-flex my-2 ps-2" href="/collection">
                             <mat-icon class="ms-3 p-0"> school </mat-icon>
                             <p class="m-0 ms-3">Science</p>
                         </a></li>
@@ -106,28 +106,22 @@
             <nav class="col-6 offset-1 container-fluid h-100 p-0 navbar">
                 <div class="row h-100 w-100 navbar-nav m-0">
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link active" aria-current="page" routerLink="/home" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">Home</a>
+                        <a class="nav-link" aria-current="page" routerLink="/home" ariaCurrentWhenActive="page">Home</a>
                     </li>
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link" routerLink="/collection" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">Collection</a>
+                        <a class="nav-link" routerLink="/collection" ariaCurrentWhenActive="page">Collection</a>
                     </li>
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link" routerLink="/shop" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">Shop</a>
+                        <a class="nav-link" routerLink="/shop" ariaCurrentWhenActive="page">Shop</a>
                     </li>
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link" routerLink="/authors" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">Authors</a>
+                        <a class="nav-link" routerLink="/authors" ariaCurrentWhenActive="page">Authors</a>
                     </li>
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link" routerLink="/faq" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">F&Q</a>
+                        <a class="nav-link" routerLink="/faq" ariaCurrentWhenActive="page">F&Q</a>
                     </li>
                     <li class="col-2 fw-bold text-center h-100 p-0 nav-item">
-                        <a class="nav-link" routerLink="/about" (click)="changeActive($event)"
-                            ariaCurrentWhenActive="page">About us</a>
+                        <a class="nav-link" routerLink="/about" ariaCurrentWhenActive="page">About us</a>
                     </li>
                 </div>
             </nav>

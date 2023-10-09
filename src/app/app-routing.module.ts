@@ -68,7 +68,7 @@ const routes: Routes = [
     canActivate: [authGuard]
   },
   {
-    path: 'payment',
+    path: 'checkout',
     component: PaymentPageComponent,
     title: 'bookzone - payment'
   },

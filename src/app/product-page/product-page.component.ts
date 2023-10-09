@@ -167,7 +167,7 @@ export class ProductPageComponent implements OnInit {
     });
   }
 
-  //Add to cart
+  //Add to cart && Buy now
   formModal: any
   token = localStorage.getItem('token');
   addToCart() {
@@ -188,5 +188,13 @@ export class ProductPageComponent implements OnInit {
   navToLogin() {
     this.router.navigate(['register']);
     this.formModal.hide()
+  }
+  buyNow() {
+    if (this.token) {
+      this.router.navigate(['checkout']);
+    }
+    else {
+      this.formModal.show()
+    }
   }
 }

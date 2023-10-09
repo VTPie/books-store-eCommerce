@@ -47,6 +47,6 @@ export class CartPageComponent {
 
   //Navigate to Payment
   navToPayment() {
-    this.router.navigate(['payment']);
+    this.router.navigate(['checkout']);
   }
 }

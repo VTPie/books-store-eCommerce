@@ -9,14 +9,6 @@ import { Popover } from 'bootstrap'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  changeActive(event: any) {
-    let elements = document.querySelectorAll('.active');
-    elements.forEach((element) => {
-      element.classList.remove('active');
-    });
-    event.srcElement.classList.add('active')
-  }
-
   //Search action
   txtSearch = new FormControl('')
   captureSearch(event: any) {

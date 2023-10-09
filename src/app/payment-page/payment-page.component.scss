@@ -1,0 +1,10 @@
+:host{
+    table{
+        th, tr, td{
+            padding: 15px 0;
+        }
+        tr:hover{
+            background-color: cyan;
+        }
+    }
+}

@@ -70,7 +70,7 @@
                     wishlist</button>
                 <button class="combo-button btn btn-info fw-bold" type="button" (click)="addToCart()">Add to
                     cart</button>
-                <button class="combo-button btn btn-danger fw-bold" type="button">Buy now</button>
+                <button class="combo-button btn btn-danger fw-bold" type="button" (click)="buyNow()">Buy now</button>
             </div>
             <hr>
             <!-- Bottom -->
@@ -156,7 +156,8 @@
     </div>
     <div class="product-related row mt-4 ms-0">
         <h2 class="product-related-title p-0">Related products</h2>
-        <button class="product-related-btn btn btn-info fw-bold" type="button">View all</button>
+        <button class="product-related-btn btn btn-info fw-bold" type="button" data-bs-toggle="popover"
+            data-bs-placement="bottom" data-bs-content="Coming soon...">View all</button>
         <div class="d-flex justify-content-between w-100 p-0 mt-3">
             <div class="product-card" *ngFor="let book of relatedBooks; let i = index">
                 <app-book-card [name]="relatedBooks[i].name" [author]="relatedBooks[i].author"
@@ -167,7 +168,8 @@
     </div>
     <div class="product-author row my-4 ms-0">
         <h2 class="product-author-title p-0">Same author</h2>
-        <button class="product-author-btn btn btn-info fw-bold" type="button">View all</button>
+        <button class="product-author-btn btn btn-info fw-bold" type="button" data-bs-toggle="popover"
+            data-bs-placement="bottom" data-bs-content="Coming soon...">View all</button>
         <div class="mt-1 d-flex justify-content-between w-100 p-0 mt-3">
             <div class="product-card" *ngFor="let book of authorBooks; let i = index">
                 <app-book-card [name]="authorBooks[i].name" [author]="authorBooks[i].author"
@@ -191,7 +193,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>You need to log in before using the shopping cart feature. Would you like to log in now?</p>
+                <p>You need to log in before using the shopping cart feature and buy product. Would you like to log in
+                    now?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" (click)="navToLogin()">Log in</button>
