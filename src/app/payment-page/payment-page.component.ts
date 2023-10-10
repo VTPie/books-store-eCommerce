@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CartService } from '../cart.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment-page',
@@ -11,7 +12,8 @@ import { ToastrService } from 'ngx-toastr';
 export class PaymentPageComponent implements OnInit {
   constructor(
     private cartService: CartService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private router: Router
   ) { }
   ngOnInit(): void {
     //FormControl
@@ -56,7 +58,8 @@ export class PaymentPageComponent implements OnInit {
       this.toastr.error('Input cannot be empty.', 'Sorry!');
     }
     else {
-      this.toastr.success('Payment success.', 'Congratulation!');
+      this.router.navigate(['thanks']);
+      this.cartService.clearCart()
     }
   }
 }

@@ -29,6 +29,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 import { ToastrModule } from 'ngx-toastr';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { ThanksPageComponent } from './thanks-page/thanks-page.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { PaymentPageComponent } from './payment-page/payment-page.component';
     RegisterPageComponent,
     AccountPageComponent,
     PaymentPageComponent,
+    ThanksPageComponent,
   ],
   imports: [
     BrowserModule,

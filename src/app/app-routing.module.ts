@@ -12,6 +12,7 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { ThanksPageComponent } from './thanks-page/thanks-page.component';
 import { authGuard } from './routes-guard/auth.guard';
 
 const routes: Routes = [
@@ -71,6 +72,11 @@ const routes: Routes = [
     path: 'checkout',
     component: PaymentPageComponent,
     title: 'bookzone - payment'
+  },
+  {
+    path: 'thanks',
+    component: ThanksPageComponent,
+    title: 'bookzone - thanks'
   },
   {
     path: '',

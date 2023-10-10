@@ -11,7 +11,6 @@ export class CartService {
   cartList: Book[] = [];
   cartListQtt: number[] = [];
   cartListPrice: number[] = [];
-  // totalPrice: number = 0
   totalPrice: number[] = []
 
   addToCart(book: Book, qtt: number, price: number) {
@@ -61,5 +60,12 @@ export class CartService {
   }
   getTotalPrice() {
     return this.totalPrice
+  }
+
+  clearCart() {
+    this.cartList = []
+    this.cartListQtt = []
+    this.cartListPrice = []
+    this.totalPrice = []
   }
 }
