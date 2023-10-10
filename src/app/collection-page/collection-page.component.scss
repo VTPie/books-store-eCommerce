@@ -24,12 +24,21 @@
         }
     }
     .product{
-        #slShow{
-            width: 11%;
+        .sortProduct{
+            width: 75%;
+            #slShow{
+                width: 25%;
+            }
+            #slSort{
+                width: 60%;
+            }
+        }
+        .filterProduct{
+            width: 25%;
         }
         .collection-items{
             .collection-item{
-                width: 20.01%;
+                width: 60%; //1 products
             }
         }
     }
@@ -40,6 +49,93 @@
         z-index: 2;
         .ng-fa-icon{
             padding: 0 2.2px;
+        }
+        transform: scale(0.5);
+    }
+}
+
+//Responsive
+:host{
+    .filter{
+        display: none;
+    }
+    .product{
+        .toggleFilter{
+            display: block;
+        }
+    }
+}
+@media (min-width: 350px){
+    :host{
+        .product{
+            .collection-items{
+                .collection-item{
+                    width: 40%; //2 products
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px){
+    :host{
+        .product{
+            .collection-items{
+                .collection-item{
+                    width: 30%; //3 products
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    :host{
+        .product{
+            .sortProduct{
+                #slShow{
+                    width: 25%;
+                }
+                #slSort{
+                    width: 50%;
+                }
+            }
+        }
+        #goToTop-collection{
+            transform: scale(0.6);
+        }
+    }
+}
+@media (min-width: 992px){
+    :host{
+        .product{
+            .sortProduct{
+                width: 50%;
+            }
+            .filterProduct{
+                width: 50%;
+            }
+            .collection-items{
+                .collection-item{
+                    width: 20.01%; //4 products
+                }
+            }
+        }
+        #goToTop-collection{
+            transform: scale(0.8);
+        }
+    }
+}
+@media (min-width: 1200px){
+    :host{
+        .filter{
+            display: block;
+        }
+        .product{
+            .toggleFilter{
+                display: none;
+            }
+        }
+        #goToTop-collection{
+            transform: scale(1);
         }
     }
 }

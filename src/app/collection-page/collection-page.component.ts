@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoaderService } from 'src/app/loader.service';
 import { Book } from '../book/book';
 import { BookService } from '../book/book.service';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp, faFilter } from '@fortawesome/free-solid-svg-icons';
 import { Popover } from 'bootstrap'
 
 @Component({
@@ -20,6 +20,9 @@ export class CollectionPageComponent implements OnInit {
       behavior: 'smooth'
     });
   }
+
+  //Button Filter toggle
+  faFilter = faFilter;
 
   //Get books
   books: Book[] = [];

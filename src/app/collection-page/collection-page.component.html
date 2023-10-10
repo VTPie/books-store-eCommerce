@@ -5,7 +5,7 @@
 </div>
 <div class="container mb-4 px-0">
     <div class="row">
-        <div class="filter col-3">
+        <div class="filter col-lg-3">
             <form class="box-cate border rounded-2 py-3 px-4">
                 <h5 class="w-100 border-bottom pb-3 mb-3">Categories</h5>
                 <div class="form-check mt-2" *ngFor="let category of categories; let i = index">
@@ -50,25 +50,34 @@
                     data-bs-placement="bottom" data-bs-content="Coming soon...">Apply</button>
             </div>
         </div>
-        <div class="product col-9">
-            <div class="d-flex flex-row-reverse">
-                <select class="form-select form-select-sm" id="slShow" aria-label="Small select example" disabled>
-                    <option value="1" selected>Show all</option>
-                    <option value="2">Show 4</option>
-                    <option value="3">Show 8</option>
-                    <option value="4">Show 12</option>
-                </select>
-                <select class="form-select form-select-sm me-4 w-25" id="slSort" aria-label="Small select example"
-                    (change)="getValueSlSort()">
-                    <option value="1" selected>Default</option>
-                    <option value="2">A &rarr; Z</option>
-                    <option value="3">Z &rarr; A</option>
-                    <option value="4">Sort by price: low to high</option>
-                    <option value="5">Sort by price: high to low</option>
-                    <option value="6" disabled>Sort by rating: low to high</option>
-                    <option value="7" disabled>Sort by rating: high to low</option>
-                    <option value="8" disabled>Sort by latest</option>
-                </select>
+        <div class="product col-12 col-xl-9">
+            <div class="d-flex flex-row-reverse px-3 px-sm-0">
+                <div class="sortProduct d-flex flex-row-reverse">
+                    <select class="form-select form-select-sm" disabled id="slShow" aria-label="Small select example">
+                        <option value="1" selected>Show all</option>
+                        <option value="2">Show 4</option>
+                        <option value="3">Show 8</option>
+                        <option value="4">Show 12</option>
+                    </select>
+                    <select class="form-select form-select me-4" id="slSort" aria-label="Small select example"
+                        (change)="getValueSlSort()">
+                        <option value="1" selected>Default</option>
+                        <option value="2">A &rarr; Z</option>
+                        <option value="3">Z &rarr; A</option>
+                        <option value="4">Sort by price: low to high</option>
+                        <option value="5">Sort by price: high to low</option>
+                        <option value="6" disabled>Sort by rating: low to high</option>
+                        <option value="7" disabled>Sort by rating: high to low</option>
+                        <option value="8" disabled>Sort by latest</option>
+                    </select>
+                </div>
+                <div class="filterProduct">
+                    <button class="toggleFilter btn btn-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <fa-icon [icon]="faFilter"></fa-icon>
+                        Filter
+                    </button>
+                </div>
             </div>
             <hr class="mb-0" style="margin-top: 25px;">
             <div class="collection-items d-flex flex-wrap justify-content-evenly mt-2">
@@ -97,10 +106,63 @@
             </nav>
         </div>
     </div>
-
 </div>
 
 <!-- Go to top -->
 <button class="btn btn-info rounded-5" id="goToTop-collection" type=" button" (click)="scrollToTop()">
     <fa-icon class="fa-2x" [icon]="faChevronUp"></fa-icon>
 </button>
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form class="box-cate border rounded-2 py-3 px-4">
+            <h5 class="w-100 border-bottom pb-3 mb-3">Categories</h5>
+            <div class="form-check mt-2" *ngFor="let category of categories; let i = index">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckCate"
+                    (change)="onChangeCategory($event, category)">
+                <label class="form-check-label" for="flexCheckCate">
+                    {{categories[i].name}}
+                </label>
+            </div>
+        </form>
+        <form class="box-author border rounded-2 py-3 px-4 my-4">
+            <h5 class="w-100 border-bottom pb-3 mb-3">Authors</h5>
+            <div class="form-check mt-2" *ngFor="let author of authors; let i = index">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckAuthor"
+                    (change)="onChangeAuthor($event, author)">
+                <label class="form-check-label" for="flexCheckAuthor">
+                    {{authors[i].name}}
+                </label>
+            </div>
+        </form>
+        <div class="box-price border rounded-2 py-3 px-4">
+            <h5 class="w-100 border-bottom pb-3 mb-3">Price</h5>
+            <mat-slider discrete min="1" max="100" step="1">
+                <input matSliderStartThumb>
+                <input matSliderEndThumb>
+            </mat-slider>
+            <p>Currency: Dollar - $</p>
+            <button class="btn btn-info mt-2 d-block mx-auto" type="button" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Coming soon...">Apply</button>
+        </div>
+        <div class="box-evaluate border rounded-2 py-3 px-4 mt-4">
+            <h5 class="w-100 border-bottom pb-3 mb-3">Evaluate</h5>
+            <mat-slider discrete min="1" max="5" step="0.1">
+                <input matSliderStartThumb>
+                <input matSliderEndThumb>
+            </mat-slider>
+            <div class="d-flex">
+                <p class="mb-0">Unit:</p>
+                <mat-icon class="h-100 text-warning ms-2"> star </mat-icon>
+            </div>
+            <button class="btn btn-info mt-2 d-block mx-auto" type="button" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Coming soon...">Apply</button>
+        </div>
+    </div>
+</div>
