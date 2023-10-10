@@ -8,17 +8,60 @@
         <div class="col-6">
             <form [formGroup]="infoForm" class="border rounded-3 p-4">
                 <h4 class="mb-3">Receiver's information</h4>
+
                 <label for="txtName" class="form-label">Name</label>
                 <input type="text" class="form-control" id="txtName" placeholder="John Weak" formControlName="name">
+                <div *ngIf="name.invalid && (name.dirty || name.touched)">
+                    <div *ngIf="name.errors?.['required']" class="vldInput p-2 text-danger">
+                        Name is required.
+                    </div>
+                    <div *ngIf=" name.errors?.['minlength']" class="vldInput p-2 text-danger">
+                        Name must be at least 3 characters long.
+                    </div>
+                </div>
+
+
                 <label for="txtEmail" class="form-label mt-2">Email address</label>
                 <input type="email" class="form-control" id="txtEmail" placeholder="john@email.com"
                     formControlName="email">
+                <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                    <div *ngIf="email.errors?.['required']" class="vldInput p-2 text-danger">
+                        Email is required.
+                    </div>
+                    <div *ngIf="email.errors?.['email']" class="vldInput p-2 text-danger">
+                        Email is not valid.
+                    </div>
+                </div>
+
+
                 <label for="txtPhone" class="form-label mt-2">Phone</label>
                 <input type="number" class="form-control" id="txtPhone" placeholder="0123456789"
                     formControlName="phone">
+                <div *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+                    <div *ngIf="phone.errors?.['required']" class="vldInput p-2 text-danger">
+                        Phone is required.
+                    </div>
+                    <div *ngIf="phone.errors?.['min']" class="vldInput p-2 text-danger">
+                        Phone is not valid.
+                    </div>
+                    <div *ngIf="phone.errors?.['max']" class="vldInput p-2 text-danger">
+                        Phone is not valid.
+                    </div>
+                </div>
+
+
                 <label for="txtAddress" class="form-label mt-2">Address</label>
                 <input type="text" class="form-control" id="txtAddress" placeholder="221B - Baker street - London"
                     formControlName="address">
+                <div *ngIf="address.invalid && (address.dirty || address.touched)">
+                    <div *ngIf="address.errors?.['required']" class="vldInput p-2 text-danger">
+                        Address is required.
+                    </div>
+                    <div *ngIf="address.errors?.['minlength']" class="vldInput p-2 text-danger">
+                        Address must be at least 10 characters long.
+                    </div>
+                </div>
+
             </form>
         </div>
         <div class="col-6">
@@ -106,7 +149,8 @@
                     <h5>Total Amount:</h5>
                     <h5 class="text-danger fw-bold">$ {{this.totalAmount[0]}}</h5>
                 </div>
-                <button class="btn btn-danger w-50 mt-3 fw-bold mx-auto d-block" type="button">Payment</button>
+                <button class="btn btn-danger w-50 mt-3 fw-bold mx-auto d-block" type="button"
+                    (click)="checkout()">Payment</button>
             </div>
         </div>
     </div>
