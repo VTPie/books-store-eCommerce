@@ -33,15 +33,23 @@ export class HomePageComponent implements OnInit {
     navText: ['<', '>'],
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        center: false,
       },
-      400: {
+      340: { // 436px -> 535px
+        items: 2,
+        center: false,
+        margin: 10,
+      },
+      440: { //536px -> 835px
         items: 3
       },
-      740: {
-        items: 3
+      740: { //836px -> 1035px
+        items: 4,
+        margin: 10,
+        center: false,
       },
-      940: {
+      940: { //1036px -> max
         items: 5
       }
     },

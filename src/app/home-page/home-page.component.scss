@@ -86,8 +86,6 @@
 }
 
 .new-container{
-    width: 93vw;
-    margin-left: 3vw;
     position: relative;
     .new-item{
         width: 250px;
@@ -100,10 +98,10 @@
         content:"";
         display: block;
         height: 1px;
-        width: 500px;
+        width: 20%;
         position: absolute;
-        top: 20px;
-        left: 55px;
+        top: 50%;
+        left: 2vw;
         background: black;
         opacity: 50%;
     }
@@ -111,10 +109,10 @@
         content:"";
         display: block;
         height: 1px;
-        width: 500px;
+        width: 20%;
         position: absolute;
-        top: 20px;
-        right: 55px;
+        top: 50%;
+        right: 2vw;
         background: black;
         opacity: 50%;
     }
@@ -269,6 +267,26 @@
 }
 
 //Responsive
+@media (min-width: 376px){
+    .new-container{
+        #new-title::before {
+            width: 25%;
+        }
+        #new-title::after {
+            width: 25%;
+        }
+    }
+}
+@media (min-width: 476px){
+    .new-container{
+        #new-title::before {
+            width: 28%;
+        }
+        #new-title::after {
+            width: 28%;
+        }
+    }
+}
 @media (min-width: 576px){
     .sale-container{
         .sale-banner{
@@ -278,6 +296,14 @@
                     width: 60%;
                 }
             }
+        }
+    }
+    .new-container{
+        #new-title::before {
+            width: 31%;
+        }
+        #new-title::after {
+            width: 31%;
         }
     }
 }
@@ -290,6 +316,24 @@
                     width: 50%;
                 }
             }
+        }
+    }
+    .new-container{
+        #new-title::before {
+            width: 33%;
+        }
+        #new-title::after {
+            width: 33%;
+        }
+    }
+}
+@media (min-width: 992px){
+    .new-container{
+        #new-title::before {
+            width: 35%;
+        }
+        #new-title::after {
+            width: 35%;
         }
     }
 }
