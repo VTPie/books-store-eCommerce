@@ -75,15 +75,15 @@
             content:"";
             display: block;
             height: 1px;
-            width: 890px;
+            width: 0;
             position: absolute;
             top: 20px;
-            right: 170px;
+            right: 160px;
             background: black;
             opacity: 50%;
         }
         .product-related-btn{
-            width: 10%;
+            width: 130px;
             position: absolute;
             top: 0;
             right: 0;
@@ -98,15 +98,15 @@
             content:"";
             display: block;
             height: 1px;
-            width: 940px;
+            width: 0;
             position: absolute;
             top: 20px;
-            right: 170px;
+            right: 160px;
             background: black;
             opacity: 50%;
         }
         .product-author-btn{
-            width: 10%;
+            width: 130px;
             position: absolute;
             top: 0;
             right: 0;
@@ -175,6 +175,16 @@
                 padding-right: 50px;
             }
         }
+        .product-related{
+            .product-related-title:after{
+                width: calc(50% - 130px);
+            }  
+        }
+        .product-author{
+            .product-author-title:after{
+                width: calc(55% - 130px);
+            }  
+        }
     }
 }
 @media (min-width: 768px){
@@ -192,6 +202,16 @@
                 padding-right: 70px;
             }
         }
+        .product-related{
+            .product-related-title:after{
+                width: calc(61% - 130px);
+            }  
+        }
+        .product-author{
+            .product-author-title:after{
+                width: calc(68% - 130px);
+            }  
+        }
     }
 }
 @media (min-width: 992px){
@@ -203,6 +223,16 @@
                 }
             }
         }
+        .product-related{
+            .product-related-title:after{
+                width: calc(69% - 130px);
+            }  
+        }
+        .product-author{
+            .product-author-title:after{
+                width: calc(75% - 130px);
+            }  
+        }
     }
 }
 @media (min-width: 1200px){
@@ -212,6 +242,16 @@
                 padding-left: 150px;
                 padding-right: 150px;
             }
+        }
+        .product-related{
+            .product-related-title:after{
+                width: calc(73% - 130px);
+            }  
+        }
+        .product-author{
+            .product-author-title:after{
+                width: calc(78% - 130px);
+            }  
         }
     }
 }
@@ -223,6 +263,16 @@
                     border-left: 1px solid;
                 }
             }
+        }
+        .product-related{
+            .product-related-title:after{
+                width: calc(77% - 130px);
+            }  
+        }
+        .product-author{
+            .product-author-title:after{
+                width: calc(82% - 130px);
+            }  
         }
     }
 }
