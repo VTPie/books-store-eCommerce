@@ -8,11 +8,13 @@
     }
     .carousel-control-prev{
         margin-left: 13px;
-        margin-top: 150px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .carousel-control-next{
         margin-right: 13px;
-        margin-top: 150px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .carousel-control-next, .carousel-control-prev /*, .carousel-indicators */ {
         filter: invert(80%);
@@ -24,8 +26,8 @@
 
 .sale-container{
     .sale-banner{
-        height: 240px;
-        width: 640px;
+        height: 200px;
+        // width: 48%;
         overflow: hidden;
         position: relative;
         .bg-banner{
@@ -59,26 +61,18 @@
 
         // Banner 1
         #icon-sale{
-            margin-top: 70px;
+            margin-top: auto;
+            margin-bottom: auto;
             width: 100px;
             height: 100px;
         }
-        #banner1-title{
-            margin-left: 220px;
-            margin-top: 60px;
-            width: 290px;
-        }
-        #banner1-content{
-            margin-left: 220px;
-            width: 290px;
-        }
 
         // Banner 2
-        .banner2-content{
-            margin-left: 350px;
-        }
-        #banner2-title{
-            margin-top: 35px;
+        .sale-banner-item{
+            width: 230px;
+            .banner2-btn{
+                width: 70%;
+            }
         }
     }
     .sale-banner:hover{
@@ -271,5 +265,38 @@
     z-index: 2;
     .ng-fa-icon{
         padding: 0 2.2px;
+    }
+}
+
+//Responsive
+@media (min-width: 576px){
+    .sale-container{
+        .sale-banner{
+            .sale-banner-item{
+                width: 230px;
+                .banner2-btn{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .sale-container{
+        .sale-banner{
+            .sale-banner-item{
+                width: 250px;
+                .banner2-btn{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    .sale-container{
+        .sale-banner{
+            height: 240px;
+        }
     }
 }
