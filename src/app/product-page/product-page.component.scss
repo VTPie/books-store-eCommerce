@@ -1,38 +1,72 @@
 :host{
     .product-info{
         .product-left{
-            width: 43%;
+            height: fit-content;
         }
         .product-right{
-            width: 55%;
             height: fit-content;
+            .break{
+                display: block;
+            }
+            .inputHardcover{
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+            .inputLimited{
+                margin-top: 1rem;
+            }
+            .buy-container{
+                flex-direction: column;
+                .btnWish{
+                    width: 80%;
+                }
+                .comboBtn{
+                    margin-top: 1rem;
+                    width: 80%;
+                    .btnAdd{
+                        width: 50%;
+                    }
+                    .btnBuy{
+                        width: 45%;
+                    }
+                }
+            }
+            .info-rated{
+                border-left: none;
+            }
+            .info-author{
+                border-right: 1px solid;
+            }
             .quantity{
                 height: 35px;
+                width: 150px;
                 .quantity-minus{
                     border-radius: 50px 0 0 50px;
-                    width: 6%;
+                    width: 40px;
                 }
                 #inputQuantity{
-                    width: 10%;
+                    width: 70px;
                 }
                 .quantity-plus{ 
                     border-radius: 0 50px 50px 0;
-                    width: 6%;
+                    width: 40px;
                 }
-            }
-            .combo-button{
-                width: 30%;
             }
         }
     }
     .detail-info{
-        .table-info, th, td{
-            
+        .table-info, th, td{   
             th, td{
                 padding: 10px 30px;
                 border: 1px solid black;
                 border-collapse: collapse;
             }
+        }
+        .detail1{
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
     .product-related{
@@ -89,5 +123,106 @@
     z-index: 2;
     .ng-fa-icon{
         padding: 0 2.2px;
+    }
+}
+
+//Responsive
+@media (min-width: 450px){
+    :host{
+        .product-info{
+            .product-right{
+                .break{
+                    display: none;
+                }
+                .inputHardcover{
+                    margin-left: 1rem;
+                    margin-top: 0;
+                }
+                .inputLimited{
+                    margin-top: 0;
+                }
+                .buy-container{
+                    flex-direction: row;
+                    .btnWish{
+                        width: 35%;
+                    }
+                    .comboBtn{
+                        width: 59%;
+                        margin-top: 0;
+                        .btnAdd{
+                            width: 50%;
+                        }
+                        .btnBuy{
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .detail-info{
+            .detail1{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 576px){
+    :host{
+        .detail-info{
+            .detail1{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    :host{
+        .product-info{
+            .product-right{
+                .info-rated{
+                    border-left: 1px solid;
+                }
+            }
+        }
+        .detail-info{
+            .detail1{
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+        }
+    }
+}
+@media (min-width: 992px){
+    :host{
+        .product-info{
+            .product-right{
+                .info-rated{
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px){
+    :host{
+        .detail-info{
+            .detail1{
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+        }
+    }
+}
+@media (min-width: 1400px){
+    :host{
+        .product-info{
+            .product-right{
+                .info-rated{
+                    border-left: 1px solid;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,39 @@
+:host{
+    .review-subcontainer{
+        flex-direction: column;
+        .review-item{
+            border: none;
+            .review-rate{
+                border:none
+            }
+        }
+    }
+
+}
+
+//Responsive
+@media (min-width: 380px){
+    :host{
+        .review-subcontainer{
+            flex-direction: row;
+            .review-item{
+                border-left: 1px solid;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    :host{
+        .review-subcontainer{
+            .review-item{
+                border: none;
+                padding-right: 0;
+                .review-rate{
+                    border-left: 1px solid;
+                    border-right: 1px solid;
+                }
+            }
+        }
+    }
+}

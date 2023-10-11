@@ -1,19 +1,23 @@
 <div class="review-container">
     <div class="d-flex">
         <img src={{image}} style="height: 50px; width: 50px;">
-        <div class="ms-4 pe-4 my-auto">
-            <p class="mb-0 fw-bold">{{name}}</p>
-            <p class="mb-0 fw-bold opacity-50">{{national}}</p>
-        </div>
-        <div class="px-4 border border-top-0 border-bottom-0 my-auto">
-            <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-            <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-            <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-            <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-            <fa-icon class="text-warning" [icon]="faStar"></fa-icon>
-        </div>
-        <div class="ps-4 my-auto">
-            <p class="mb-0 fw-bold opacity-50">{{date}}</p>
+        <div class="review-subcontainer d-flex">
+            <div class="ms-4 pe-4 my-auto">
+                <p class="mb-0 fw-bold">{{name}}</p>
+                <p class="mb-0 fw-bold opacity-50">{{national}}</p>
+            </div>
+            <div class="review-item d-flex flex-column flex-md-row">
+                <div class="review-rate px-4 my-auto">
+                    <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                    <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                    <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                    <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                    <fa-icon class="text-warning" [icon]="faStar"></fa-icon>
+                </div>
+                <div class="ps-4 my-auto">
+                    <p class="mb-0 fw-bold opacity-50">{{date}}</p>
+                </div>
+            </div>
         </div>
     </div>
     <p class="mb-0 mt-3">{{comment}}</p>

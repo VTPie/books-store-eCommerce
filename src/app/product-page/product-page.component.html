@@ -1,88 +1,107 @@
 <div class="container p-0" *ngIf="targetBook">
     <div class="product-info row mt-4 ms-0 d-flex justify-content-between">
-        <div class="product-left col-6 p-4 border rounded-5">
-            <img src={{targetBook.image}} class="w-100 rounded-5">
+        <div class="product-left col-8 offset-2 col-lg-6 offset-lg-0 ps-0">
+            <div class="border rounded-5 p-4">
+                <img src={{targetBook.image}} class="w-100 rounded-5">
+            </div>
         </div>
-        <div class="product-right col-6 border rounded-5 p-4">
-            <!-- Top -->
-            <h2>{{targetBook.name}}</h2>
-            <span class="opacity-75">Author: </span>
-            <span class="pe-4 border-end me-4">{{targetBook.author}}</span>
-            <span class="pe-4 border-end me-4">
-                <span class="me-2 fw-medium">5.0</span>
-                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-                <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
-                <fa-icon class="text-warning" [icon]="faStar"></fa-icon>
-                <span class="ms-2">(1999 voted)</span>
-            </span>
-            <span class="opacity-75">SKU: </span>
-            <span>{{targetBook.id}}</span>
-            <h2 class="text-danger mt-2">
-                <span>$</span>
-                <span>{{targetBook.price}}</span>
-            </h2>
-            <hr>
-            <!-- Format -->
-            <p class="mb-0 fw-bold">Quantity</p>
-            <div class="quantity d-flex mt-2">
-                <button class="quantity-minus btn btn-info border border-end-0 h-100" type="button"
-                    (click)="minusQtt()"><fa-icon [icon]="faMinus"></fa-icon></button>
-                <input class="h-100 text-center fw-bold form-control rounded-0" type="text" [value]="quantity"
-                    id="inputQuantity" (change)="changeQtt($event)" readonly>
-                <button class="quantity-plus btn btn-info border border-start-0 h-100" type="button"
-                    (click)="plusQtt()"><fa-icon [icon]="faPlus"></fa-icon></button>
-            </div>
-            <p class="mt-2 mb-1 fw-bold">Editions</p>
-            <div>
-                <input type="radio" class="btn-check" name="options-outlined" id="radio-ppb" autocomplete="off" checked>
-                <label class="btn btn-outline-info" for="radio-ppb">Paperback</label>
+        <div class="product-right col-12 col-lg-6 mt-4 mt-lg-0 px-0 px-lg-2">
+            <div class="border rounded-5 p-4">
+                <!-- Top -->
+                <h2>{{targetBook.name}}</h2>
+                <div>
+                    <span class="opacity-75">Author: </span>
+                    <span class="info-author pe-4 me-4">{{targetBook.author}}</span>
+                    <span class="opacity-75">SKU: </span>
+                    <span>{{targetBook.id}}</span>
+                    <span class="info-rated 
+                        ps-0 ps-md-4 ps-lg-0 ps-xxl-4 
+                        ms-0 ms-md-4 ms-lg-0 ms-xxl-4 
+                        d-block d-md-inline d-lg-block d-xxl-inline 
+                        mt-lg-1 mt-xxl-0">
+                        <span class="me-2 fw-medium">5.0</span>
+                        <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                        <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                        <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                        <fa-icon class="text-warning me-1" [icon]="faStar"></fa-icon>
+                        <fa-icon class="text-warning" [icon]="faStar"></fa-icon>
+                        <span class="ms-2">(1999 voted)</span>
+                    </span>
 
-                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
-                <label class="btn btn-outline-info ms-3" for="radio-hc">Hardcover</label>
+                </div>
+                <h2 class="text-danger mt-2">
+                    <span>$</span>
+                    <span>{{targetBook.price}}</span>
+                </h2>
+                <hr>
+                <!-- Format -->
+                <p class="mb-0 fw-bold">Quantity</p>
+                <div class="quantity d-flex mt-2">
+                    <button class="quantity-minus btn btn-info border border-end-0 h-100" type="button"
+                        (click)="minusQtt()"><fa-icon [icon]="faMinus"></fa-icon></button>
+                    <input class="h-100 text-center fw-bold form-control rounded-0" type="text" [value]="quantity"
+                        id="inputQuantity" (change)="changeQtt($event)" readonly>
+                    <button class="quantity-plus btn btn-info border border-start-0 h-100" type="button"
+                        (click)="plusQtt()"><fa-icon [icon]="faPlus"></fa-icon></button>
+                </div>
+                <p class="mt-2 mb-1 fw-bold">Editions</p>
+                <div>
+                    <input type="radio" class="btn-check" name="options-outlined" id="radio-ppb" autocomplete="off"
+                        checked>
+                    <label class="btn btn-outline-info" for="radio-ppb">Paperback</label>
 
-                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc" autocomplete="off">
-                <label class="btn btn-outline-info ms-3" for="radio-hc">Ebook</label>
+                    <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc"
+                        autocomplete="off">
+                    <label class="btn btn-outline-info ms-3" for="radio-hc">Ebook</label>
 
-                <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-lmt"
-                    autocomplete="off">
-                <label class="btn btn-outline-info ms-3" for="radio-lmt">Limited</label>
+                    <br class="break">
 
-            </div>
-            <h4 class="text-danger mt-2">
-                <span class="fs-5 text-black">Total: </span>
-                <span class="fs-2">$</span>
-                <ng-container *ngIf="this.totalPrice > 0; else beginPrice">
-                    <span class="fs-2">{{totalPrice}}</span>
-                </ng-container>
-                <ng-template #beginPrice>
-                    <span class="fs-2">{{this.targetBook.price}}</span>
-                </ng-template>
-                <!-- <span class="fs-2">{{totalPrice}}</span>
+                    <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-hc"
+                        autocomplete="off">
+                    <label class="inputHardcover btn btn-outline-info" for="radio-hc">Hardcover</label>
+
+                    <input type="radio" disabled class="btn-check" name="options-outlined" id="radio-lmt"
+                        autocomplete="off">
+                    <label class="inputLimited btn btn-outline-info ms-3" for="radio-lmt">Limited</label>
+
+                </div>
+                <h4 class="text-danger mt-2">
+                    <span class="fs-5 text-black">Total: </span>
+                    <span class="fs-2">$</span>
+                    <ng-container *ngIf="this.totalPrice > 0; else beginPrice">
+                        <span class="fs-2">{{totalPrice}}</span>
+                    </ng-container>
+                    <ng-template #beginPrice>
+                        <span class="fs-2">{{this.targetBook.price}}</span>
+                    </ng-template>
+                    <!-- <span class="fs-2">{{totalPrice}}</span>
                 <span class="fs-2">{{this.targetBook.price}}</span> -->
-            </h4>
-            <hr>
-            <!-- Buy -->
-            <div class="d-flex justify-content-between w-100">
-                <button class="btn btn-info fw-bold combo-button" type="button" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="Coming soon...">Add to
-                    wishlist</button>
-                <button class="combo-button btn btn-info fw-bold" type="button" (click)="addToCart()">Add to
-                    cart</button>
-                <button class="combo-button btn btn-danger fw-bold" type="button" (click)="buyNow()">Buy now</button>
-            </div>
-            <hr>
-            <!-- Bottom -->
-            <span class="opacity-75">Categories: </span>
-            <span>{{targetBook.category}}</span>
-            <div class="">
-                <fa-icon [icon]="faFacebook" class="fa-2x" style="color: blue;"></fa-icon>
-                <fa-icon [icon]="faTwitter" class="ms-3 fa-2x" style="color: #1DA1F2;"></fa-icon>
-                <fa-icon [icon]="faPinterest" class="ms-3 fa-2x" style="color: #c8232c;"></fa-icon>
-                <fa-icon [icon]="faLinkedin" class="ms-3 fa-2x" style="color: #0072b1;"></fa-icon>
-            </div>
+                </h4>
+                <hr>
+                <!-- Buy -->
+                <div class="buy-container d-flex justify-content-between w-100">
+                    <button class="btn btn-info fw-bold btnWish" type="button" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Coming soon...">Add to
+                        wishlist</button>
+                    <div class="comboBtn d-flex justify-content-between">
+                        <button class="btn btn-info fw-bold btnAdd" type="button" (click)="addToCart()">Add to
+                            cart</button>
+                        <button class="btn btn-danger fw-bold btnBuy" type="button" (click)="buyNow()">Buy
+                            now</button>
+                    </div>
 
+                </div>
+                <hr>
+                <!-- Bottom -->
+                <span class="opacity-75">Categories: </span>
+                <span>{{targetBook.category}}</span>
+                <div class="">
+                    <fa-icon [icon]="faFacebook" class="fa-2x" style="color: blue;"></fa-icon>
+                    <fa-icon [icon]="faTwitter" class="ms-3 fa-2x" style="color: #1DA1F2;"></fa-icon>
+                    <fa-icon [icon]="faPinterest" class="ms-3 fa-2x" style="color: #c8232c;"></fa-icon>
+                    <fa-icon [icon]="faLinkedin" class="ms-3 fa-2x" style="color: #0072b1;"></fa-icon>
+                </div>
+            </div>
         </div>
     </div>
     <div class="detail-info row mt-4 ms-0">
@@ -103,9 +122,9 @@
                 </li>
             </ul>
         </nav>
-        <div [ngSwitch]="indexTemplate" class="border rounded-5">
+        <div [ngSwitch]="indexTemplate" class="border rounded-5 p-0">
             <ng-template [ngSwitchCase]=1>
-                <div style="padding: 16px 150px;">
+                <div class="detail1">
                     <p>Aut eligendi voluptatem adipisci unde iusto. Vitae aut voluptas velit beatae at nam
                         maiores. Sunt
                         dolorem cumque qui sit in esse quia occaecati. Eos et vero optio eaque nemo.</p>
@@ -120,7 +139,7 @@
                 </div>
             </ng-template>
             <ng-template [ngSwitchCase]=2>
-                <div style="padding: 16px 150px;">
+                <div class="detail1">
                     <table class="table-info mx-auto">
                         <tr>
                             <th>Publisher</th>
@@ -146,7 +165,7 @@
                 </div>
             </ng-template>
             <ng-template [ngSwitchCase]=3>
-                <div *ngFor="let cmt of listReview; let i = index" style="padding: 16px 150px;">
+                <div *ngFor="let cmt of listReview; let i = index" class="detail1">
                     <app-review-card [name]="listReview[i].name" [date]="listReview[i].date"
                         [comment]="listReview[i].comment" [image]="listReview[i].image"
                         [national]="listReview[i].national"></app-review-card>
