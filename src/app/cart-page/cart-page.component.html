@@ -18,12 +18,12 @@
                     </tr>
                     <tr class="border-bottom border-black" *ngFor="let book of cartList; let i = index">
                         <td>{{i+1}}</td>
-                        <td class="d-flex px-2 px-md-5">
-                            <img src={{book.image}} style="width: 100px;">
-                            <div class="ms-4 d-flex flex-column justify-content-center">
+                        <td class="d-flex px-0 px-sm-2 px-md-5">
+                            <img src={{book.image}} style="width: 40%;" class="h-auto my-auto">
+                            <div class="ms-1 ms-sm-4 d-flex flex-column justify-content-center">
                                 <p class="text-start fw-bold mb-0 my-2 cart-name">{{book.name}}</p>
+                                <p class="text-start mb-0 py-2 fw-bold text-danger">$ {{book.price}}</p>
                                 <p class="text-start mb-0 py-2">Paperback</p>
-                                <p class="text-start fw-bold text-danger mb-0 py-2">$ {{book.price}}</p>
                             </div>
                         </td>
                         <td>

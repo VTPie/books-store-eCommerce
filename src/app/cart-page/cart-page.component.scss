@@ -29,20 +29,20 @@
 }
 
 //Responsive
-@media (min-width: 476px){
+@media (min-width: 315px){
     .cart-product{
         .cart-item{
             table th:first-child{
                 width: 5%;
             }
             table th:nth-child(2){
-                width: 45%;
+                width: 42%;
             }
             table th:nth-child(3){
                 width: 28%;
             }
             table th:nth-child(4){
-                width: 17%;
+                width: 20%;
             }
             table th:last-child{
                 width: 5%;
