@@ -12,7 +12,7 @@
     </nav>
     <div [ngSwitch]="indexTemplate" class="border rounded-5">
         <ng-template [ngSwitchCase]=1>
-            <div style="padding: 16px 400px;">
+            <div class="template-auth">
                 <form [formGroup]="signin" (ngSubmit)="onSubmitLogin()">
                     <div class="mb-3">
                         <label for="txt-signin-username" class="form-label fw-medium">Email address / Phone</label>
@@ -29,13 +29,13 @@
                     </div>
                     <p class="text-end text-danger mb-0">Forgot password?</p>
                     <div class="col-auto text-center">
-                        <button type="submit" class="btn btn-info mb-3 fw-bold px-5">Sign in</button>
+                        <button type="submit" class="btn btn-info mt-3 fw-bold px-5">Sign in</button>
                     </div>
                 </form>
             </div>
         </ng-template>
         <ng-template [ngSwitchCase]=2>
-            <div style="padding: 16px 400px;">
+            <div class="template-auth">
                 <form>
                     <div class="mb-3">
                         <label for="txt-signup-username" class="form-label fw-medium">Email address / Phone</label>

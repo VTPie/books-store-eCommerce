@@ -1,0 +1,42 @@
+:host{
+    .template-auth{
+        padding: 16px 10%;
+    }
+}
+
+//Responsive
+@media (min-width: 576px){
+    :host{
+        .template-auth{
+            padding: 16px 70px;
+        }
+    }
+}
+@media (min-width: 768px){
+    :host{
+        .template-auth{
+            padding: 16px 140px;
+        }
+    }
+}
+@media (min-width: 992px){
+    :host{
+        .template-auth{
+            padding: 16px 220px;
+        }
+    }
+}
+@media (min-width: 1200px){
+    :host{
+        .template-auth{
+            padding: 16px 310px;
+        }
+    }
+}
+@media (min-width: 1400px){
+    :host{
+        .template-auth{
+            padding: 16px 400px;
+        }
+    }
+}
