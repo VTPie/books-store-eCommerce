@@ -264,6 +264,7 @@
     .ng-fa-icon{
         padding: 0 2.2px;
     }
+    transform: scale(0.8);
 }
 
 //Responsive
@@ -326,6 +327,9 @@
             width: 33%;
         }
     }
+    #goToTop-collection{
+        transform: scale(0.9);
+    }
 }
 @media (min-width: 992px){
     .new-container{
@@ -342,5 +346,8 @@
         .sale-banner{
             height: 240px;
         }
+    }
+    #goToTop-collection{
+        transform: scale(1);
     }
 }
