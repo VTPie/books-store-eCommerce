@@ -7,7 +7,55 @@
             background-color: cyan;
         }
     }
+    table th:first-child{
+        width: 10%;
+    }
+    table th:nth-child(2){
+        width: 60%;
+    }
+    table th:nth-child(3){
+        width: 15%;
+    }
+    table th:last-child{
+        width: 15%;
+    }
     .vldInput{
         background-color: #fed3d3;
+    }
+    .checkout-nameProduct{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .payment-img{
+        width: 40%;
+    }
+}
+
+//Responsive
+@media (min-width: 576px){
+    :host{
+        .payment-img{
+            width: 100px;
+        }
+    }
+}
+@media (min-width: 1400px){
+    :host{
+        table th:first-child{
+            width: 10%;
+        }
+        table th:nth-child(2){
+            width: 50%;
+        }
+        table th:nth-child(3){
+            width: 20%;
+        }
+        table th:last-child{
+            width: 20%;
+        }
     }
 }
