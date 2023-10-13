@@ -258,8 +258,8 @@
 
 #goToTop-home{
     position: fixed; 
-    bottom: 30px;
-    right: 20px;
+    bottom: 10%;
+    right: 1%;
     z-index: 2;
     .ng-fa-icon{
         padding: 0 2.2px;
@@ -327,7 +327,7 @@
             width: 33%;
         }
     }
-    #goToTop-collection{
+    #goToTop-home{
         transform: scale(0.9);
     }
 }
@@ -347,7 +347,9 @@
             height: 240px;
         }
     }
-    #goToTop-collection{
+}
+@media (min-width: 1200px){
+    #goToTop-home{
         transform: scale(1);
     }
 }

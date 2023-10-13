@@ -116,14 +116,15 @@
         }
     }
 }
-#goToTop-home{
+#goToTop-product{
     position: fixed; 
-    bottom: 30px;
-    right: 20px;
+    bottom: 10%;
+    right: 1%;;
     z-index: 2;
     .ng-fa-icon{
         padding: 0 2.2px;
     }
+    transform: scale(0.8);
 }
 
 //Responsive
@@ -212,6 +213,9 @@
                 width: calc(68% - 130px);
             }  
         }
+        #goToTop-product{
+            transform: scale(0.9);
+        }
     }
 }
 @media (min-width: 992px){
@@ -273,6 +277,9 @@
             .product-author-title:after{
                 width: calc(82% - 130px);
             }  
+        }
+        #goToTop-product{
+            transform: scale(1);
         }
     }
 }
