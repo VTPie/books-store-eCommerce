@@ -18,11 +18,11 @@
             .buy-container{
                 flex-direction: column;
                 .btnWish{
-                    width: 80%;
+                    width: 100%;
                 }
                 .comboBtn{
                     margin-top: 1rem;
-                    width: 80%;
+                    width: 100%;
                     .btnAdd{
                         width: 50%;
                     }
@@ -88,9 +88,9 @@
             top: 0;
             right: 0;
         }
-        .product-card{
-            width: 17%;
-        }
+        // .product-card{
+        //     width: 17%;
+        // }
     }
     .product-author{
         position: relative;
@@ -111,9 +111,9 @@
             top: 0;
             right: 0;
         }
-        .product-card{
-            width: 17%;
-        }
+        // .product-card{
+        //     width: 17%;
+        // }
     }
 }
 #goToTop-product{
@@ -128,6 +128,22 @@
 }
 
 //Responsive
+@media (min-width: 350px){
+    :host{
+        .product-info{
+            .product-right{
+                .buy-container{
+                    .btnWish{
+                        width: 80%;
+                    }
+                    .comboBtn{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width: 450px){
     :host{
         .product-info{

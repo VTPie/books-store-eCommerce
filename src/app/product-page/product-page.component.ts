@@ -197,4 +197,38 @@ export class ProductPageComponent implements OnInit {
       this.formModal.show()
     }
   }
+
+  //Related carousel
+  productOptions: any = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dotsEach: true,
+    margin: 50,
+    autoplay: true,
+    center: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { // 0px -> 352px
+        items: 1,
+        center: false,
+      },
+      354: { // 353px -> 575px
+        items: 2,
+        center: false,
+      },
+      500: { //500px -> 991px
+        items: 3
+      },
+      896: { //992px -> 1199px
+        items: 4,
+        center: false,
+      },
+      1104: { //1200px -> max
+        items: 5,
+      }
+    },
+    nav: false
+  }
 }

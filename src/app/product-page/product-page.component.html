@@ -1,11 +1,11 @@
 <div class="container p-0" *ngIf="targetBook">
-    <div class="product-info row mt-4 ms-0 d-flex justify-content-between">
+    <div class="product-info row mt-4 ms-0 d-flex justify-content-between w-100">
         <div class="product-left col-8 offset-2 col-lg-6 offset-lg-0 ps-0">
             <div class="border rounded-5 p-4">
                 <img src={{targetBook.image}} class="w-100 rounded-5">
             </div>
         </div>
-        <div class="product-right col-12 col-lg-6 mt-4 mt-lg-0 px-0 px-lg-2">
+        <div class="product-right col-12 col-lg-6 mt-4 mt-lg-0 ps-0 ps-lg-2 pe-0">
             <div class="border rounded-5 p-4">
                 <!-- Top -->
                 <h2>{{targetBook.name}}</h2>
@@ -104,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="detail-info row mt-4 ms-0">
+    <div class="detail-info row mt-4 ms-0 w-100">
         <nav class="w-100 p-0">
             <ul class="nav nav-underline justify-content-center mx-auto" style="width: 96%;">
                 <li class="nav-item">
@@ -170,7 +170,7 @@
             </ng-template>
         </div>
     </div>
-    <div class="product-related row mt-4 ms-0">
+    <!-- <div class="product-related row mt-4 ms-0">
         <h2 class="product-related-title p-0">Related products</h2>
         <button class="product-related-btn btn btn-info fw-bold" type="button" data-bs-toggle="popover"
             data-bs-placement="bottom" data-bs-content="Coming soon...">View all</button>
@@ -193,6 +193,34 @@
                     [routerLink]="['/collection', authorBooks[i].id]"></app-book-card>
             </div>
         </div>
+    </div> -->
+    <div class="product-related row mt-4 ms-0 w-100">
+        <h2 class="product-related-title p-0">Related products</h2>
+        <button class="product-related-btn btn btn-info fw-bold" type="button" data-bs-toggle="popover"
+            data-bs-placement="bottom" data-bs-content="Coming soon...">View all</button>
+        <owl-carousel-o [options]="productOptions" class="p-0 mt-3">
+            <ng-template carouselSlide *ngFor="let book of relatedBooks; let i = index">
+                <div class="product-card">
+                    <app-book-card [name]="relatedBooks[i].name" [author]="relatedBooks[i].author"
+                        [price]="relatedBooks[i].price" [image]="relatedBooks[i].image"
+                        [routerLink]="['/collection', relatedBooks[i].id]"></app-book-card>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="product-author row my-4 ms-0 w-100">
+        <h2 class="product-author-title p-0">Same author</h2>
+        <button class="product-author-btn btn btn-info fw-bold" type="button" data-bs-toggle="popover"
+            data-bs-placement="bottom" data-bs-content="Coming soon...">View all</button>
+        <owl-carousel-o [options]="productOptions" class="p-0 mt-3">
+            <ng-template carouselSlide *ngFor="let book of authorBooks; let i = index">
+                <div class="product-card">
+                    <app-book-card [name]="authorBooks[i].name" [author]="authorBooks[i].author"
+                        [price]="authorBooks[i].price" [image]="authorBooks[i].image"
+                        [routerLink]="['/collection', authorBooks[i].id]"></app-book-card>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
     </div>
 </div>
 
