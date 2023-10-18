@@ -202,11 +202,15 @@
 
 .getInfo-container{
     background-image: url('../../assets/images/bg-getinfo.jpg');
-    .btnEnter{
-        position: absolute;
-        right: 320px;
-        width: 120px;
-        height: 54px;
+    .getInfo-input{
+        width: 75%;
+        .btnEnter{
+            position: absolute;
+            // right: 320px;
+            right: 0;
+            width: 120px;
+            height: 54px;
+        }    
     }
 }
 
@@ -338,6 +342,11 @@
         }
         #new-title::after {
             width: 35%;
+        }
+    }
+    .getInfo-container{
+        .getInfo-input{
+            width: 50%;
         }
     }
 }
