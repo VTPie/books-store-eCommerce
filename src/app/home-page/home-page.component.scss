@@ -216,14 +216,13 @@
 
 .stat-container{
     .stat-item{
+        height: fit-content;
         .stat-item-icon{
             width: 40%;
-            padding: 19px 0;
+            height: fit-content;
+            // padding: 15px 0;
             background-color: #edebfc;
             border-radius: 50px;
-        }
-        .stat-item-info{
-            margin-top: 35px;
         }
     }
     #stat-item-1:hover{
