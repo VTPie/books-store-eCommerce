@@ -120,50 +120,51 @@
 </div>
 
 <!-- One author per week -->
-<div class="oapw container my-4 d-flex">
-    <div class="h-100 text-end" id="oapw-info">
-        <h5 class="text-danger">ONE AUTHOR PER WEEK</h5>
-        <h1 class="mt-3">Susanna Clarke</h1>
-        <p class="opacity-75 mt-3">Susanna Clarke is a British author,<br>
-            screenwriter and an award-winning journalist,<br>
-            best known for her
-            phenomenally successful<br>
-            debut thriller The Appeal.</p>
-        <p class="opacity-75">Before her breakout entry into<br>
-            the realms of crime fiction,<br>
-            Susanna Clarke worked as a journalist,<br>
-            magazine editor and speech writer for<br>
-            the Cabinet Office and Home Office,<br>
-            as well as writing for the stage and screen.<br>
-            Her first feature film Retreat<br>
-            (co-written and directed by Carl Tibbetts)<br>
-            came out in 2011,<br>
-            and she won the award for Best New Screenplay<br>
-            at the 2014 British Independent Film Festival.</p>
-        <button class="btn btn-info py-2 px-4 rounded-5 fw-bold mt-3" type="button" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="Coming soon...">View Author</button>
-
-    </div>
-    <div class="h-100" id="oapw-pic">
-        <img src="../../assets/images/author1.jpg" class="h-100 d-block mx-auto">
-    </div>
-    <div class="h-100 d-flex flex-column justify-content-between p-0" id="oapw-feat">
-        <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[0].name" [author]="listSusan[0].author"
-                [price]="listSusan[0].price" [image]="listSusan[0].image" class="new-item"
-                [routerLink]="['/collection', listSusan[0].id]"></app-mini-book-card>
+<div class="oapw container my-4 d-flex p-0">
+    <div class="row w-100 m-0">
+        <div class="text-end" id="oapw-info">
+            <h5 class="text-danger mb-0">ONE AUTHOR PER WEEK</h5>
+            <h1 class="mt-2 mt-md-3 mb-0">Susanna Clarke</h1>
+            <p class="opacity-75 mt-2 mt-md-3 mb-0">Susanna Clarke is a British author,
+                screenwriter and an award-winning journalist,
+                best known for her
+                phenomenally successful
+                debut thriller The Appeal.</p>
+            <p class="opacity-75 mb-0 mt-2 mt-md-3">Before her breakout entry into
+                the realms of crime fiction,
+                Susanna Clarke worked as a journalist,
+                magazine editor and speech writer for
+                the Cabinet Office and Home Office,
+                as well as writing for the stage and screen.
+                Her first feature film Retreat
+                (co-written and directed by Carl Tibbetts)
+                came out in 2011,
+                and she won the award for Best New Screenplay
+                at the 2014 British Independent Film Festival.</p>
+            <button class="btn btn-info py-2 px-4 rounded-5 fw-bold mt-2 mt-md-3" type="button" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Coming soon...">View Author</button>
+    
         </div>
-        <hr class="m-0">
-        <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[1].name" [author]="listSusan[1].author"
-                [price]="listSusan[1].price" [image]="listSusan[1].image" class="new-item"
-                [routerLink]="['/collection', listSusan[1].id]"></app-mini-book-card>
+        <div id="oapw-pic">
+            <img src="../../assets/images/author1.jpg" class="d-block mx-auto">
         </div>
-        <hr class="m-0">
-        <div class="oapw-card row m-0">
-            <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[2].name" [author]="listSusan[2].author"
-                [price]="listSusan[2].price" [image]="listSusan[2].image" class="new-item"
-                [routerLink]="['/collection', listSusan[2].id]"></app-mini-book-card>
+        <div class="w-100 mt-4 d-block d-xl-none"></div>
+        <div class="d-flex flex-row flex-xl-column justify-content-between p-0" id="oapw-feat">
+            <div class="oapw-card m-0">
+                <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[0].name" [author]="listSusan[0].author"
+                    [price]="listSusan[0].price" [image]="listSusan[0].image" class="new-item"
+                    [routerLink]="['/collection', listSusan[0].id]"></app-mini-book-card>
+            </div>
+            <div class="oapw-card m-0">
+                <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[1].name" [author]="listSusan[1].author"
+                    [price]="listSusan[1].price" [image]="listSusan[1].image" class="new-item"
+                    [routerLink]="['/collection', listSusan[1].id]"></app-mini-book-card>
+            </div>
+            <div class="oapw-card m-0 d-none d-lg-block">
+                <app-mini-book-card class="p-0 h-100 w-100" [name]="listSusan[2].name" [author]="listSusan[2].author"
+                    [price]="listSusan[2].price" [image]="listSusan[2].image" class="new-item"
+                    [routerLink]="['/collection', listSusan[2].id]"></app-mini-book-card>
+            </div>
         </div>
     </div>
 </div>

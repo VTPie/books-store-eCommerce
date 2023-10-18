@@ -167,18 +167,19 @@
 }
 
 .oapw{
-    height: 650px;
+    height: fit-content;
     #oapw-info{
-        width: 28%;
+        width: 50%;
     }
     #oapw-pic{
-        width: 44%;
+        width: 50%;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     #oapw-feat{
-        width: 28%;
-        .oapw-card{
-            height: 28%;
-        }
+        width: 100%;
     }
 }
 
@@ -353,6 +354,7 @@
             width: 35%;
         }
     }
+
     #evaluate-container{
         #evaluate-title::after {
             width: 530px;
@@ -368,6 +370,21 @@
     .sale-container{
         .sale-banner{
             height: 240px;
+        }
+    }
+    .oapw{
+        #oapw-info{
+            width: 28%;
+        }
+        #oapw-pic{
+            width: 44%;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+        #oapw-feat{
+            width: 28%;
         }
     }
     #evaluate-container{
