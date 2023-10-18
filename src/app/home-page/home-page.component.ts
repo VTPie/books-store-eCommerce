@@ -68,16 +68,14 @@ export class HomePageComponent implements OnInit {
     center: true,
     autoplayHoverPause: true,
     responsive: {
-      0: {
-        items: 3
+      0:{
+        items: 1
       },
-      400: {
-        items: 3
+      540: { // 540 - 991px
+        items: 2,
+        center: false
       },
-      740: {
-        items: 3
-      },
-      940: {
+      896: { // 992px - max
         items: 3
       }
     },

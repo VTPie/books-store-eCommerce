@@ -83,8 +83,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .owl-dots{
     width: fit-content;
     position: absolute;
-    top: -55px;
+    top: -40px;
     right: 0;
+    margin-top: 0;
     .owl-dot{
       span{
         width: 5px;
@@ -99,6 +100,34 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
         margin: 5px;
         background-color: cyan;
       }
+    }
+  }
+}
+@media (min-width: 576px){
+  #evaluate-container{
+    .owl-dots{
+      top: -43px;
+    }
+  }
+}
+@media (min-width: 768px){
+  #evaluate-container{
+    .owl-dots{
+      top: -44px;
+    }
+  }
+}
+@media (min-width: 992px){
+  #evaluate-container{
+    .owl-dots{
+      top: -44px;
+    }
+  }
+}
+@media (min-width: 1200px){
+  #evaluate-container{
+    .owl-dots{
+      top: -46px;
     }
   }
 }
