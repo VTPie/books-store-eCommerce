@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { Book } from '../book/book';
 
 @Component({
   selector: 'app-register-page',
@@ -40,12 +41,22 @@ export class RegisterPageComponent {
     psw: new FormControl('')
   })
 
+  //Init Cart
+  initCartProduct: Book[] = [];
+  initCartQtt: number[] = [];
+  initCartPrice: number[] = [];
+  initTotalPrice: number = 0;
+
 
   //Login method
   onSubmitLogin() {
     if (this.signin.value.username === "admin@gmail.com" && this.signin.value.psw === "admin") {
       this.toastr.success('Successful authentication.', 'Congratulation!');
       localStorage.setItem('token', Math.random().toString());
+      localStorage.setItem('cart_products', JSON.stringify(this.initCartProduct));
+      localStorage.setItem('cart_quantity', JSON.stringify(this.initCartQtt));
+      localStorage.setItem('cart_price', JSON.stringify(this.initCartPrice));
+      localStorage.setItem('total_price', JSON.stringify(this.initTotalPrice));
       this.router.navigate(['account'])
     }
     else {

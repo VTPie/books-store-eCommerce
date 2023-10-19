@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CartService } from '../cart.service';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { Book } from '../book/book';
 
 @Component({
   selector: 'app-payment-page',
@@ -36,6 +37,7 @@ export class PaymentPageComponent implements OnInit {
         Validators.minLength(10)
       ]),
     });
+    this.getCart()
   }
 
   //FormControl
@@ -44,13 +46,6 @@ export class PaymentPageComponent implements OnInit {
   get email() { return this.infoForm.get('email')!; }
   get phone() { return this.infoForm.get('phone')!; }
   get address() { return this.infoForm.get('address')!; }
-
-
-  //Get property from service CART
-  cartList = this.cartService.getItems();
-  cartListQtt = this.cartService.getQtt();
-  cartListPrice = this.cartService.getPrice();
-  totalAmount = this.cartService.getTotalPrice()
 
   //Submit form
   checkout() {
@@ -61,5 +56,24 @@ export class PaymentPageComponent implements OnInit {
       this.router.navigate(['thanks']);
       this.cartService.clearCart()
     }
+  }
+
+  //Cart
+  cartProduct: Book[] = []
+  cartQtt: number[] = []
+  cartPrice: number[] = []
+  totalPrice: number=0
+
+  getCart(){
+    //Get value from local-storage
+    let productString: string = localStorage.getItem('cart_products') as string;
+    let quantityString: string = localStorage.getItem('cart_quantity') as string;
+    let priceString: string = localStorage.getItem('cart_price') as string;
+    let totalString: string = localStorage.getItem('total_price') as string;
+    //Convert to original array
+    this.cartProduct= JSON.parse(productString) as Book[];
+    this.cartQtt= JSON.parse(quantityString) as number[];
+    this.cartPrice= JSON.parse(priceString) as number[];
+    this.totalPrice= JSON.parse(totalString) as number;
   }
 }

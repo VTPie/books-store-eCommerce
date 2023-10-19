@@ -12,7 +12,7 @@ export class AccountPageComponent implements OnInit {
   constructor(private router: Router) { }
 
   logout() {
-    localStorage.removeItem('token');
+    localStorage.clear()
     this.router.navigate(['home']);
     this.formModal.hide()
   }

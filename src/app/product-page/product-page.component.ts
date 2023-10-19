@@ -36,7 +36,6 @@ export class ProductPageComponent implements OnInit {
 
     //Action coming soon
     Array.from(document.querySelectorAll('button[data-bs-toggle="popover"]')).forEach(popoverNode => new Popover(popoverNode))
-
   }
 
   //Fetch data
@@ -99,10 +98,6 @@ export class ProductPageComponent implements OnInit {
     if (this.quantity > 1) {
       this.quantity--
     }
-    this.totalPrice = this.targetBook.price * this.quantity
-  }
-  changeQtt(event: any) {
-    this.quantity = event.target.value
     this.totalPrice = this.targetBook.price * this.quantity
   }
 
