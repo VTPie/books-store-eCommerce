@@ -122,7 +122,7 @@
     #combo-deal{
         position: relative;
         .deal-card{
-            width: 20.01%;
+            width: 30%;
         }
         #timer-daily{
             position: absolute;
@@ -131,14 +131,14 @@
         }
         #timer-weekly{
             position: absolute;
-            top: 845px;
+            top: 0;
             right: 12px;
         }
         #deal-daily-title:after{
             content:"";
             display: block;
             height: 1px;
-            width: 525px;
+            width: 0;
             position: absolute;
             top: 20px;
             right: 240px;
@@ -149,9 +149,9 @@
             content:"";
             display: block;
             height: 1px;
-            width: 507px;
+            width: 0;
             position: absolute;
-            top: 865px;
+            top: 20px;
             right: 240px;
             background: black;
             opacity: 50%;
@@ -303,6 +303,21 @@
             }
         }
     }
+    .combo-container{
+        #combo-deal{
+            .deal-card{
+                width: 27%;
+            }
+            #deal-daily-title:after{
+                width: 200px;
+                right: 170px;
+            }
+            #deal-weekly-title:after{
+                width: 170px;
+                right: 170px;
+            }
+        }
+    } 
     .new-container{
         #new-title::before {
             width: 31%;
@@ -328,6 +343,21 @@
             }
         }
     }
+    .combo-container{
+        #combo-deal{
+            .deal-card{
+                width: 20.01%;
+            }
+            #deal-daily-title:after{
+                width: 310px;
+                right: 240px;
+            }
+            #deal-weekly-title:after{
+                width: 270px;
+                right: 240px;
+            }
+        }
+    }   
     .new-container{
         #new-title::before {
             width: 33%;
@@ -354,7 +384,16 @@
             width: 35%;
         }
     }
-
+    .combo-container{
+        #combo-deal{
+            #deal-daily-title:after{
+                width: 525px;
+            }
+            #deal-weekly-title:after{
+                width: 507px;
+            }
+        }
+    }
     #evaluate-container{
         #evaluate-title::after {
             width: 530px;
@@ -370,6 +409,16 @@
     .sale-container{
         .sale-banner{
             height: 240px;
+        }
+    }
+    .combo-container{
+        #combo-deal{
+            #deal-daily-title:after{
+                width: 400px;
+            }
+            #deal-weekly-title:after{
+                width: 360px;
+            }
         }
     }
     .oapw{
@@ -397,6 +446,16 @@
     }
 }
 @media (min-width: 1400px){
+    .combo-container{
+        #combo-deal{
+            #deal-daily-title:after{
+                width: 525px;
+            }
+            #deal-weekly-title:after{
+                width: 500px;
+            }
+        }
+    }
     #evaluate-container{
         #evaluate-title::after {
             width: 870px;
